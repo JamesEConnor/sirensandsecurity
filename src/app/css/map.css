@@ -1,0 +1,20 @@
+#map {
+    position: relative;
+    width: 100%;
+
+
+    background-image: url("/diaglines2.png");
+    background-size: 64px;
+}
+
+#map > svg {
+    height: 100%;
+    max-width: 100%;
+
+    margin: auto;
+}
+
+.land
+{
+    
+}

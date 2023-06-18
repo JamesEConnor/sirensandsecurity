@@ -1,0 +1,30 @@
+main {
+    background-color: #252525;
+}
+
+header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+header #header-title {
+    font-family: "__Share_Tech_35764a", "__Share_Tech_Fallback_35764a", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 28pt;
+    text-shadow: var(--neon-text);
+}
+
+.horiline {
+    width: 80%;
+    height: 1px;
+    background: rgb(var(--highlight-rgb));
+}
+

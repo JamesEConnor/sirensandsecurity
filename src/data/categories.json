@@ -1,0 +1,49 @@
+{
+    "list": [
+        {
+            "name": "Other/Unassigned",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "DoS",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "DoS (911/PSAP)",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "TDoS",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "TDoS (911/PSAP)",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "Malware (Excluding Ransomware)",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "Ransomware",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "Swatting",
+            "icon": "",
+            "alt": ""
+        },
+        {
+            "name": "Doxxing",
+            "icon": "",
+            "alt": ""
+        }
+    ]
+}
