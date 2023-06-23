@@ -23,21 +23,53 @@ interface IncidentProps {
     date: number,
     category: number,
     description: string,
-    duration: number,
-    durationUnit: string,
-    perpetrator: string,
-    media: object
+    loc: {name: string, coords: string},
+    media: Array<{ name: string, url: string }>
 }
 
 export default function Incident(props: IncidentProps) {
     return (
-        <div className="incident">
-            <Image
+        <li className="incident">
+            <IncidentIcon
                 src={ categories.list[props.category].icon }
                 alt={categories.list[props.category].alt}
+                catName={ categories.list[props.category].name }
+                location={ props.loc.name }
+            />
+            <div className="incidentContent">
+                <h1>{ props.title }</h1>
+
+                <p>{ props.description }</p>
+
+                <h2>Media/Reports</h2>
+                <span>
+                    {props.media.map(entry => {
+                        return (
+                            <a key={entry.name} target="_blank" href={ entry.url }>
+                                <p>{ entry.name }</p>
+                            </a>
+                        );
+                    })}
+                </span>
+            </div>
+        </li>
+    );
+}
+
+function IncidentIcon(props: {src: string, alt: string, catName: string, location: string}) {
+    return (
+        <div className="incidentImg">
+            <Image
+                src={ props.src }
+                alt={ props.alt }
+                width="80"
+                height="80"
             />
 
-            <h1>{props.title}</h1>
+            <p className="category">{ props.catName }</p>
+
+            <p style={{textDecoration: "underline"}}>Location(s)</p>
+            <p>{ props.location }</p>
         </div>
     );
 }

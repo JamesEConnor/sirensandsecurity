@@ -14,9 +14,11 @@
     "@types/react-dom": "^18.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
+    "leaflet": "^1.9.4",
     "next": "13.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-simple-maps": "^3.0.0",
     "typescript": "5.0.4"
   },

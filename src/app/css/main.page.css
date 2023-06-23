@@ -1,5 +1,9 @@
-main {
-    background-color: #252525;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main, body {
+    background-color: rgb(var(--background-rgb));
 }
 
 header {
@@ -28,3 +32,134 @@ header #header-title {
     background: rgb(var(--highlight-rgb));
 }
 
+
+
+
+
+
+#incidentList {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
+    grid-auto-rows: 1;
+    grid-auto-columns: 1;
+}
+
+@media only screen and (max-width: 1250px)  {
+    #incidentList {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 850px)  {
+    #incidentList {
+        grid-template-columns: auto;
+    }
+}
+
+li.incident {
+    display: flex;
+
+    margin: 20px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.incidentImg > p.category {
+    min-width: 80px;
+    padding: 2px;
+    margin: 5px 0 10px 0;
+
+    color: black;
+    font-family: "__Share_Tech_35764a", "__Share_Tech_Fallback_35764a", Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: rgba(var(--emphasis-rgb), 0.52);
+    border-radius: 5px;
+}
+
+.incidentImg > p:not(.category) {
+    color: black;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.incidentContent {
+    margin-left: 18px;
+}
+
+.incidentContent h1, .incidentContent h2 {
+    position: relative;
+    margin-bottom: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-style: normal;
+    color: black;
+}
+
+.incidentContent h1:after, .incidentContent h2:after {
+    content: '';
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70px;
+    margin-top: 5px;
+    
+    border: rgb(var(--emphasis-rgb)) solid 3px;
+}
+
+.incidentContent h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    font-weight: normal;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.incidentContent h2:after {
+    border: rgb(var(--emphasis-rgb)) solid 2px;
+}
+
+.incidentContent > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-style: normal;
+    color: black;
+}
+
+.incidentContent > span {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.incidentContent > span a {
+    position: relative;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 5px 10px 5px 0;
+
+    color: black;
+    font-size: 0.9em;
+    text-align: center;
+
+    background-color: rgba(var(--emphasis-rgb), 0.52);
+
+    border-radius: 5px;
+}
+
+.incidentContent > span a:hover {
+    background-color: rgba(var(--emphasis-rgb), 0.72);
+}

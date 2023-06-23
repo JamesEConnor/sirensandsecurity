@@ -5,35 +5,24 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 240, 240, 240;
-  --background-rgb: 255, 255, 255;
+  --foreground-rgb: #f0f0f0;
+  --background-rgb: 37, 37, 37;
 
   --highlight-rgb: 250, 61, 40;
+  --emphasis-rgb: 209, 0, 0;
+  --border-rgb: 135, 2, 2;
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --text-shadow: 0px 0px 10px 5px #fa3d28;
-  --neon-text: 0px 2px 8px #fa3d28, 0px -2px 8px #fa3d28, 2px 0px 8px #fa3d28, -2px 0px 8px #fa3d28;
+  --text-shadow: 0px 0px 10px 5px rgb(var(--highlight-rgb));
+  --neon-text: 0px 2px 8px rgb(var(--highlight-rgb)),
+               0px -2px 8px rgb(var(--highlight-rgb)),
+               2px 0px 8px rgb(var(--highlight-rgb)),
+               -2px 0px 8px rgb(var(--highlight-rgb));
 }
-
-/*@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 20, 19, 33;
-
-    --highlight-rgb: 240, 240, 255;
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-
-    --text-shadow: 0px 0px 10px #ff0000;
-  }
-}*/
 
 * {
   box-sizing: border-box;

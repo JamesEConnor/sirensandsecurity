@@ -5,15 +5,65 @@
         {
             "title": "TDoS Against PSAPs in 12 States",
             "date": 1477353600,
-            "category": 4,
+            "category": 3,
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
-            "duration": 2,
-            "durationUnit": "Days",
-            "perpetrator": "Meetkumar Desai",
+            "loc": {
+                "name": "Southeastern U.S. (12 States)",
+                "coords": ""
+            },
             "media": [
-                "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/",
-                "https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit",
-                "https://www.azcentral.com/story/news/local/phoenix-breaking/2017/10/10/meetkumar-desai-sentenced-cyber-attack-nearly-crashed-phoenix-area-911-systems/751478001/"
+                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
+                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
+                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
+                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+            ]
+        },
+        {
+            "title": "TDoS Against PSAPs in 12 States",
+            "date": 1477353600,
+            "category": 3,
+            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "loc": {
+                "name": "Southeastern U.S. (12 States)",
+                "coords": ""
+            },
+            "media": [
+                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
+                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
+                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
+                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+            ]
+        },
+        {
+            "title": "TDoS Against PSAPs in 12 States",
+            "date": 1477353600,
+            "category": 3,
+            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "loc": {
+                "name": "Southeastern U.S. (12 States)",
+                "coords": ""
+            },
+            "media": [
+                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
+                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
+                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
+                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+            ]
+        },
+        {
+            "title": "TDoS Against PSAPs in 12 States",
+            "date": 1477353600,
+            "category": 3,
+            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "loc": {
+                "name": "Southeastern U.S. (12 States)",
+                "coords": ""
+            },
+            "media": [
+                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
+                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
+                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
+                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
             ]
         }
     ]

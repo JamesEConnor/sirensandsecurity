@@ -2,47 +2,42 @@
     "list": [
         {
             "name": "Other/Unassigned",
-            "icon": "",
+            "icon": "/icons/cat_other_unknown.png",
             "alt": ""
         },
         {
             "name": "DoS",
-            "icon": "",
-            "alt": ""
-        },
-        {
-            "name": "DoS (911/PSAP)",
-            "icon": "",
+            "icon": "/icons/cat_dos.png",
             "alt": ""
         },
         {
             "name": "TDoS",
-            "icon": "",
+            "icon": "/icons/cat_tdos.png",
             "alt": ""
         },
         {
-            "name": "TDoS (911/PSAP)",
-            "icon": "",
+            "name": "TDoS (911)",
+            "icon": "/icons/cat_tdos_911.png",
             "alt": ""
         },
         {
-            "name": "Malware (Excluding Ransomware)",
-            "icon": "",
+            "name": "Malware",
+            "icon": "/icons/cat_malware.png",
             "alt": ""
         },
         {
             "name": "Ransomware",
-            "icon": "",
+            "icon": "/icons/cat_ransomware.png",
             "alt": ""
         },
         {
             "name": "Swatting",
-            "icon": "",
+            "icon": "/icons/cat_swatting.png",
             "alt": ""
         },
         {
             "name": "Doxxing",
-            "icon": "",
+            "icon": "/icons/cat_doxxing.png",
             "alt": ""
         }
     ]
