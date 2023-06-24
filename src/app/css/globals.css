@@ -7,10 +7,13 @@
 
   --foreground-rgb: #f0f0f0;
   --background-rgb: 37, 37, 37;
+  --light-background-rgb: 208, 207, 211;
 
   --highlight-rgb: 250, 61, 40;
   --emphasis-rgb: 209, 0, 0;
   --border-rgb: 135, 2, 2;
+
+  --highlight-blue-rgb: 50, 101, 196;
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -22,6 +25,10 @@
                0px -2px 8px rgb(var(--highlight-rgb)),
                2px 0px 8px rgb(var(--highlight-rgb)),
                -2px 0px 8px rgb(var(--highlight-rgb));
+  --neon-blue-text: 0px 2px 8px rgb(var(--highlight-blue-rgb)),
+              0px -2px 8px rgb(var(--highlight-blue-rgb)),
+              2px 0px 8px rgb(var(--highlight-blue-rgb)),
+              -2px 0px 8px rgb(var(--highlight-blue-rgb));
 }
 
 * {

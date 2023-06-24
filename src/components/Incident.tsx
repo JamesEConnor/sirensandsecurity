@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Image from "next/image"
+import * as L from "leaflet";
+import { useMarker } from '@/components/Map'
 
 import categories from "@/data/categories.json"
 
@@ -23,26 +25,26 @@ interface IncidentProps {
     date: number,
     category: number,
     description: string,
-    loc: {name: string, coords: string},
+    loc: {name: string, coords: Array<number>},
     media: Array<{ name: string, url: string }>
 }
 
 export default function Incident(props: IncidentProps) {
     return (
-        <li className="incident">
+        <li className="incident flex m-4 p-4 bg-white rounded-lg">
             <IncidentIcon
                 src={ categories.list[props.category].icon }
                 alt={categories.list[props.category].alt}
                 catName={ categories.list[props.category].name }
                 location={ props.loc.name }
             />
-            <div className="incidentContent">
+            <div className="incidentContent ml-8">
                 <h1>{ props.title }</h1>
 
-                <p>{ props.description }</p>
+                <p className="text-sm text-black">{ props.description }</p>
 
                 <h2>Media/Reports</h2>
-                <span>
+                <span className="flex justify-start items-start flex-wrap">
                     {props.media.map(entry => {
                         return (
                             <a key={entry.name} target="_blank" href={ entry.url }>

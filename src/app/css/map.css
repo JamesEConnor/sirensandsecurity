@@ -9,7 +9,8 @@
     width: 100%;
 
 
-    background-image: url("/diaglines2.png");
+    background-color: #D0CFD3;
+    /* background-image: url("/diaglines2.png"); */
     background-size: 64px;
 }
 

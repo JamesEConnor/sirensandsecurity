@@ -6,30 +6,49 @@ main, body {
     background-color: rgb(var(--background-rgb));
 }
 
+p a {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
 header {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     margin-bottom: 20px;
 }
 
-header #header-title {
-    font-family: "__Share_Tech_35764a", "__Share_Tech_Fallback_35764a", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: 28pt;
+.logo-text.dark {
     text-shadow: var(--neon-text);
 }
+
+.logo-text.light {
+    text-shadow: var(--neon-blue-text);
+}
+
+
+footer {
+    background-color: rgb(var(--light-background-rgb));
+}
+
+footer p {
+    width: 50%;
+    margin-top: 1.1em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1.1em;
+}
+
 
 .horiline {
     width: 80%;
     height: 1px;
     background: rgb(var(--highlight-rgb));
+}
+
+.horiline-dark {
+    width: 80%;
+    height: 1px;
+    background: black;
 }
 
 
@@ -38,35 +57,23 @@ header #header-title {
 
 
 #incidentList {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: row;
-    grid-auto-rows: 1;
-    grid-auto-columns: 1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 @media only screen and (max-width: 1250px)  {
     #incidentList {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media only screen and (max-width: 850px)  {
     #incidentList {
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 
 li.incident {
     display: flex;
-
-    margin: 20px;
-    padding: 20px;
-
-    background-color: white;
-    border-radius: 10px;
 }
 
 .incidentImg > p.category {
@@ -88,10 +95,6 @@ li.incident {
     color: black;
     font-size: 10pt;
     text-align: center;
-}
-
-.incidentContent {
-    margin-left: 18px;
 }
 
 .incidentContent h1, .incidentContent h2 {
@@ -132,17 +135,6 @@ li.incident {
 
 .incidentContent > p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.85em;
-    font-style: normal;
-    color: black;
-}
-
-.incidentContent > span {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .incidentContent > span a {

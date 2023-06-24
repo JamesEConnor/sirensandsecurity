@@ -9,7 +9,7 @@
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
-                "coords": ""
+                "coords": [38.908742, -77.065142]
             },
             "media": [
                 { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
@@ -25,7 +25,7 @@
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
-                "coords": ""
+                "coords": [42.908742, -77.065142]
             },
             "media": [
                 { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
@@ -41,7 +41,7 @@
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
-                "coords": ""
+                "coords": [38.908742, -84.065142]
             },
             "media": [
                 { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
@@ -57,7 +57,7 @@
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
-                "coords": ""
+                "coords": [33.908742, -80.065142]
             },
             "media": [
                 { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
