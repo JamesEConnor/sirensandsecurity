@@ -6,7 +6,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer className="flex justify-center items-center flex-col w-full mt-10 pt-16 pb-24">
-                <Logo size={ 100 } text="Sirens & Security" dark={ false } />
+                <Logo size={ 100 } text="Sirens & Security" dark={ true } />
 
                 <p className="">
                     Sirens & Security is a series of projects dedicated towards tracking cyber incidents involving the

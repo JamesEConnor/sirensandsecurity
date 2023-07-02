@@ -8,10 +8,11 @@
     position: relative;
     width: 100%;
 
-
     background-color: #D0CFD3;
-    /* background-image: url("/diaglines2.png"); */
+    /* background-image: url("/assets/diaglines2.png"); */
     background-size: 64px;
+
+    z-index: 0;
 }
 
 #map > svg {
