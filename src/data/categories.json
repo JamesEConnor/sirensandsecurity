@@ -1,44 +1,47 @@
 {
-    "list": [
-        {
-            "name": "Other/Unassigned",
-            "icon": "/icons/cat_other_unknown.png",
-            "alt": ""
-        },
-        {
-            "name": "DoS",
-            "icon": "/icons/cat_dos.png",
-            "alt": ""
-        },
-        {
-            "name": "TDoS",
-            "icon": "/icons/cat_tdos.png",
-            "alt": ""
-        },
-        {
-            "name": "TDoS (911)",
-            "icon": "/icons/cat_tdos_911.png",
-            "alt": ""
-        },
-        {
-            "name": "Malware",
-            "icon": "/icons/cat_malware.png",
-            "alt": ""
-        },
-        {
-            "name": "Ransomware",
-            "icon": "/icons/cat_ransomware.png",
-            "alt": ""
-        },
-        {
-            "name": "Swatting",
-            "icon": "/icons/cat_swatting.png",
-            "alt": ""
-        },
-        {
-            "name": "Doxxing",
-            "icon": "/icons/cat_doxxing.png",
-            "alt": ""
-        }
-    ]
+    "dos": {
+        "name": "DoS",
+        "icon": "/icons/cat_dos.png",
+        "alt": ""
+    },
+    "tdos": {
+        "name": "TDoS",
+        "icon": "/icons/cat_tdos.png",
+        "alt": ""
+    },
+    "tdos911": {
+        "name": "TDoS (911)",
+        "icon": "/icons/cat_tdos_911.png",
+        "alt": ""
+    },
+    "mal": {
+        "name": "Malware",
+        "icon": "/icons/cat_malware.png",
+        "alt": ""
+    },
+    "ran": {
+        "name": "Ransomware",
+        "icon": "/icons/cat_ransomware.png",
+        "alt": ""
+    },
+    "swat": {
+        "name": "Swatting",
+        "icon": "/icons/cat_swatting.png",
+        "alt": ""
+    },
+    "dox": {
+        "name": "Doxxing",
+        "icon": "/icons/cat_doxxing.png",
+        "alt": ""
+    },
+    "una": {
+        "name": "Unassigned",
+        "icon": "/icons/cat_other_unknown.png",
+        "alt": ""
+    },
+    "oth": {
+        "name": "Other",
+        "icon": "/icons/cat_dos.png",
+        "alt": ""
+    }
 }

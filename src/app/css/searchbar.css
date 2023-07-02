@@ -1,0 +1,139 @@
+#search-bar > *:not(h1) {
+    width: 90%;
+}
+
+
+#search_key input {
+    padding-right: 48px;
+    border: solid 1px #cccccc;
+}
+
+#search_key input:hover {
+    border-color: #b3b3b3;
+}
+
+#search_key:before, #search_key:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 100%;
+    padding: 4px;
+
+    background-color: rgba(var(--emphasis-rgb), 0.65);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+#search_key:after {
+    background-image: url('/icons/search.png');
+    background-color: transparent;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+
+#search_date input {
+    width: 90%;
+
+    background-color: white;
+    color: black;
+    border: solid 1px #cccccc;
+    border-radius: 0.25rem;
+}
+
+#search_date input:hover {
+    border-color: #b3b3b3;
+}
+
+.react-datepicker__input-container {
+    margin: .125rem 0;
+}
+
+.react-datepicker__input-container:before, .react-datepicker__input-container:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 42px;
+    height: 41.6px;
+    padding: 4px;
+
+    background-color: rgba(var(--emphasis-rgb), 0.65);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.react-datepicker__input-container:after {
+    background-image: url('/icons/calendar.png');
+    background-color: transparent;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+/* #search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    al
+}
+
+
+#search_key input {
+    padding-right: 48px;
+}
+
+#search_key:before, #search_key:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    padding: 4px;
+
+    background-color: rgba(var(--emphasis-rgb), 0.65);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+#search_key:after {
+    background-image: url('/icons/search.png');
+    background-color: transparent;
+    background-size: 35px;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+#search-date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datepicker {
+    width: calc(50% - 4px);
+    height: 1em;
+    padding: 2px;
+
+    margin: 5px 10px;
+}
+
+.react-datepicker-wrapper {
+    margin: 0 auto;
+} */

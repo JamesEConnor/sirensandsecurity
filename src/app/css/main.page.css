@@ -56,6 +56,21 @@ footer p {
 
 
 
+
+
+
+@media only screen and (max-width: 1100px) {
+    #incidents {
+        flex-direction: column;
+    }
+
+    #incidents > * {
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+
 #incidentList {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
