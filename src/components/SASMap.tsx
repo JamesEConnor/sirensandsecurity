@@ -1,4 +1,4 @@
-import React, { Component, RefObject, createRef, forwardRef, useImperativeHandle, useRef } from 'react';
+import React, { Component, PureComponent, RefObject, createRef, forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from 'react';
 
 import {
     MapContainer,
@@ -10,7 +10,7 @@ import {
 import * as L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
-import ReactDOM from 'react-dom';
+import memoize from "memoize-one"
 
 interface MapProps {
     height_offset:number,
@@ -18,7 +18,7 @@ interface MapProps {
     marker_color: string
 }
 
-export default class SASMap extends Component<MapProps> {
+export default class SASMap extends PureComponent<MapProps, {markers:Array<{id:string, coords:Array<number>, popup:string}>}> {
     //The starting view. Tuned to be just the right amount of zoom.
     startBounds = [
         [-45, -20],
@@ -31,6 +31,20 @@ export default class SASMap extends Component<MapProps> {
         [90, 180]
     ]
 
+    //Memoized function for updating markers when they change.
+    adjustMarkersList = memoize(
+        (newMarkers) => newMarkers
+    );
+
+
+    constructor(props:MapProps) {
+        super(props);
+
+        console.log(props.markers);
+        this.state = {
+            markers: props.markers
+        };
+    }
 
     render() {
 
@@ -51,7 +65,7 @@ export default class SASMap extends Component<MapProps> {
         //refer here: https://stackoverflow.com/questions/67045268/react-leaflet-canvas
         const DrawnMarker = (props:{marker:{id:string,coords:Array<number>,popup:string}}) => {
             const mapRef = useMap();
-
+        
             L.circleMarker(props.marker.coords, {
                 color: this.props.marker_color
             })
@@ -61,7 +75,6 @@ export default class SASMap extends Component<MapProps> {
 
             return null;
         }
-
 
         return (
             <div id="map" style={{ height: `calc(100vh - ${ this.props.height_offset }px)` }}>
@@ -79,7 +92,8 @@ export default class SASMap extends Component<MapProps> {
                     />
 
                     {
-                        this.props.markers.map((marker, i) => {
+                        this.state.markers.map((marker, i) => {
+                            console.log(marker);
                             return (
                                 <DrawnMarker key={i} marker={marker} />
                             );

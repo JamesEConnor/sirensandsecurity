@@ -1,5 +1,5 @@
 import React, { Component, MutableRefObject, PropsWithRef } from 'react';
-import Logo from '@/components/Logo';
+import Logo from '@components/Logo';
 
 export default class Header extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import categories from "@/data/categories.json"
+import categories from "@data/categories"
 
 //The different incident categories.
 export const IncidentCategory = {
