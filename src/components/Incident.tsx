@@ -33,12 +33,12 @@ export default function Incident(props: IncidentProps) {
     var bgColor = (props.rowIdx % 2 == 0) ? "white" : "transparent";
 
     return (
-        <tr className="text-black text-sm" style={{backgroundColor: bgColor}}>
-            <td className="p-3">{props.id}</td>
-            <td className="p-3">{categories[catC].name}</td>
-            <td className="p-3">{props.title}</td>
-            <td className="p-3">{(new Date(props.date)).toLocaleDateString()}</td>
-            <td className="p-3">{props.loc.name}</td>
+        <tr className="text-black text-sm block" style={{backgroundColor: bgColor}}>
+            <td className="inline-block w-1/5 p-3">{props.id}</td>
+            <td className="inline-block w-1/5 p-3">{categories[catC].name}</td>
+            <td className="inline-block w-1/5 p-3">{props.title}</td>
+            <td className="inline-block w-1/5 p-3">{(new Date(props.date)).toLocaleDateString()}</td>
+            <td className="inline-block w-1/5 p-3">{props.loc.name}</td>
         </tr>
     );
 }

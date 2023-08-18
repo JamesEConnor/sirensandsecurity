@@ -102,7 +102,6 @@ export default class SASMap extends Component<MapProps, {query_string:string}> {
 
                     {
                         this.props.markers.map((marker, i) => {
-                            //console.log(marker);
                             return (
                                 <DrawnMarker key={i} marker={marker} />
                             );

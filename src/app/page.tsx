@@ -1,6 +1,7 @@
 'use client';
 
 import "@css/main.page.css";
+import "@css/incidents.css";
 import "@css/map.css";
 
 import Header from '@components/Header';
@@ -16,6 +17,8 @@ export default class PageSecurityIncidents extends Component {
   state = {
     incidents: [],
     incidents_query: "",
+    incidents_error: false,
+    incidents_are_loading: true,
     search: {
       keyphrase: '',
       category: '',
@@ -29,6 +32,7 @@ export default class PageSecurityIncidents extends Component {
   constructor(props:any) {
     super(props);
 
+    //Bind for use by the search bar child component.
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
   }
 
@@ -55,11 +59,19 @@ export default class PageSecurityIncidents extends Component {
       searchTimeout: setTimeout(() => {
 
         this.loadIncidents();
-      }, 1500)
+      }, 1500),
+      incidents_are_loading: true
     });
   }
 
+  //Loads incidents based on search parameters.
   loadIncidents() {
+    this.setState((state) => {
+      return {
+        incidents_error: false
+      }
+    });
+
     fetch('/api/incidents?' + new URLSearchParams({
       key: this.state.search.keyphrase,
       cat: this.state.search.category,
@@ -73,13 +85,20 @@ export default class PageSecurityIncidents extends Component {
         this.setState((state) => {
           return {
             incidents: result,
-            incidents_query: `${this.state.search.keyphrase}|${this.state.search.category}|${this.state.search.startDate}|${this.state.search.endDate}`
+            incidents_query: `${this.state.search.keyphrase}|${this.state.search.category}|${this.state.search.startDate}|${this.state.search.endDate}`,
+            incidents_are_loading: false,
+            incidents_error: false
           }
         })
       },
       //TODO: implement error handling.
       (error) => {
-
+        this.setState((state) => {
+          return {
+            incidents_are_loading: false,
+            incidents_error: true
+          }
+        });
       }
     )
   }
@@ -97,7 +116,7 @@ export default class PageSecurityIncidents extends Component {
           <SASMap
             height_offset={121}
             markers={this.state.incidents.map((entry) => {
-              console.log(entry);
+
               return {
                 id:entry[0],
                 coords:entry[1].loc.coords,
@@ -108,7 +127,12 @@ export default class PageSecurityIncidents extends Component {
             query_string={ this.state.incidents_query }
             ></SASMap>
 
-          <IncidentTable incidents={this.state.incidents} updateSearch={ this.updateSearchTerm } />
+          <IncidentTable
+            incidents={this.state.incidents}
+            updateSearch={ this.updateSearchTerm }
+            isLoading={ this.state.incidents_are_loading }
+            error={ this.state.incidents_error }
+          />
 
           <Footer />
         </main>
