@@ -15,6 +15,7 @@ import { URLSearchParams } from "next/dist/compiled/@edge-runtime/primitives/url
 export default class PageSecurityIncidents extends Component {
   state = {
     incidents: [],
+    incidents_query: "",
     search: {
       keyphrase: '',
       category: '',
@@ -70,7 +71,10 @@ export default class PageSecurityIncidents extends Component {
     .then(
       (result) => {
         this.setState((state) => {
-          return {incidents: result}
+          return {
+            incidents: result,
+            incidents_query: `${this.state.search.keyphrase}|${this.state.search.category}|${this.state.search.startDate}|${this.state.search.endDate}`
+          }
         })
       },
       //TODO: implement error handling.
@@ -101,6 +105,7 @@ export default class PageSecurityIncidents extends Component {
               })
             }
             marker_color="#d10000"
+            query_string={ this.state.incidents_query }
             ></SASMap>
 
           <IncidentTable incidents={this.state.incidents} updateSearch={ this.updateSearchTerm } />

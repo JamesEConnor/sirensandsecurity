@@ -1,4 +1,4 @@
-import React, { Component, PureComponent, RefObject, createRef, forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from 'react';
+import React, { Component } from 'react';
 
 import {
     MapContainer,
@@ -15,10 +15,11 @@ import memoize from "memoize-one"
 interface MapProps {
     height_offset:number,
     markers: Array<{id:string, coords:Array<number>, popup:string}>,
-    marker_color: string
+    marker_color: string,
+    query_string: string
 }
 
-export default class SASMap extends PureComponent<MapProps, {markers:Array<{id:string, coords:Array<number>, popup:string}>}> {
+export default class SASMap extends Component<MapProps, {query_string:string}> {
     //The starting view. Tuned to be just the right amount of zoom.
     startBounds = [
         [-45, -20],
@@ -31,29 +32,37 @@ export default class SASMap extends PureComponent<MapProps, {markers:Array<{id:s
         [90, 180]
     ]
 
-    //Memoized function for updating markers when they change.
-    adjustMarkersList = memoize(
-        (newMarkers) => newMarkers
-    );
+    layerGroup = null;
 
 
     constructor(props:MapProps) {
         super(props);
+    }
 
-        console.log(props.markers);
-        this.state = {
-            markers: props.markers
-        };
+    shouldComponentUpdate(nextProps: Readonly<MapProps>, nextState: Readonly<{ markers: Array<{
+        id: string;
+        coords: Array<number>;
+        popup: string;
+    }>,
+    query_string:string; }>, nextContext: any): boolean {
+
+        return (this.props.query_string != nextProps.query_string || this.props.query_string == "|||");
     }
 
     render() {
-
         //Create a child component that can go inside the MapContainer
         //and handle all of the setup.
         const MapSetup = () => {
             const mapRef = useMap();
             mapRef.setMaxBounds(this.maxBounds);
             mapRef.preferCanvas = false;
+
+            if (this.layerGroup != null)
+                mapRef.removeLayer(this.layerGroup);
+            this.layerGroup = null;
+
+            this.layerGroup = L.layerGroup();
+            mapRef.addLayer(this.layerGroup);
             
             return null;
         };
@@ -70,7 +79,7 @@ export default class SASMap extends PureComponent<MapProps, {markers:Array<{id:s
                 color: this.props.marker_color
             })
             .bindPopup(props.marker.id + ": " + props.marker.popup)
-            .addTo(mapRef)
+            .addTo(this.layerGroup)
             .on('click', () => { console.log("ID: " + props.marker.id) });
 
             return null;
@@ -92,8 +101,8 @@ export default class SASMap extends PureComponent<MapProps, {markers:Array<{id:s
                     />
 
                     {
-                        this.state.markers.map((marker, i) => {
-                            console.log(marker);
+                        this.props.markers.map((marker, i) => {
+                            //console.log(marker);
                             return (
                                 <DrawnMarker key={i} marker={marker} />
                             );
