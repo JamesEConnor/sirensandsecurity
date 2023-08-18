@@ -1,20 +1,20 @@
 import Select from 'react-select';
 
-import categories from "@/data/categories.json";
-import DateInput from './DateInput';
+import categories from "@data/categories";
+import DateInput from '@components/DateInput';
 
-import '@/app/css/searchbar.css';
+import '@css/searchbar.css';
 
 //Search/Filter by:
 //Keyword (This will look for keywords in the title, description, and location name)
 //Category
 //Date
 
-export default function SearchBar() {
+export default function SearchBar(props: { updateSearch:(key?:string, cat?:string, startDate?:string, endDate?:string)=>{} }) {
     //Get all of the available category names.
     var catOptions = Object.keys(categories).map(key => {
         var category = categories[key as keyof typeof categories];
-        return {"value":category.name, "label":category.name}
+        return {"value":key, "label":category.name}
     });
 
     return (
@@ -27,7 +27,7 @@ export default function SearchBar() {
             { /* Header text */ }
             <h1
                 className="absolute top-0 left-0 py-2 px-4 text-black font-bold w-full"
-                style={{ backgroundColor: "rgba(var(--emphasis-rgb), 0.5)" }}
+                style={{ backgroundColor: "rgb(var(--accent-rgb))" }}
             >Search</h1>
 
             { /* The keyword search input */ }
@@ -36,6 +36,7 @@ export default function SearchBar() {
                     name="search_key"
                     placeholder="Type to search..."
                     className="w-full p-2 rounded bg-white text-black"
+                    onChange={ e => props.updateSearch(e.target.value, undefined, undefined, undefined) }
                 />
             </div>
 
@@ -55,11 +56,12 @@ export default function SearchBar() {
                         boxShadow: 'none'
                     }),
                 }}
+                onChange={ cats => props.updateSearch(undefined, cats.join('|'), undefined, undefined) }
             />
 
             { /* The start and end date inputs. */ }
             <label className="text-black mb-1 mt-4">Start Date / End Date</label>
-            <DateInput />
+            <DateInput updateSearch={ props.updateSearch } />
         </form>
     );
 }

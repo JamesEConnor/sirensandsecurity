@@ -1,4 +1,4 @@
-import React, { Component, RefObject, createRef, forwardRef, useImperativeHandle, useRef } from 'react';
+import React, { Component } from 'react';
 
 import {
     MapContainer,
@@ -10,15 +10,16 @@ import {
 import * as L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
-import ReactDOM from 'react-dom';
+import memoize from "memoize-one"
 
 interface MapProps {
     height_offset:number,
     markers: Array<{id:string, coords:Array<number>, popup:string}>,
-    marker_color: string
+    marker_color: string,
+    query_string: string
 }
 
-export default class SASMap extends Component<MapProps> {
+export default class SASMap extends Component<MapProps, {query_string:string}> {
     //The starting view. Tuned to be just the right amount of zoom.
     startBounds = [
         [-45, -20],
@@ -31,15 +32,37 @@ export default class SASMap extends Component<MapProps> {
         [90, 180]
     ]
 
+    layerGroup = null;
+
+
+    constructor(props:MapProps) {
+        super(props);
+    }
+
+    shouldComponentUpdate(nextProps: Readonly<MapProps>, nextState: Readonly<{ markers: Array<{
+        id: string;
+        coords: Array<number>;
+        popup: string;
+    }>,
+    query_string:string; }>, nextContext: any): boolean {
+
+        return (this.props.query_string != nextProps.query_string || this.props.query_string == "|||");
+    }
 
     render() {
-
         //Create a child component that can go inside the MapContainer
         //and handle all of the setup.
         const MapSetup = () => {
             const mapRef = useMap();
             mapRef.setMaxBounds(this.maxBounds);
             mapRef.preferCanvas = false;
+
+            if (this.layerGroup != null)
+                mapRef.removeLayer(this.layerGroup);
+            this.layerGroup = null;
+
+            this.layerGroup = L.layerGroup();
+            mapRef.addLayer(this.layerGroup);
             
             return null;
         };
@@ -51,17 +74,16 @@ export default class SASMap extends Component<MapProps> {
         //refer here: https://stackoverflow.com/questions/67045268/react-leaflet-canvas
         const DrawnMarker = (props:{marker:{id:string,coords:Array<number>,popup:string}}) => {
             const mapRef = useMap();
-
+        
             L.circleMarker(props.marker.coords, {
                 color: this.props.marker_color
             })
             .bindPopup(props.marker.id + ": " + props.marker.popup)
-            .addTo(mapRef)
+            .addTo(this.layerGroup)
             .on('click', () => { console.log("ID: " + props.marker.id) });
 
             return null;
         }
-
 
         return (
             <div id="map" style={{ height: `calc(100vh - ${ this.props.height_offset }px)` }}>
@@ -80,6 +102,7 @@ export default class SASMap extends Component<MapProps> {
 
                     {
                         this.props.markers.map((marker, i) => {
+                            //console.log(marker);
                             return (
                                 <DrawnMarker key={i} marker={marker} />
                             );
