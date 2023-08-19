@@ -79,8 +79,7 @@ export default class SASMap extends Component<MapProps, {query_string:string}> {
                 color: this.props.marker_color
             })
             .bindPopup(props.marker.id + ": " + props.marker.popup)
-            .addTo(this.layerGroup)
-            .on('click', () => { console.log("ID: " + props.marker.id) });
+            .addTo(this.layerGroup);
 
             return null;
         }

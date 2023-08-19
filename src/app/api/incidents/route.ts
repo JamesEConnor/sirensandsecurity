@@ -12,7 +12,7 @@ export async function GET(request: Request, response: Response) {
     var incident = incidents[id];
 
     if (incident != null) {
-      return NextResponse.json([incidents[id]], {status: 200});
+      return NextResponse.json([[id, incident]], {status: 200});
     }
   }
 

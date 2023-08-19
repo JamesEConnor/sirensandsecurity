@@ -10,7 +10,7 @@ import '@css/searchbar.css';
 //Category
 //Date
 
-export default function SearchBar(props: { updateSearch:(key?:string, cat?:string, startDate?:string, endDate?:string)=>{} }) {
+export default function SearchBar(props: { updateSearch:(id?:string, key?:string, cat?:string, startDate?:string, endDate?:string)=>{} }) {
     //Get all of the available category names.
     var catOptions = Object.keys(categories).map(key => {
         var category = categories[key as keyof typeof categories];
@@ -36,7 +36,7 @@ export default function SearchBar(props: { updateSearch:(key?:string, cat?:strin
                     name="search_key"
                     placeholder="Type to search..."
                     className="w-full p-2 rounded bg-white text-black"
-                    onChange={ e => props.updateSearch(e.target.value, undefined, undefined, undefined) }
+                    onChange={ e => props.updateSearch(undefined, e.target.value, undefined, undefined, undefined) }
                 />
             </div>
 
@@ -56,7 +56,7 @@ export default function SearchBar(props: { updateSearch:(key?:string, cat?:strin
                         boxShadow: 'none'
                     }),
                 }}
-                onChange={ cats => props.updateSearch(undefined, cats.join('|'), undefined, undefined) }
+                onChange={ cats => props.updateSearch(undefined, undefined, cats.join('|'), undefined, undefined) }
             />
 
             { /* The start and end date inputs. */ }

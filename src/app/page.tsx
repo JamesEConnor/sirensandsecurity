@@ -20,6 +20,7 @@ export default class PageSecurityIncidents extends Component {
     incidents_error: false,
     incidents_are_loading: true,
     search: {
+      id: '',
       keyphrase: '',
       category: '',
       startDate: '',
@@ -37,17 +38,45 @@ export default class PageSecurityIncidents extends Component {
   }
 
   //Allows updating each individual search term.
-  updateSearchTerm(keyphrase?:string, category?:string, startDate?:string, endDate?:string) {
+  updateSearchTerm(id?:string, keyphrase?:string, category?:string, startDate?:string, endDate?:string) {
 
     //Immediately update the state.
     this.setState({
       search: {
+        id: (id != undefined) ? id : this.state.search.id,
         keyphrase: (keyphrase != undefined) ? keyphrase : this.state.search.keyphrase,
         category: (category != undefined) ? category : this.state.search.category,
         startDate: (startDate != undefined) ? startDate : this.state.search.startDate,
         endDate: (endDate != undefined) ? endDate : this.state.search.endDate
       }
     });
+
+    //Optimization that automatically changes if the incident is present in the current
+    //subset. This allows for instantly showing more details (rather than delaying) when
+    //an ID is selected.
+    //Still has to do a proper refresh if the ID is being cleared.
+    if (id != undefined && id != "") {
+
+      //Loop through and search by ID.
+      var found = null;
+      this.state.incidents.forEach((incident) => {
+        if (incident[0] == id) {
+          found = incident;
+          return;
+        }
+      });
+
+      //Find based on ID.
+      if (found != null) {
+        this.setState({
+          incidents: [found]
+        });
+
+        //Stop early so web request isn't made.
+        return;
+      }
+    } 
+
 
     //Delay the loading for a moment
     //to allow for continuous typing.
@@ -73,6 +102,7 @@ export default class PageSecurityIncidents extends Component {
     });
 
     fetch('/api/incidents?' + new URLSearchParams({
+      id: this.state.search.id,
       key: this.state.search.keyphrase,
       cat: this.state.search.category,
       startDate: this.state.search.startDate,
@@ -116,7 +146,6 @@ export default class PageSecurityIncidents extends Component {
           <SASMap
             height_offset={121}
             markers={this.state.incidents.map((entry) => {
-
               return {
                 id:entry[0],
                 coords:entry[1].loc.coords,

@@ -4,7 +4,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '@css/searchbar.css';
 
-export default function DateInput(props: {updateSearch:(key?:string, cat?:string, startDate?:string, endDate?:string)=>{}}) {
+export default function DateInput(props: {updateSearch:(id?:string, key?:string, cat?:string, startDate?:string, endDate?:string)=>{}}) {
     //States for handling dates.
     const [startDate, setStartDate] = useState(new Date("1970/01/01"));
     const [endDate, setEndDate] = useState(new Date());
@@ -16,7 +16,7 @@ export default function DateInput(props: {updateSearch:(key?:string, cat?:string
                 onChange={(date) => {
                     if (date != null) {
                         setStartDate(date);
-                        props.updateSearch(undefined, undefined, date.toLocaleDateString(), undefined);
+                        props.updateSearch(undefined, undefined, undefined, date.toLocaleDateString(), undefined);
                     }
                 }}
                 selectsStart
@@ -29,7 +29,7 @@ export default function DateInput(props: {updateSearch:(key?:string, cat?:string
                 onChange={(date) => {
                     if (date != null) {
                         setEndDate(date);
-                        props.updateSearch(undefined, undefined, undefined, date.toLocaleDateString());
+                        props.updateSearch(undefined, undefined, undefined, undefined, date.toLocaleDateString());
                     }
                 }}
                 selectsEnd

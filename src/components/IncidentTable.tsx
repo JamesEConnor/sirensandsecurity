@@ -1,8 +1,8 @@
-import Incident from "@components/Incident";
+import IncidentTableRow, { IncidentDetails } from "@/components/IncidentTableRow";
 import SearchBar from "./SearchBar";
 
 export default function IncidentTable(props: {
-    incidents:Array<Map<string, {}>>,
+    incidents:Array<Array<string|{}>>,
     updateSearch:(a?:string, b?:string, c?:string, d?:string)=>{},
     isLoading:boolean,
     error:boolean
@@ -25,7 +25,7 @@ export default function IncidentTable(props: {
         }
 
         content = (
-            <tr className={ resultsClass } align="center">
+            <tr className={ resultsClass }>
                 <td colSpan={5}>
                     <img src={ resultsImgPath } className="block mx-auto h-48" />
                     <p className="text-black text-center font-bold text-xl">{resultsText}</p>
@@ -35,26 +35,59 @@ export default function IncidentTable(props: {
     }
     //Show actual data otherwise
     else {
-        
+
         //Create a list of incident elements by looping through
         //the data        
         content = props.incidents.map((entry, i) => {
-            return (<Incident
-                key={entry[0]}
+
+            var id = entry[0] as string;
+            var details = entry[1];
+
+            //The content row.
+            var rowEl = (<IncidentTableRow
                 rowIdx={i}
-                id={entry[0]}
-                title={entry[1].title}
-                date={entry[1].date}
-                category={entry[1].category}
-                description={entry[1].description}
-                loc={entry[1].loc}
-                media={entry[1].media}
+                id={id}
+                title={details.title}
+                date={details.date}
+                category={details.category}
+                description={details.description}
+                loc={details.loc}
+                media={details.media}
+                updateSearch={ props.updateSearch } 
             />);
+
+            //If this is the only element, show some details as well.
+            var detailsEl = (props.incidents.length == 1 ?
+                <IncidentDetails
+                    rowIdx={i}
+                    id={id}
+                    title={details.title}
+                    date={details.date}
+                    category={details.category}
+                    description={details.description}
+                    loc={details.loc}
+                    media={details.media}
+                    updateSearch={ props.updateSearch } 
+                /> : null);
+
+            //Return both elements.
+            return (
+                <>
+                {rowEl}
+                {detailsEl}
+                </>
+            )
         })
     }
 
+
+    var tBodyClasses = "inline-block w-full";
+    if (props.incidents.length == 1) {
+        tBodyClasses += " rounded-md"
+    }
+
     return (
-        <div id="incidents" className="flex justify-around px-4 py-8">
+        <div id="incidents" className="relative flex justify-around px-4 py-8">
             <SearchBar updateSearch={ props.updateSearch } />
 
             <table className="incidentTable block w-8/12">
@@ -67,7 +100,7 @@ export default function IncidentTable(props: {
                         <th className="inline-block p-3 w-1/5">Location</th>
                     </tr>
                 </thead>
-                <tbody className="inline-block w-full" style={{backgroundColor: "rgb(var(--light-background-rgb))"}}>
+                <tbody className={tBodyClasses} style={{backgroundColor: "rgb(var(--light-background-rgb))"}}>
                     {content}
                 </tbody>
             </table>

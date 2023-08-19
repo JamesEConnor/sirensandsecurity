@@ -50,3 +50,18 @@ footer p {
     height: 1px;
     background: black;
 }
+
+
+.custom-underline {
+    position: relative;
+}
+
+.custom-underline:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + .15em);
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background: rgb(var(--highlight-rgb));
+}
