@@ -76,6 +76,11 @@ export async function GET(request: Request, response: Response) {
       }
     }
 
+    //Eliminate debug data entries.
+    if (!searchParams.get('debug') && entry[0].startsWith("9999")) {
+      return false;
+    }
+
     return true;
   })
   .sort((a, b) => {

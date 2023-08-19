@@ -14,7 +14,8 @@ export default function IncidentTable(props: {
     //Show error, loading, or no results displays.
     if (props.error || props.isLoading || props.incidents.length <= 0) {
 
-        var resultsClass = props.isLoading ? "no-results w-full inline-block p-8 pt-3 loading" : "no-results w-full inline-block p-8 pt-3";
+        var resultsClass = "no-results w-full inline-flex flex-col justify-center items-center p-8 pt-3"
+        if (props.isLoading) { resultsClass += " loading" }
         var resultsImgPath = props.isLoading ? "/icons/loading.png" : "/icons/frown.png";
         var resultsText = "No results found.";
 

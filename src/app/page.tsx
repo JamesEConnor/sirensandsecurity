@@ -37,7 +37,7 @@ export default class PageSecurityIncidents extends Component {
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
   }
 
-  //Allows updating each individual search term.
+  //Allows updating each individual search term, while maintaining the others.
   updateSearchTerm(id?:string, keyphrase?:string, category?:string, startDate?:string, endDate?:string) {
 
     //Immediately update the state.
@@ -101,6 +101,8 @@ export default class PageSecurityIncidents extends Component {
       }
     });
 
+    //Makes call to backend incidents API using search parameters.
+    //To use debug entries, add "debug: 'true'" to end.
     fetch('/api/incidents?' + new URLSearchParams({
       id: this.state.search.id,
       key: this.state.search.keyphrase,
@@ -109,8 +111,10 @@ export default class PageSecurityIncidents extends Component {
       endDate: this.state.search.endDate,
       sortBy: this.state.sort
     }))
+    //Transforms response into JSON
     .then(res => res.json())
     .then(
+      //When successful, updates a lot of state info.
       (result) => {
         this.setState((state) => {
           return {
@@ -121,7 +125,7 @@ export default class PageSecurityIncidents extends Component {
           }
         })
       },
-      //TODO: implement error handling.
+      //When unsuccessful, displays an error screen (also by updating state)
       (error) => {
         this.setState((state) => {
           return {
