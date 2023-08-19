@@ -1,9 +1,10 @@
 import IncidentTableRow, { IncidentDetails } from "@/components/IncidentTableRow";
 import SearchBar from "./SearchBar";
+import { incidentType, searchUpdateFunctionType } from "@/types/customtypes";
 
 export default function IncidentTable(props: {
     incidents:Array<Array<string|{}>>,
-    updateSearch:(a?:string, b?:string, c?:string, d?:string)=>{},
+    updateSearch:searchUpdateFunctionType,
     isLoading:boolean,
     error:boolean
 }) {
@@ -42,18 +43,13 @@ export default function IncidentTable(props: {
         content = props.incidents.map((entry, i) => {
 
             var id = entry[0] as string;
-            var details = entry[1];
+            var details = entry[1] as incidentType;
 
             //The content row.
             var rowEl = (<IncidentTableRow
                 rowIdx={i}
                 id={id}
-                title={details.title}
-                date={details.date}
-                category={details.category}
-                description={details.description}
-                loc={details.loc}
-                media={details.media}
+                incident={details}
                 updateSearch={ props.updateSearch } 
             />);
 
@@ -62,12 +58,7 @@ export default function IncidentTable(props: {
                 <IncidentDetails
                     rowIdx={i}
                     id={id}
-                    title={details.title}
-                    date={details.date}
-                    category={details.category}
-                    description={details.description}
-                    loc={details.loc}
-                    media={details.media}
+                    incident={details}
                     updateSearch={ props.updateSearch } 
                 /> : null);
 

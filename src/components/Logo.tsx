@@ -14,10 +14,6 @@ interface LogoProps {
 }
 
 export default function Logo(props : LogoProps) {
-
-    /*var logoUrl = window.matchMedia("(prefers-color-scheme: dark)").matches ?
-        "/assets/logo-dark.png" :
-        "/assets/logo-light.png";*/
     var logoUrl = props.dark ? "/assets/logo-dark.png" : "/assets/logo-light.png";
 
     return (

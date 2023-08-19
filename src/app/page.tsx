@@ -11,7 +11,9 @@ import SASMap from '@components/SASMap';
 import incidentsData from "@data/incidents"
 import IncidentTable from "@components/IncidentTable";
 import { Component, useRef, useState } from "react";
-import { URLSearchParams } from "next/dist/compiled/@edge-runtime/primitives/url";
+
+import { incidentType, isSSR } from "@/types/customtypes";
+import { LatLngExpression } from "leaflet";
 
 export default class PageSecurityIncidents extends Component {
   state = {
@@ -147,18 +149,21 @@ export default class PageSecurityIncidents extends Component {
         <main>
           <Header />
           
-          <SASMap
+          {/* {!isSSR && <SASMap
             height_offset={121}
             markers={this.state.incidents.map((entry) => {
+              var details = entry[1] as incidentType;
+
               return {
-                id:entry[0],
-                coords:entry[1].loc.coords,
-                popup:entry[1].title }
+                id: entry[0],
+                coords: details.loc.coords as LatLngExpression,
+                popup: details.title }
               })
             }
             marker_color="#d10000"
             query_string={ this.state.incidents_query }
             ></SASMap>
+          } */}
 
           <IncidentTable
             incidents={this.state.incidents}

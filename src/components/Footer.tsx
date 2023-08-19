@@ -10,7 +10,7 @@ export default class Footer extends Component {
 
                 <p className="">
                     Sirens & Security is a series of projects dedicated towards tracking cyber incidents involving the
-                    emergency services. Currently it's focused on collecting information about these incidents, but there are
+                    emergency services. Currently it&apos;s focused on collecting information about these incidents, but there are
                     future plans to expand into additional tracking and partnerships.
                 </p><p>
                     This project is run by <a href="https://github.com/JamesEConnor" target="_blank">James Connor</a>.
@@ -18,7 +18,7 @@ export default class Footer extends Component {
                     the <a href="https://github.com/JamesEConnor/sirensandsecurity" target="_blank">Github</a> page!
                 </p><p>
                     Special acknowledgement to <a href="https://openmoji.org/" target="_blank">OpenMoji</a> for the emoji
-                    designs, because I'm bad at art.<br />All emojis are licensed
+                    designs, because I&apos;m bad at art.<br />All emojis are licensed
                     under <a href="https://creativecommons.org/licenses/by-sa/4.0/#" target="_blank">CC BY-SA 4.0</a>.
                 </p>
 

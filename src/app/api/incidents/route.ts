@@ -83,27 +83,28 @@ export async function GET(request: Request, response: Response) {
 
     return true;
   })
-  .sort((a, b) => {
+  //TODO: Add sorting feature.
+  // .sort((a, b) => {
 
-    //Sort by ID.
-    if (sortBy == 'id') {
-      if (a[0] <= b[0]) {
-        return -1;
-      }
-      else {
-        return 1;
-      }
-    }
-    //Sort by a property.
-    else {
-      if (a[1][sortBy] <= b[1][sortBy]) {
-        return -1;
-      }
-      else {
-        return 1;
-      }
-    }
-  });
+  //   //Sort by ID.
+  //   if (sortBy == 'id') {
+  //     if (a[0] <= b[0]) {
+  //       return -1;
+  //     }
+  //     else {
+  //       return 1;
+  //     }
+  //   }
+  //   //Sort by a property.
+  //   else {
+  //     if (a[1][sortBy] <= b[1][sortBy]) {
+  //       return -1;
+  //     }
+  //     else {
+  //       return 1;
+  //     }
+  //   }
+  // });
 
   
 
