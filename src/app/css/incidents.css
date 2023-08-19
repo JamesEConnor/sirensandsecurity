@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1100px) {
+    #incidents {
+        flex-direction: column;
+    }
+
+    #incidents > * {
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+.no-results {
+    background-color: rgb(244 244 244);
+}
+
+.no-results.loading img {
+    animation: rotation 8s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

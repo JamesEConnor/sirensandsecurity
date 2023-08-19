@@ -3,7 +3,7 @@
     "updated": 1687046400,
     "incidents": {
         "99990001": {
-            "title": "TDoS Against PSAPs in 12 States",
+            "title": "DTDoS Against PSAPs in 12 States",
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
@@ -20,7 +20,7 @@
         },
         "99990002": {
             "id": 99990002,
-            "title": "TDoS Against PSAPs in 12 States",
+            "title": "BTDoS Against PSAPs in 12 States",
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
@@ -37,7 +37,7 @@
         },
         "99990003": {
             "id": 99990003,
-            "title": "TDoS Against PSAPs in 12 States",
+            "title": "ATDoS Against PSAPs in 12 States",
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
@@ -54,7 +54,7 @@
         },
         "99990004": {
             "id": 99990004,
-            "title": "TDoS Against PSAPs in 12 States",
+            "title": "CTDoS Against PSAPs in 12 States",
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
