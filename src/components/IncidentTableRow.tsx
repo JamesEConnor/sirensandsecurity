@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import categories from "@data/categories"
+import { incidentType, searchUpdateFunctionType } from '@/types/customtypes';
 
 //The different incident categories.
 export const IncidentCategory = {
@@ -20,17 +21,12 @@ export const IncidentCategory = {
 interface IncidentProps {
     rowIdx: number,
     id: string,
-    title: string,
-    date: number,
-    category: string,
-    description: string,
-    loc: {name: string, coords: Array<number>},
-    media: Array<{ name: string, url: string }>,
-    updateSearch:(id?:string, key?:string, cat?:string, startDate?:string, endDate?:string)=>{}
+    incident:incidentType,
+    updateSearch:searchUpdateFunctionType
 }
 
 export default function IncidentTableRow(props: IncidentProps) {
-    var catC = props.category as keyof typeof categories;
+    var catC = props.incident.category as keyof typeof categories;
     var bgColor = (props.rowIdx % 2 == 0) ? "white" : "transparent";
 
     return (
@@ -44,9 +40,9 @@ export default function IncidentTableRow(props: IncidentProps) {
                 </i>
             </td>
             <td className="inline-block w-1/5 p-3">{categories[catC].name}</td>
-            <td className="inline-block w-1/5 p-3">{props.title}</td>
-            <td className="inline-block w-1/5 p-3">{(new Date(props.date)).toLocaleDateString()}</td>
-            <td className="inline-block w-1/5 p-3">{props.loc.name}</td>
+            <td className="inline-block w-1/5 p-3">{props.incident.title}</td>
+            <td className="inline-block w-1/5 p-3">{(new Date(props.incident.date)).toLocaleDateString()}</td>
+            <td className="inline-block w-1/5 p-3">{props.incident.loc.name}</td>
         </tr>
     );
 }
@@ -55,13 +51,13 @@ export function IncidentDetails(props: IncidentProps) {
     return (
         <tr key={"details-" + props.id} className="bg-neutral-200 rounded-md">
             <td className="w-full relative p-5">
-                <h1 className="custom-underline text-black text-xl font-bold">{props.title}</h1>
-                <p className="text-black text-md my-5">{props.description}</p>
+                <h1 className="custom-underline text-black text-xl font-bold">{props.incident.title}</h1>
+                <p className="text-black text-md my-5">{props.incident.description}</p>
 
                 <h3 className="inline-block custom-underline text-black text-lg mb-3">Sources</h3>
                 <ul className="list-disc pl-5 text-black">
                     {
-                        props.media.map((mediaEntry, i) => {
+                        props.incident.media.map((mediaEntry, i) => {
                             return (
                                 <li key={"sources-" + props.id + "-" + i}>
                                     <a

@@ -1,22 +1,28 @@
 {
   "name": "sirensandsecurity",
   "version": "0.1.0",
+  "homepage": "https://jameseconnor.github.io/sirensandsecurity",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-leaflet/universal-leaflet": "^1.0.1",
     "@types/node": "18.16.3",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
+    "gh-pages": "^6.0.0",
     "leaflet": "^1.9.4",
     "memoize-one": "^6.0.0",
     "next": "13.3.4",
+    "preact": "^10.17.1",
     "react": "18.2.0",
     "react-datepicker": "^4.14.1",
     "react-dom": "18.2.0",
@@ -26,7 +32,9 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.3",
     "@types/react-datepicker": "^4.11.2",
+    "@types/react-leaflet": "^3.0.0",
     "autoprefixer": "^10.4.14",
     "tailwindcss": "^3.3.2"
   }

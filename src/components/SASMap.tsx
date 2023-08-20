@@ -1,43 +1,55 @@
-import React, { Component } from 'react';
-
-import {
-    MapContainer,
-    TileLayer,
-    Marker,
-    useMap,
-    Popup
-} from 'react-leaflet';
-import * as L from 'leaflet';
+import React, { Component, useEffect } from 'react';
 
 import 'leaflet/dist/leaflet.css';
-import memoize from "memoize-one"
+import { LatLngBoundsLiteral, LatLngExpression, LayerGroup } from 'leaflet';
+import dynamic from 'next/dynamic';
+
+//Wait for CSR to load from react leaflet.
+const MapContainer = dynamic(() =>
+    import('react-leaflet').then((mod) => mod.MapContainer),
+    {ssr: false}
+);
+const TileLayer = dynamic(() =>
+    import('react-leaflet').then((mod) => mod.TileLayer),
+    {ssr: false}
+);
+const CircleMarker = dynamic(() =>
+    import('react-leaflet').then((mod) => mod.CircleMarker),
+    {ssr: false}
+);
+const Popup = dynamic(() =>
+    import('react-leaflet').then((mod) => mod.Popup),
+    {ssr: false}
+);
+
+
 
 interface MapProps {
     height_offset:number,
-    markers: Array<{id:string, coords:Array<number>, popup:string}>,
+    markers: Array<{id:string, coords:LatLngExpression, popup:string}>,
     marker_color: string,
     query_string: string
 }
 
 export default class SASMap extends Component<MapProps, {query_string:string}> {
     //The starting view. Tuned to be just the right amount of zoom.
-    startBounds = [
+    startBounds:LatLngBoundsLiteral = [
         [-45, -20],
         [45, 20]
     ]
 
     //Used to constrain the map's panning to the actual map.
-    maxBounds = [
+    maxBounds:LatLngBoundsLiteral = [
         [-90, -180],
         [90, 180]
     ]
 
-    layerGroup = null;
+    isClient = false;
 
-
-    constructor(props:MapProps) {
-        super(props);
+    componentDidMount(): void {
+        this.isClient = true;
     }
+
 
     shouldComponentUpdate(nextProps: Readonly<MapProps>, nextState: Readonly<{ markers: Array<{
         id: string;
@@ -49,66 +61,45 @@ export default class SASMap extends Component<MapProps, {query_string:string}> {
         return (this.props.query_string != nextProps.query_string || this.props.query_string == "|||");
     }
 
-    render() {
-        //Create a child component that can go inside the MapContainer
-        //and handle all of the setup.
-        const MapSetup = () => {
-            const mapRef = useMap();
-            mapRef.setMaxBounds(this.maxBounds);
-            mapRef.preferCanvas = false;
-
-            if (this.layerGroup != null)
-                mapRef.removeLayer(this.layerGroup);
-            this.layerGroup = null;
-
-            this.layerGroup = L.layerGroup();
-            mapRef.addLayer(this.layerGroup);
-            
-            return null;
-        };
-        MapSetup.displayName = "MapSetup";
-
-
-        //Function to create a marker and popup.
-        //Fine for now. If rendering speed becomes an issue,
-        //refer here: https://stackoverflow.com/questions/67045268/react-leaflet-canvas
-        const DrawnMarker = (props:{marker:{id:string,coords:Array<number>,popup:string}}) => {
-            const mapRef = useMap();
-        
-            L.circleMarker(props.marker.coords, {
-                color: this.props.marker_color
-            })
-            .bindPopup(props.marker.id + ": " + props.marker.popup)
-            .addTo(this.layerGroup);
-
-            return null;
-        }
-
+    render() {        
         return (
-            <div id="map" style={{ height: `calc(100vh - ${ this.props.height_offset }px)` }}>
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-                <MapContainer
-                    bounds={this.startBounds}
-                    preferCanvas={true}
-                    scrollWheelZoom={false}
-                >
-                    <MapSetup />
-                    <TileLayer
-                        url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
-                        noWrap
-                        bounds={this.maxBounds}
-                    />
+            <>
+                {this.isClient &&
+                <div id="map" style={{ height: `calc(100vh - ${ this.props.height_offset }px)` }}>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+                    <MapContainer
+                        bounds={this.startBounds}
+                        maxBounds={this.maxBounds}
+                        preferCanvas={true}
+                        scrollWheelZoom={false}
+                    >
+                        <TileLayer
+                            url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+                            noWrap
+                            bounds={this.maxBounds}
+                        />
 
-                    {
-                        this.props.markers.map((marker, i) => {
-                            return (
-                                <DrawnMarker key={i} marker={marker} />
-                            );
-                        })
-                    }
+                        {
+                            this.props.markers.map((marker, i) => {
+                                return (
+                                    <CircleMarker
+                                        key={"marker-" + i}
+                                        center={marker.coords}
+                                        radius={10}
+                                        color={this.props.marker_color}
+                                    >
+                                        <Popup>
+                                            {marker.popup}
+                                        </Popup>
+                                    </CircleMarker>
+                                );
+                            })
+                        }
 
-                </MapContainer>
-            </div>
+                    </MapContainer>
+                </div>
+                }
+            </>
         );
     }
 }

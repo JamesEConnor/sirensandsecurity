@@ -4,7 +4,9 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '@css/searchbar.css';
 
-export default function DateInput(props: {updateSearch:(id?:string, key?:string, cat?:string, startDate?:string, endDate?:string)=>{}}) {
+import { searchUpdateFunctionType } from '@/types/customtypes';
+
+export default function DateInput(props: {updateSearch:searchUpdateFunctionType}) {
     //States for handling dates.
     const [startDate, setStartDate] = useState(new Date("1970/01/01"));
     const [endDate, setEndDate] = useState(new Date());

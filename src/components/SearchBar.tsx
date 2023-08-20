@@ -4,13 +4,14 @@ import categories from "@data/categories";
 import DateInput from '@components/DateInput';
 
 import '@css/searchbar.css';
+import { searchUpdateFunctionType } from '@/types/customtypes';
 
 //Search/Filter by:
 //Keyword (This will look for keywords in the title, description, and location name)
 //Category
 //Date
 
-export default function SearchBar(props: { updateSearch:(id?:string, key?:string, cat?:string, startDate?:string, endDate?:string)=>{} }) {
+export default function SearchBar(props: { updateSearch:searchUpdateFunctionType }) {
     //Get all of the available category names.
     var catOptions = Object.keys(categories).map(key => {
         var category = categories[key as keyof typeof categories];
@@ -56,7 +57,7 @@ export default function SearchBar(props: { updateSearch:(id?:string, key?:string
                         boxShadow: 'none'
                     }),
                 }}
-                onChange={ cats => props.updateSearch(undefined, undefined, cats.join('|'), undefined, undefined) }
+                onChange={ cats => props.updateSearch(undefined, undefined, cats.map((val) => val.value).join('|'), undefined, undefined) }
             />
 
             { /* The start and end date inputs. */ }
