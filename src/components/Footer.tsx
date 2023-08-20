@@ -27,7 +27,7 @@ export default class Footer extends Component {
                 <div id="socialBar" className="flex justify-center items-center space-x-2 mt-8">
                     <a href="https://github.com/JamesEConnor/sirensandsecurity" target="_blank">
                         <Image
-                            src={PATH("icons/social_github.png")}
+                            src={PATH("/icons/social_github.png")}
                             alt=""
                             width={30}
                             height={30}

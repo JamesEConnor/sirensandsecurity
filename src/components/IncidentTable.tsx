@@ -20,7 +20,7 @@ export default function IncidentTable(props: {
 
         var resultsClass = "no-results w-full inline-flex flex-col justify-center items-center p-8 pt-3"
         if (props.isLoading) { resultsClass += " loading" }
-        var resultsImgPath = props.isLoading ? "icons/loading.png" : "icons/frown.png";
+        var resultsImgPath = props.isLoading ? "/icons/loading.png" : "/icons/frown.png";
         var resultsText = "No results found.";
 
         if (props.error) {
