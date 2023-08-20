@@ -16,7 +16,7 @@ interface LogoProps {
 }
 
 export default function Logo(props : LogoProps) {
-    var logoUrl = props.dark ? "assets/logo-dark.png" : "assets/logo-light.png";
+    var logoUrl = props.dark ? "/assets/logo-dark.png" : "/assets/logo-light.png";
 
     return (
         <div className="logo flex items-center justify-center">
