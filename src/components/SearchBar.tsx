@@ -57,7 +57,7 @@ export default function SearchBar(props: { updateSearch:searchUpdateFunctionType
                         boxShadow: 'none'
                     }),
                 }}
-                onChange={ cats => props.updateSearch(undefined, undefined, cats.join('|'), undefined, undefined) }
+                onChange={ cats => props.updateSearch(undefined, undefined, cats.map((val) => val.value).join('|'), undefined, undefined) }
             />
 
             { /* The start and end date inputs. */ }

@@ -12,8 +12,9 @@ import incidentsData from "@data/incidents"
 import IncidentTable from "@components/IncidentTable";
 import { Component, useRef, useState } from "react";
 
-import { incidentType, isSSR } from "@/types/customtypes";
+import { incidentType, incidentsResultType, isSSR } from "@/types/customtypes";
 import { LatLngExpression } from "leaflet";
+import { loadIncidents } from "@/scripts/dataloader";
 
 export default class PageSecurityIncidents extends Component {
   state = {
@@ -37,6 +38,7 @@ export default class PageSecurityIncidents extends Component {
 
     //Bind for use by the search bar child component.
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
+    this.handleLoad = this.handleLoad.bind(this);
   }
 
   //Allows updating each individual search term, while maintaining the others.
@@ -71,6 +73,7 @@ export default class PageSecurityIncidents extends Component {
       //Find based on ID.
       if (found != null) {
         this.setState({
+          incidents_query: "IDSEARCH-" + id,
           incidents: [found]
         });
 
@@ -89,59 +92,49 @@ export default class PageSecurityIncidents extends Component {
     this.setState({
       searchTimeout: setTimeout(() => {
 
-        this.loadIncidents();
+        this.startLoad();
       }, 1500),
       incidents_are_loading: true
     });
   }
 
-  //Loads incidents based on search parameters.
-  loadIncidents() {
-    this.setState((state) => {
-      return {
-        incidents_error: false
-      }
-    });
+  startLoad() {
+    this.setState({
+      incidents_error: false,
+      incidents_are_loading: true
+    })
 
-    //Makes call to backend incidents API using search parameters.
-    //To use debug entries, add "debug: 'true'" to end.
-    fetch('/api/incidents?' + new URLSearchParams({
+    loadIncidents({
       id: this.state.search.id,
-      key: this.state.search.keyphrase,
-      cat: this.state.search.category,
-      startDate: this.state.search.startDate,
-      endDate: this.state.search.endDate,
-      sortBy: this.state.sort
-    }))
-    //Transforms response into JSON
-    .then(res => res.json())
-    .then(
-      //When successful, updates a lot of state info.
-      (result) => {
-        this.setState((state) => {
-          return {
-            incidents: result,
-            incidents_query: `${this.state.search.keyphrase}|${this.state.search.category}|${this.state.search.startDate}|${this.state.search.endDate}`,
-            incidents_are_loading: false,
-            incidents_error: false
-          }
-        })
-      },
-      //When unsuccessful, displays an error screen (also by updating state)
-      (error) => {
-        this.setState((state) => {
-          return {
-            incidents_are_loading: false,
-            incidents_error: true
-          }
-        });
-      }
-    )
+      keyphrase: this.state.search.keyphrase,
+      category: this.state.search.category,
+      startDate: this.state.search.startDate == '' ? undefined : new Date(this.state.search.startDate),
+      endDate: this.state.search.endDate == '' ? undefined : new Date(this.state.search.startDate),
+      sort: ""
+    }, this.handleLoad, this.handleError)
   }
+
+  handleLoad(query_str:string, results:incidentsResultType) {
+    this.setState({
+      incidents_query: query_str,
+      incidents_error: false,
+      incidents_are_loading: false,
+      incidents: results
+    });
+  }
+
+  handleError() {
+    this.setState({
+      incidents_error: true,
+      incidents_are_loading: false
+    })
+  }
+
+
 
   //Performs the initial incident load.
   componentDidMount() {
-    this.loadIncidents();
+    this.startLoad();
   }
 
   render() {
@@ -149,7 +142,7 @@ export default class PageSecurityIncidents extends Component {
         <main>
           <Header />
           
-          {/* {!isSSR && <SASMap
+          {!isSSR && <SASMap
             height_offset={121}
             markers={this.state.incidents.map((entry) => {
               var details = entry[1] as incidentType;
@@ -163,7 +156,7 @@ export default class PageSecurityIncidents extends Component {
             marker_color="#d10000"
             query_string={ this.state.incidents_query }
             ></SASMap>
-          } */}
+          }
 
           <IncidentTable
             incidents={this.state.incidents}
