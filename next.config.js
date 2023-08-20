@@ -1,9 +1,22 @@
+const webpack = require('webpack');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     appDir: true,
   },
-  output: 'export'
+  images: {
+    unoptimized: true
+  },
+  output: 'export',
+  basePath: '/sirensandsecurity',
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'BASE_PATH': '"/sirensandsecurity"'
+      }
+    })
+  ]
 }
 
 module.exports = nextConfig

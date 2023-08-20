@@ -1,6 +1,7 @@
 import IncidentTableRow, { IncidentDetails } from "@/components/IncidentTableRow";
 import SearchBar from "./SearchBar";
 import { incidentType, searchUpdateFunctionType } from "@/types/customtypes";
+import Image from "next/image";
 
 export default function IncidentTable(props: {
     incidents:Array<Array<string|{}>>,
@@ -17,7 +18,7 @@ export default function IncidentTable(props: {
 
         var resultsClass = "no-results w-full inline-flex flex-col justify-center items-center p-8 pt-3"
         if (props.isLoading) { resultsClass += " loading" }
-        var resultsImgPath = props.isLoading ? "/icons/loading.png" : "/icons/frown.png";
+        var resultsImgPath = props.isLoading ? "icons/loading.png" : "icons/frown.png";
         var resultsText = "No results found.";
 
         if (props.error) {
@@ -29,7 +30,13 @@ export default function IncidentTable(props: {
         content = (
             <tr className={ resultsClass }>
                 <td colSpan={5}>
-                    <img src={ resultsImgPath } className="block mx-auto h-48" />
+                    <Image
+                        src={ resultsImgPath }
+                        alt=""
+                        width={192}
+                        height={192}
+                        className="block mx-auto h-48"
+                    />
                     <p className="text-black text-center font-bold text-xl">{resultsText}</p>
                 </td>
             </tr>

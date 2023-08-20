@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '@components/Logo';
+import Image from 'next/image';
 
 export default class Footer extends Component {
 
@@ -24,7 +25,12 @@ export default class Footer extends Component {
 
                 <div id="socialBar" className="flex justify-center items-center space-x-2 mt-8">
                     <a href="https://github.com/JamesEConnor/sirensandsecurity" target="_blank">
-                        <img width={30} height={30} src="/icons/social_github.png"></img>
+                        <Image
+                            src="icons/social_github.png"
+                            alt=""
+                            width={30}
+                            height={30}
+                        />
                     </a>
                 </div>
             </footer>
