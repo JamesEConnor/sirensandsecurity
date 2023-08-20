@@ -26,7 +26,8 @@ export type loadFunctionProps = {
     category:string,
     startDate?:Date,
     endDate?:Date,
-    sort:string
+    sort:string,
+    debug:boolean
 }
 
 export type loadReturnFunction = (
