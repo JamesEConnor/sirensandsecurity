@@ -1,4 +1,5 @@
 import { incidentType, incidentsResultType, loadFunctionProps, loadReturnFunction } from "@/types/customtypes"
+import { PATH } from "@/types/envvars";
 
 
 //Loads incidents based on search parameters.
@@ -16,9 +17,7 @@ export function loadIncidents(
     //To use debug entries, add "debug: 'true'" to end.
     
     //Load proper base path in production.
-    var basePath = process.env.BASE_PATH != undefined ? process.env.BASE_PATH : ""; 
-
-    fetch(`${basePath}/api/incidents`)
+    fetch(PATH("/api/incidents"))
     //Transforms response into JSON
     .then(res => res.json())
     .then(
@@ -28,7 +27,6 @@ export function loadIncidents(
         var finalResult:incidentsResultType = [];
         
         Object.entries(result).forEach((incident) => {
-            console.log(incident);
 
             var id = incident[0];
             var details = incident[1] as incidentType;

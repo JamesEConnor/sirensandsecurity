@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '@components/Logo';
 import Image from 'next/image';
+import { PATH } from '@/types/envvars';
 
 export default class Footer extends Component {
 
@@ -26,7 +27,7 @@ export default class Footer extends Component {
                 <div id="socialBar" className="flex justify-center items-center space-x-2 mt-8">
                     <a href="https://github.com/JamesEConnor/sirensandsecurity" target="_blank">
                         <Image
-                            src="icons/social_github.png"
+                            src={PATH("icons/social_github.png")}
                             alt=""
                             width={30}
                             height={30}

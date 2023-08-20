@@ -27,7 +27,6 @@
 }
 
 #search_key:after {
-    background-image: url('/icons/search.png');
     background-color: transparent;
     background-size: 35px;
     background-repeat: no-repeat;
@@ -69,7 +68,6 @@
 }
 
 .react-datepicker__input-container:after {
-    background-image: url('/icons/calendar.png');
     background-color: transparent;
     background-size: 35px;
     background-repeat: no-repeat;
