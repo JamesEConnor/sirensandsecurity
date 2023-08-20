@@ -14,7 +14,11 @@ export function loadIncidents(
     
     //Makes call to backend incidents API using search parameters.
     //To use debug entries, add "debug: 'true'" to end.
-    fetch('/api/incidents')
+    
+    //Load proper base path in production.
+    var basePath = process.env.BASE_PATH != undefined ? process.env.BASE_PATH : ""; 
+
+    fetch(`${basePath}/api/incidents`)
     //Transforms response into JSON
     .then(res => res.json())
     .then(

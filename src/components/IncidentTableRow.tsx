@@ -77,7 +77,7 @@ export function IncidentDetails(props: IncidentProps) {
                     className="absolute top-3 right-5 inline-block cursor-pointer hover:scale-125"
                     onClick={ () => props.updateSearch("", undefined, undefined, undefined, undefined) }
                 >
-                    <img src="/icons/close.png" width={35} height={35} />
+                    <img src="icons/close.png" width={35} height={35} />
                 </span>
             </td>
         </tr>

@@ -39,6 +39,7 @@ export default class PageSecurityIncidents extends Component {
     //Bind for use by the search bar child component.
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
     this.handleLoad = this.handleLoad.bind(this);
+    this.handleError = this.handleError.bind(this);
   }
 
   //Allows updating each individual search term, while maintaining the others.
@@ -111,7 +112,7 @@ export default class PageSecurityIncidents extends Component {
       startDate: this.state.search.startDate == '' ? undefined : new Date(this.state.search.startDate),
       endDate: this.state.search.endDate == '' ? undefined : new Date(this.state.search.startDate),
       sort: "",
-      debug: false
+      debug: true
     }, this.handleLoad, this.handleError)
   }
 
