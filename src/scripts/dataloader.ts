@@ -30,18 +30,20 @@ export function loadIncidents(
             var details = incident[1] as incidentType;
 
             //Matching ID takes precedence.
-            if (search.id != undefined && id == search.id) {
-                finalResult.push([id, details]);
-            }
-            else if(
-                (search.category == "" || searchCats.includes(details.category)) &&
-                (search.startDate == undefined || new Date(details.date) >= search.startDate) &&
-                (search.endDate == undefined || new Date(details.date) <= search.endDate) &&
-                (search.keyphrase == '' ||
-                details.title.toLowerCase().includes(search.keyphrase) ||
-                details.description.toLowerCase().includes(search.keyphrase))
-            ) {
-                finalResult.push([id, details]);
+            if (search.debug || !id.startsWith("9999")) {
+              if (search.id != undefined && id == search.id) {
+                  finalResult.push([id, details]);
+              }
+              else if(
+                  (search.category == "" || searchCats.includes(details.category)) &&
+                  (search.startDate == undefined || new Date(details.date) >= search.startDate) &&
+                  (search.endDate == undefined || new Date(details.date) <= search.endDate) &&
+                  (search.keyphrase == '' ||
+                  details.title.toLowerCase().includes(search.keyphrase) ||
+                  details.description.toLowerCase().includes(search.keyphrase))
+              ) {
+                  finalResult.push([id, details]);
+              }
             }
         })
 
