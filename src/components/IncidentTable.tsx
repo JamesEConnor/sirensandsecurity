@@ -2,6 +2,8 @@ import IncidentTableRow, { IncidentDetails } from "@/components/IncidentTableRow
 import SearchBar from "./SearchBar";
 import { incidentType, searchUpdateFunctionType } from "@/types/customtypes";
 import Image from "next/image";
+import { PATH } from "@/types/envvars";
+import { Fragment } from "react";
 
 export default function IncidentTable(props: {
     incidents:Array<Array<string|{}>>,
@@ -28,10 +30,10 @@ export default function IncidentTable(props: {
         }
 
         content = (
-            <tr className={ resultsClass }>
+            <tr key="table-non-results" className={ resultsClass }>
                 <td colSpan={5}>
                     <Image
-                        src={ resultsImgPath }
+                        src={ PATH(resultsImgPath) }
                         alt=""
                         width={192}
                         height={192}
@@ -71,10 +73,10 @@ export default function IncidentTable(props: {
 
             //Return both elements.
             return (
-                <>
-                {rowEl}
-                {detailsEl}
-                </>
+                <Fragment key={"fragment-" + id + "-" + i}>
+                    {rowEl}
+                    {detailsEl}
+                </Fragment>
             )
         })
     }

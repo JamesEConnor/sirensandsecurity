@@ -8,15 +8,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  output: 'export',
-  basePath: '/sirensandsecurity',
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'BASE_PATH': '"/sirensandsecurity"'
-      }
-    })
-  ]
+  output: 'export'
 }
 
 module.exports = nextConfig

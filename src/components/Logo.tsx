@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Image from 'next/image';
 
 import { Share_Tech, Share_Tech_Mono } from 'next/font/google';
+import { PATH } from '@/types/envvars';
 const sharetech = Share_Tech({
     weight: "400",
     subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function Logo(props : LogoProps) {
         <div className="logo flex items-center justify-center">
             <Image
                 className="inline-block"
-                src={ logoUrl }
+                src={ PATH(logoUrl) }
                 alt=""
                 width={ props.size }
                 height={ props.size }

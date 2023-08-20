@@ -5,6 +5,8 @@ import DateInput from '@components/DateInput';
 
 import '@css/searchbar.css';
 import { searchUpdateFunctionType } from '@/types/customtypes';
+import { PATH } from '@/types/envvars';
+import { useEffect, useState } from 'react';
 
 //Search/Filter by:
 //Keyword (This will look for keywords in the title, description, and location name)
@@ -12,6 +14,13 @@ import { searchUpdateFunctionType } from '@/types/customtypes';
 //Date
 
 export default function SearchBar(props: { updateSearch:searchUpdateFunctionType }) {
+    //Tracks whether this is a client to handle hydration issues
+    //with CSS styling.
+    const [isClient, setIsClient] = useState(false)
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
+
     //Get all of the available category names.
     var catOptions = Object.keys(categories).map(key => {
         var category = categories[key as keyof typeof categories];
@@ -32,6 +41,12 @@ export default function SearchBar(props: { updateSearch:searchUpdateFunctionType
             >Search</h1>
 
             { /* The keyword search input */ }
+            {isClient &&
+            <style>
+                {`#search_key:after {
+                    background-image: url(\'${PATH("/icons/search.png")}\');
+                }`}
+            </style>}
             <div id="search_key" className="relative my-4">
                 <input
                     name="search_key"

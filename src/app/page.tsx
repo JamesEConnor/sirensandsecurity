@@ -112,7 +112,7 @@ export default class PageSecurityIncidents extends Component {
       startDate: this.state.search.startDate == '' ? undefined : new Date(this.state.search.startDate),
       endDate: this.state.search.endDate == '' ? undefined : new Date(this.state.search.startDate),
       sort: "",
-      debug: true
+      debug: false
     }, this.handleLoad, this.handleError)
   }
 
