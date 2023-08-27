@@ -2,11 +2,26 @@
     "version": "0.1",
     "updated": 1687046400,
     "incidents": {
+        "99990000": {
+            "title": "",
+            "date": 0,
+            "category": "",
+            "description": "",
+            "perpetrator": "",
+            "loc": {
+                "name": "",
+                "coords": [0,0]
+            },
+            "media": [
+                { "name": "", "url": "" }
+            ]
+        },
         "99990001": {
             "title": "DTDoS Against PSAPs in 12 States",
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "perpetrator": "Unknown",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
                 "coords": [38.908742, -77.065142]
@@ -24,6 +39,7 @@
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "perpetrator": "Unknown",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
                 "coords": [42.908742, -77.065142]
@@ -41,6 +57,7 @@
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "perpetrator": "Unknown",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
                 "coords": [38.908742, -84.065142]
@@ -58,6 +75,7 @@
             "date": 1477353600,
             "category": "tdos911",
             "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+            "perpetrator": "Unknown",
             "loc": {
                 "name": "Southeastern U.S. (12 States)",
                 "coords": [33.908742, -80.065142]
@@ -67,6 +85,117 @@
                 { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
                 { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
                 { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+            ]
+        },
+        "20230001": {
+            "title": "NHS 111 Cyber-attack Outage",
+            "date": 1659596400,
+            "category": "ran",
+            "description": "The National Health Service (NHS) 111 service, which provides U.K. citizens with 24/7 medical consultation services, suffered a system outage as a result of a ransomware attack against a contractor. The contractor, called Advance, provided approximately 85% of NHS's systems, which were used to dispatch ambulances, manage patient records, and handle emergency prescriptions (among other things). The attack resulted in significant outages and delays across the 111 service for several days.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "London, England, U.K.",
+                "coords": [51.5072,-0.1276]
+            },
+            "media": [
+                { "name": "The Guardian", "url": "https://www.theguardian.com/society/2022/aug/05/nhs-111-expects-delays-after-cyber-attack-causes-system-outage" },
+                { "name": "Independent", "url": "https://www.independent.co.uk/news/health/cyber-attack-nhs-111-b2139188.html" },
+                { "name": "The Guardian", "url": "https://www.theguardian.com/technology/2022/aug/11/nhs-ransomware-attack-what-happened-and-how-bad-is-it" }
+            ]
+        },
+        "20230002": {
+            "title": "Suffolk County Ransomware Attack",
+            "date": 1662595200,
+            "category": "att",
+            "description": "The Suffolk County, NY clerk's office was compromised by the ALPHV group in December, 2021 through exploitation of the Log4j vulnerability. The attackers then spent eight months installing bitcoin mining software, establishing persistence, and creating fake accounts. In August, 2022, the group was able to escalate their attack through obtained credentials, gaining access to other Suffolk County departments before deploying BlackCat ransomware across the compromised systems. This resulted in 911 dispatchers using pen and paper, rather than their digital CAD system, and law enforcement officers calling in crime scene information via radio, rather than using their tablet-based emails. It also resulted in a months-long website outage for the entire county.",
+            "perpetrator": "Alphv Group",
+            "loc": {
+                "name": "Suffolk County, NY, U.S.",
+                "coords": [40.9849,-72.6151]
+            },
+            "media": [
+                { "name": "The New York Times", "url": "https://www.nytimes.com/2022/11/28/nyregion/suffolk-county-cyber-attack.html" },
+                { "name": "The Record", "url": "https://therecord.media/suffolk-county-new-york-ransomware-investigation" },
+                { "name": "Police1", "url": "https://www.police1.com/cyber-attack/articles/ny-county-gets-help-from-nypd-after-hackers-hit-911-center-pd-hq-ERMrNQJfg1MQ5C2D/" }
+            ]
+        },
+        "20230003": {
+            "title": "CommonSpirit Health Ransomware Attack",
+            "date": 1664755200,
+            "category": "ran",
+            "description": "A ransomware attack against CommonSpirit Health resulted in disruptions across their hospitals spanning 21 states. These disruptions were felt particularly in midwestern states like Iowa and Indiana, resulting in ambulance diversions, cancelled appointments, and even a misdose of a patient. In terms of diversions, 5 ambulances were diverted from Iowa's MercyOne Des Moines Medical Center to UnityPoint Health-Des Moines.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "United States (21 states)",
+                "coords": [41.8781,-87.6298]
+            },
+            "media": [
+                { "name": "The Des Moines Register", "url": "https://www.desmoinesregister.com/story/news/health/2022/10/06/mercyone-clinics-open-after-online-systems-shut-down-cyberattack/69544758007/" },
+                { "name": "The Northwest Indiana Times", "url": "https://www.nwitimes.com/info-expected-to-emerge-slowly-in-hospital-chain-cyberattack/article_7b716ca8-9186-5e0d-8f6f-1e9d1f101a2a.html" },
+                { "name": "The Des Moines Register", "url": "https://www.desmoinesregister.com/story/news/health/2022/10/20/mercyone-ransomware-attack-officials-restoring-systems-payroll-health-records/69578709007/" }
+            ]
+        },
+        "20230004": {
+            "title": "MedStar Ambulance Ransomware Attack",
+            "date": 1666224000,
+            "category": "ran",
+            "description": "MedStar Ambulance was compromised by attackers who gained unauthorized access to a number of files, potentially affecting 612,000 people. The perpetrators then deployed ransomware, causing an impact on MedStar Ambulance's CAD and patient record systems. 911 systems were reported to not have been impacted, but personnel reportedly used manual radios for dispatching due to concerns of system confidentiality and integrity.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Fort Worth, TX, U.S.",
+                "coords": [32.7555,-97.3308]
+            },
+            "media": [
+                { "name": "Fort Worth Star-Telegram", "url": "https://www.star-telegram.com/news/local/article267648132.html" },
+                { "name": "Bank Info Security", "url": "https://www.bankinfosecurity.com/texas-county-ems-agency-says-ransomware-breach-affects-612k-a-20876" },
+                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/tarrant-county-medstar-911-dispatch-patient-care-reporting-systems-disrupted-after-cyberattack/287-f1e54d71-48b6-40e5-a0d6-b0d7a021c737" }
+            ]
+        },
+        "20230005": {
+            "title": "Empress EMS Ransomware Attack",
+            "date": 1653523200,
+            "category": "ran",
+            "description": "Empress EMS, a company that provides ambulance service to communities throughout New York, was infiltrated by attackers. After a few months, the responsible actors exfiltrated a \"small subset\" of files before deploying ransomware across systems. 318,558 patients were reported to have been impacted.",
+            "perpetrator": "Hive Ransomware Group",
+            "loc": {
+                "name": "Yonkers, NY, U.S.",
+                "coords": [40.9312,-73.8987]
+            },
+            "media": [
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/new-york-ambulance-service-discloses-ransomware-attack-and-318k-record-data-breach/" },
+                { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/new-york-ambulance-service-discloses-data-breach-after-ransomware-attack/" },
+                { "name": "Patch", "url": "https://patch.com/new-york/newrochelle/300k-patients-compromised-ransomware-attack-empress-ems" }
+            ]
+        },
+        "20230006": {
+            "title": "Comstar Data Breach",
+            "date": 1648252800,
+            "category": "att",
+            "description": "Comstar, an ambulance billing company, observed suspicious network behavior in March, 2022. Upon further investigation, they realized that an unauthorized party had gained access to patient records. Comstar did not observe the breach occuring in real-time, but determined post factum that up to 69,000 individuals were affected.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Rowley, MA, U.S.",
+                "coords": [42.7167,-70.8787]
+            },
+            "media": [
+                { "name": "Portswigger", "url": "https://portswigger.net/daily-swig/data-breach-at-us-ambulance-billing-service-comstar-exposed-patients-healthcare-information" },
+                { "name": "Bank Info Security", "url": "https://www.bankinfosecurity.com/hacks-spotlight-phi-risks-for-ambulance-cos-vendors-a-20132" }
+            ]
+        },
+        "20230007": {
+            "title": "Erie County TDoS Incident",
+            "date": 1666644900,
+            "category": "tdos911",
+            "description": "On October 23rd, 2022, at 8:55pm, the Erie County, PA 911 center began to receive a high volume of calls originating from a single \"deactived wireless device\". This resulted in the 911 center becoming overwhelmed and some legitimate callers suffering from delays. The perpetrator and motivation remain unknown. The issue was initially mitigated through expansion of existing NG911 infrastructure, including isolation of the faulting device and creation of additional phone trunks for dispatchers.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Erie County, PA, U.S.",
+                "coords": [42.02589567294202, -80.09967120279346]
+            },
+            "media": [
+                { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-review-of-what-caused-system-from-mobile-calls/69586114007/" },
+                { "name": "Erie News Now", "url": "https://www.erienewsnow.com/story/47542591/possible-cyber-attack-suspected-as-cause-of-sundays-erie-county-911-issue" },
+                { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-down-unable-to-receive-9-1-1-calls-on-wireless-devices/69585056007/" }
             ]
         }
     }

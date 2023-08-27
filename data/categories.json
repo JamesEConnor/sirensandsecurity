@@ -34,6 +34,11 @@
         "icon": "/icons/cat_doxxing.png",
         "alt": ""
     },
+    "att": {
+        "name": "Attack/Breach",
+        "icon": "/icons/cat_other_unknown.png",
+        "alt": ""
+    },
     "una": {
         "name": "Unassigned",
         "icon": "/icons/cat_other_unknown.png",
@@ -41,7 +46,7 @@
     },
     "oth": {
         "name": "Other",
-        "icon": "/icons/cat_dos.png",
+        "icon": "/icons/cat_other_unknown.png",
         "alt": ""
     }
 }
