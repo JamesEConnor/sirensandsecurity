@@ -139,7 +139,7 @@
             "title": "MedStar Ambulance Ransomware Attack",
             "date": 1666224000,
             "category": "ran",
-            "description": "MedStar Ambulance was compromised by attackers who gained unauthorized access to a number of files, potentially affecting 612,000 people. The perpetrators then deployed ransomware, causing an impact on MedStar Ambulance's CAD and patient record systems. 911 systems were reported to not have been impacted, but personnel reportedly used manual radios for dispatching due to concerns of system confidentiality and integrity.",
+            "description": "MedStar Ambulance was compromised by attackers who gained unauthorized access to a number of files, potentially affecting 612,000 people. The perpetrators then deployed ransomware, causing an impact on MedStar Ambulance's CAD and patient record systems. 911 systems were reported to not have been impacted, but personnel reportedly used manual radios for dispatching due to concerns of system confidentiality and integrity; this was said to create a delay in ambulance response times.",
             "perpetrator": "Unknown",
             "loc": {
                 "name": "Fort Worth, TX, U.S.",
@@ -148,7 +148,8 @@
             "media": [
                 { "name": "Fort Worth Star-Telegram", "url": "https://www.star-telegram.com/news/local/article267648132.html" },
                 { "name": "Bank Info Security", "url": "https://www.bankinfosecurity.com/texas-county-ems-agency-says-ransomware-breach-affects-612k-a-20876" },
-                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/tarrant-county-medstar-911-dispatch-patient-care-reporting-systems-disrupted-after-cyberattack/287-f1e54d71-48b6-40e5-a0d6-b0d7a021c737" }
+                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/tarrant-county-medstar-911-dispatch-patient-care-reporting-systems-disrupted-after-cyberattack/287-f1e54d71-48b6-40e5-a0d6-b0d7a021c737" },
+                { "name": "JEMS", "url": "https://www.jems.com/operations/hack-causes-medstar-ambulance-wait-times-to-skyrocket/" }
             ]
         },
         "20230005": {
@@ -163,7 +164,7 @@
             },
             "media": [
                 { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/new-york-ambulance-service-discloses-ransomware-attack-and-318k-record-data-breach/" },
-                { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/new-york-ambulance-service-discloses-data-breach-after-ransomware-attack/" },
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/new-york-ambulance-service-discloses-data-breach-after-ransomware-attack/" },
                 { "name": "Patch", "url": "https://patch.com/new-york/newrochelle/300k-patients-compromised-ransomware-attack-empress-ems" }
             ]
         },
@@ -186,7 +187,7 @@
             "title": "Erie County TDoS Incident",
             "date": 1666644900,
             "category": "tdos911",
-            "description": "On October 23rd, 2022, at 8:55pm, the Erie County, PA 911 center began to receive a high volume of calls originating from a single \"deactived wireless device\". This resulted in the 911 center becoming overwhelmed and some legitimate callers suffering from delays. The perpetrator and motivation remain unknown. The issue was initially mitigated through expansion of existing NG911 infrastructure, including isolation of the faulting device and creation of additional phone trunks for dispatchers.",
+            "description": "On October 23rd, 2022, at 8:55pm, the Erie County, PA 911 center began to receive a high volume of calls originating from a single \"deactived wireless device\". This resulted in the 911 center becoming overwhelmed and some legitimate callers suffering from delays. The perpetrator and motivation remain unknown. The issue was mitigated through expansion of existing NG911 infrastructure, including isolation of the faulting device and creation of additional phone trunks for dispatchers.",
             "perpetrator": "Unknown",
             "loc": {
                 "name": "Erie County, PA, U.S.",
@@ -196,6 +197,70 @@
                 { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-review-of-what-caused-system-from-mobile-calls/69586114007/" },
                 { "name": "Erie News Now", "url": "https://www.erienewsnow.com/story/47542591/possible-cyber-attack-suspected-as-cause-of-sundays-erie-county-911-issue" },
                 { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-down-unable-to-receive-9-1-1-calls-on-wireless-devices/69585056007/" }
+            ]
+        },
+        "20230008": {
+            "title": "CLOP Leaks UK Police Data",
+            "date": 1633435200,
+            "category": "ran",
+            "description": "In October, 2021, the IT firm 'Dacoll' suffered a hack by the CL0P ransomware gang. This resulted in encryption of their data and exfiltration of a number of sensitive files. In December, 2021, it became apparent that this included limited information from the U.K. Police, including images from the country's Automatic Numberplate Recognition, was for sale on the Dark Web. While the sellers indicated that it was from the Police National Computer (PNC), U.K. Police denied that any of their systems had been compromised.",
+            "perpetrator": "CL0P",
+            "loc": {
+                "name": "United Kingdom",
+                "coords": [55.900927025894205, -3.644369229523187]
+            },
+            "media": [
+                { "name": "Infosecurity Magazine", "url": "https://www.infosecurity-magazine.com/news/ransomware-gang-police-data-dark/" },
+                { "name": "The Register", "url": "https://www.theregister.com/2021/12/20/dacoll_ransomware_clop_pnc_claims/" }
+            ]
+        },
+        "20230009": {
+            "title": "Fire-Rescue Victoria Ransomware",
+            "date": 1671105600,
+            "category": "ran",
+            "description": "In December, 2022, Fire Rescue Victoria (FRV) suffered a ransomware attack at the hands of Vice Society. That attack resulted in the disclosure of sensitive data regarding current and former employees; the breached data also potentially included former applicants to FRV. Additionally, Vice Society took down FRV's email system while accessing sensitve data, causing a longer-lasting disruption to services within the department. Disruption also negatively impacted the department's CAD system, causing units to be dispatched manually via phone and radio instead.",
+            "perpetrator": "Vice Society",
+            "loc": {
+                "name": "East Melbourne, Australia",
+                "coords": [-37.80928636135747, 144.97518997391347]
+            },
+            "media": [
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/vice-society-ransomware-claims-attack-on-australian-firefighting-service/" },
+                { "name": "ABC News", "url": "https://www.abc.net.au/news/2022-12-16/fire-rescue-victoria-confirms-cyber-attack/101781530" },
+                { "name": "Bit Defender", "url": "https://www.bitdefender.com/blog/hotforsecurity/australian-firefighting-service-frv-hacked-by-vice-society-ransomware-crew/" }
+            ]
+        },
+        "20230010": {
+            "title": "City of Oakland Ransomware Attack",
+            "date": 1675857600,
+            "category": "ran",
+            "description": "The City of Oakland declared a local state of emergency in response to a ransomware attack in February, 2023. The city stated that emergency services were not impacted, but the Oakland Police Department sent a tweet indicating that response times were delayed as a result. The primary impact of the attack was encryption and exfiltration of personnel files from the municipality, which were later identified for sale on the Dark Web. The attack was determined to be the work of the Play Ransomware group",
+            "perpetrator": "Play",
+            "loc": {
+                "name": "Oakland, CA, U.S.",
+                "coords": [37.80547295481007, -122.2724585728565]
+            },
+            "media": [
+                { "name": "City of Oakland", "url": "https://www.oaklandca.gov/news/2023/city-of-oakland-targeted-by-ransomware-attack-core-services-not-affected" },
+                { "name": "CBS News", "url": "https://www.cbsnews.com/sanfrancisco/news/oakland-ransomware-attack-state-of-emergency/" },
+                { "name": "San Francisco Chronicle", "url": "https://www.sfchronicle.com/eastbay/article/oakland-s-ransomware-attack-unusual-17829514.php" },
+                { "name": "Twitter", "url": "https://twitter.com/oaklandpoliceca/status/1625626564540104711" }
+            ]
+        },
+        "20230011": {
+            "title": "CHU Saint-Pierre Diverts Ambulances",
+            "date": 1678449600,
+            "category": "mal",
+            "description": "In March, 2023, CHU Saint-Pierre, a Belgian hospital, suffered an unspecified \"cyber attack\". It was later reported that the attack was a computer virus, which had resulted in the hospital shutting down its infrastructure to preemptively prevent propagation. As a direct result of the attack, ambulances were diverted for several hours to prevent the hospital's resources from becoming overwhelmed.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Burxelles, Belgium",
+                "coords": [50.83444492999195, 4.347948557820978]
+            },
+            "media": [
+                { "name": "The Brussels Times", "url": "https://www.brusselstimes.com/403517/chu-saint-pierre-hospital-hit-by-cyber-attack-on-friday" },
+                { "name": "The Record", "url": "https://therecord.media/brussels-hospital-cyberattack-belgium-saint-pierre" },
+                { "name": "The Brussels Times", "url": "https://www.brusselstimes.com/410896/hospitals-risk-becoming-major-targets-for-cyberattacks-following-saint-pierre-hacking" }
             ]
         }
     }
