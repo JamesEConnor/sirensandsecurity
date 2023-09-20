@@ -262,6 +262,38 @@
                 { "name": "The Record", "url": "https://therecord.media/brussels-hospital-cyberattack-belgium-saint-pierre" },
                 { "name": "The Brussels Times", "url": "https://www.brusselstimes.com/410896/hospitals-risk-becoming-major-targets-for-cyberattacks-following-saint-pierre-hacking" }
             ]
+        },
+        "20230012": {
+            "title": "Dallas Police Department Struck by Ransomware",
+            "date": 1683111600,
+            "category": "ran",
+            "description": "In the early morning hours of May 3rd, 2023, the city of Dallas, Texas was struck by a ransomware attack. While it's unclear exactly what caused the attack to occur, the impact on emergency services was quickly obvious. It forced both law enforcement and fire-rescue to revert to manual dispatching mechanisms, with indications that their computer aided dispatch (CAD) systems had been taken offline. While 911 calls themselves weren't impacted, Dallas PD also indicated that internal shared drives and personnel records had also been affected. Dallas Fire-Rescue described how they were using coordination via public safety radio and public maps apps to overcome their loss of technology.",
+            "perpetrator": "Royal",
+            "loc": {
+                "name": "Dallas, TX, U.S.",
+                "coords": [32.779167,-96.808891]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/05/03/politics/ransomware-dallas-police-department/index.html" },
+                { "name": "Dallas News", "url": "https://www.dallasnews.com/news/public-safety/2023/05/04/a-group-called-royal-is-behind-the-ransomware-attack-on-dallas-the-city-said/" },
+                { "name": "StateScoop", "url": "https://statescoop.com/dallas-ransomware-sensitive-data/" },
+                { "name": "WFAA-TV", "url": "https://www.wfaa.com/article/news/local/dallas-ransomware-attack-delays-firefighters-response-emergency/287-295d512d-bbb1-4acc-b4b5-791c8e987c5e" }
+            ]
+        },
+        "20230013": {
+            "title": "Scripps Healthcare Ransomware Attack",
+            "date": 1619827200,
+            "category": "ran",
+            "description": "On May 1st, 2021, Scripps Healthcare was struck by a ransomware attack. It caused the cancellation of appointments, loss of patient records, and diversion of ambulances. Those ambulance diversions caused increased transport times and wall-holding among EMS personnel, in addition to straining nearby hospitals by pushing all new patients on to them.",
+            "perpetrator": "Maksim Galochkin",
+            "loc": {
+                "name": "San Diego, CA, U.S.",
+                "coords": [32.715736,-117.161087]
+            },
+            "media": [
+                { "name": "Department of Justice", "url": "https://www.justice.gov/usao-ndoh/pr/multiple-foreign-nationals-charged-connection-trickbot-malware-and-conti-ransomware" },
+                { "name": "Journal of the American Medical Association", "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2804585" }
+            ]
         }
     }
 }
