@@ -294,6 +294,52 @@
                 { "name": "Department of Justice", "url": "https://www.justice.gov/usao-ndoh/pr/multiple-foreign-nationals-charged-connection-trickbot-malware-and-conti-ransomware" },
                 { "name": "Journal of the American Medical Association", "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2804585" }
             ]
+        },
+        "20230014": {
+            "title": "City of Lowell Ransomware Attack",
+            "date": 1682402307,
+            "category": "ran",
+            "description": "On April 24th, 2023, the Play ransomware group compromised the network for the city of Lowell, MA. They soon exfiltrated and encrypted data, resulting in disruptions for servers and telephone systems. While Lowell never published many details to the public about the attack, it's known that the attack impacted systems for Lowell's police and fire departments, although 911 was never disrupted. The Play group initially released 5 GB of stolen data on their website, but no news articles were published announcing any further disclosures. While unconfirmed, that may be indicative of a ransom payment.",
+            "perpetrator": "Play",
+            "loc": {
+                "name": "Lowell, MA",
+                "coords": [42.646374619848615, -71.31418697446858]
+            },
+            "media": [
+                { "name": "Boston Globe", "url": "https://www.bostonglobe.com/2023/05/11/business/lowell-city-agencies-still-recovering-cyber-attack/" },
+                { "name": "The Sun", "url": "https://www.lowellsun.com/2023/05/11/play-ransomware-group-releases-5gb-of-lowell-data/" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/feds-now-investigating-the-lowell-mass-cyber-attack" }
+            ]
+        },
+        "20230015": {
+            "title": "City of Augusta Ransomware Attack",
+            "date": 1684684800,
+            "category": "ran",
+            "description": "The City of Augusta, Georgia disclosed that they had suffered an outage starting September 21st, 2023 that was determined to be the result of an ongoing cyber-attack. Specifically, the city's systems were infected by BlackByte ransomware. While not officially disclosed, BlackByte placed at least 10 GB of stolen Augusta data on their Tor site. The ransomware was found to affect the CAD system that permitted data sharing between 911 and responders, forcing dispatchers to resort to a 'manual' system.",
+            "perpetrator": "BlackByte",
+            "loc": {
+                "name": "Augusta, GA",
+                "coords": [33.47134071806415, -81.96192443442239]
+            },
+            "media": [
+                { "name": "WRDW-TV", "url": "https://www.wrdw.com/2023/05/24/city-augusta-cyber-crisis-whats-working-whats-not/" },
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/blackbyte-ransomware-claims-city-of-augusta-cyberattack/" }
+            ]
+        },
+        "20230016": {
+            "title": "Idaho Hospital Forced to Divert Ambulances",
+            "date": 1684684800,
+            "category": "mal",
+            "description": "Idaho Falls Community Hospital was struck by a virus that infected a number of its systems. While hospital IT staff were able to disconnect systems before it spread too far, the disruption of emergency room equipment caused the hospital to go on diversion and redirect any responding ambulances elsewhere. Idaho Falls Community Hospital staff refused to acknowledge whether or not the event was the result of ransomware, indicating only that it was some form of 'virus'.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Idaho Falls, ID",
+                "coords": [43.474324471447225, -111.98678851120387]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/05/31/politics/idaho-hospital-cyberattack/index.html" },
+                { "name": "Fierce Healthcare", "url": "https://www.fiercehealthcare.com/health-tech/over-24-hours-following-cyberattack-idaho-hospital-diverts-ambulances-turns-paper" }
+            ]
         }
     }
 }
