@@ -340,6 +340,82 @@
                 { "name": "CNN", "url": "https://www.cnn.com/2023/05/31/politics/idaho-hospital-cyberattack/index.html" },
                 { "name": "Fierce Healthcare", "url": "https://www.fiercehealthcare.com/health-tech/over-24-hours-following-cyberattack-idaho-hospital-diverts-ambulances-turns-paper" }
             ]
+        },
+        "20230017": {
+            "title": "Swatting of Ubisoft Montreal",
+            "date": 1605297600,
+            "category": "swat",
+            "description": "On November 13th, 2020, Yanni Ouahioune contacted police to report that multiple hostages had been taken in Ubisoft's Montreal office. This prompted the response of a tactical police unit, which entered the building and eventually determined the report to be false. Ouahioune had placed the call due to being banned from Ubisoft's game 'Rainbow Six Siege' multiple times, inducing anger towards the company. Three years later he was caught and sentenced to three years of community service.",
+            "perpetrator": "Yanni Ouahioune",
+            "loc": {
+                "name": "Ubisoft Montreal, Montréal, QC, Canada",
+                "coords": [45.52746258404415, -73.59980758380944]
+            },
+            "media": [
+                { "name": "Montreal Gazette", "url": "https://montrealgazette.com/news/local-news/police-operation-at-ubisoft-montreal-offices" },
+                { "name": "Montreal Gazette", "url": "https://montrealgazette.com/news/crime/man-sentenced-in-france-for-ubisoft-montreal-hostage-hoax" },
+                { "name": "Polygon", "url": "https://www.polygon.com/23787004/rainbow-six-siege-ubisoft-swat-swatting-hostage-hoax-sentenced" }
+            ]
+        },
+        "20230018": {
+            "title": "Swatting in Wichita, Kansas",
+            "date": 1514507400,
+            "category": "swat",
+            "description": "Police were dispatched to a residential home on November 13th, 2017 for reports of a man who had shot his father and was holding multiple people hostage. Upon police arrival, an officer killed a man who arrived at the front door of the residence. It was later determined that no one else was injured and that the call was an instance of swatting. The perpetrator was caught two years later and charged with making a false report that resulted in a death, eventually being sentenced to 20 years in prison. It was discovered that the swatting incident had been the result of a dispute between Barriss and the victim over a $1.50 bet in Call of Duty.",
+            "perpetrator": "Tyler Barriss",
+            "loc": {
+                "name": "Wichita, KS, U.S.",
+                "coords": [37.673280, -97.351940]
+            },
+            "media": [
+                { "name": "Wichita Eagle", "url": "https://www.kansas.com/news/local/crime/article192081124.html" },
+                { "name": "Polygon", "url": "https://www.polygon.com/2019/3/29/18287168/call-of-duty-swatting-death-prison-sentence" }
+            ]
+        },
+        "20230019": {
+            "title": "City of Hayward Ransomware Attack",
+            "date": 1688875200,
+            "category": "ran",
+            "description": "On Sunday, July 28th, 2023, the City of Hayward detected a ransomware attack on their network. The city preemptively shut down its website on Monday. Hayward reported no signs that any personal information had been compromised. While the emergency services were said to have not had their ability to respond impacted, it was later reported that the ransomware had impacted the CAD system, making it more difficult to appropriately respond to or coordinate calls for help.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "City of Hayward",
+                "coords": [37.671105855346184, -122.08554719984978]
+            },
+            "media": [
+                { "name": "The Mercury News", "url": "https://www.mercurynews.com/2023/07/14/systems-have-gone-down-emergency-declared-as-hayward-cyberattack-impedes-emergency-dispatch-system/" },
+                { "name": "CBS Bay Area", "url": "https://www.cbsnews.com/sanfrancisco/news/city-of-hayward-websites-cyber-attack/" },
+                { "name": "ABC7 News", "url": "https://abc7news.com/hayward-cyber-security-attack-city-of-website-down-personal-information/13485987/" }
+            ]
+        },
+        "20230020": {
+            "title": "Swatting in Knoxville, Tennessee",
+            "date": 1689110280,
+            "category": "swat",
+            "description": "Police were sent to a residential home for a report from a suicide hotline that a subject inside had already killed a 4-year-old child. Upon arrival, officers spoke to the homeowner and realized that the call was likely fabricated, due to the lack of a victim as reported in the chat with the suicide hotline.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Knoxville, TN, U.S.",
+                "coords": [35.989581059257624, -83.91604310804316]
+            },
+            "media": [
+                { "name": "WATE", "url": "https://www.wate.com/news/knox-county-news/swatting-call-targets-knox-county-family/" },
+                { "name": "WVLT", "url": "https://www.wvlt.tv/2023/07/11/knoxville-family-swatted-police-raid-their-home-after-phony-phone-call/" }
+            ]
+        },
+        "20230021": {
+            "title": "",
+            "date": 0,
+            "category": "",
+            "description": "",
+            "perpetrator": "",
+            "loc": {
+                "name": "",
+                "coords": [0,0]
+            },
+            "media": [
+                { "name": "", "url": "" }
+            ]
         }
     }
 }
