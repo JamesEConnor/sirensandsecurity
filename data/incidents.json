@@ -392,7 +392,7 @@
             "title": "Swatting in Knoxville, Tennessee",
             "date": 1689110280,
             "category": "swat",
-            "description": "Police were sent to a residential home for a report from a suicide hotline that a subject inside had already killed a 4-year-old child. Upon arrival, officers spoke to the homeowner and realized that the call was likely fabricated, due to the lack of a victim as reported in the chat with the suicide hotline.",
+            "description": "Police were sent to a residential home for a report from a suicide hotline that a subject inside had already killed a 4-year-old child. Upon arrival, officers spoke to the homeowner and realized that the call was fabricated, which was confirmed following a sweep of the house.",
             "perpetrator": "Unknown",
             "loc": {
                 "name": "Knoxville, TN, U.S.",
@@ -404,6 +404,35 @@
             ]
         },
         "20230021": {
+            "title": "Swatting in Leitchfield, Kentucky",
+            "date": 1688603700,
+            "category": "swat",
+            "description": "Leitchfield PD and FD were dispatched for reports of a male who had shot his wife, tied up another man, and was threatening to burn down the house. The caller also stated that there were children inside. The large law enforcement response realized soon after arrival that the call was fake.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Leitchfield, KY, U.S.",
+                "coords": [37.48181837056912, -86.29756237591653]
+            },
+            "media": [
+                { "name": "K105", "url": "https://www.k105.com/2023/07/11/leitchfield-pd-investigating-swatting-call-that-said-a-husband-shot-his-wife-on-west-walnut-st/" }
+            ]
+        },
+        "20230022": {
+            "title": "Swatting in Orchard Park, NY",
+            "date": 1688931000,
+            "category": "swat",
+            "description": "On July 9th, two repairmen were working on a house when police arrived. They stated that they had received a call reporting four black men who had tied up a man inside the house. This was quickly proven to be false, and most articles have cited the fact that this was likely racially motivated.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Orchard Park, NY, U.S.",
+                "coords": [42.762762136443854, -78.7441735636318]
+            },
+            "media": [
+                { "name": "WIVB4", "url": "https://www.wivb.com/news/local-news/racist-swatting-call-goes-viral-on-tik-tok-victims-say-it-couldve-been-much-worse/" },
+                { "name": "WKBW7", "url": "https://www.wkbw.com/news/local-news/orchard-park-pd-investigating-swatting-incident" }
+            ]
+        },
+        "20230023": {
             "title": "",
             "date": 0,
             "category": "",
