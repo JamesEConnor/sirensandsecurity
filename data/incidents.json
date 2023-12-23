@@ -2,71 +2,971 @@
     "version": "0.1",
     "updated": 1687046400,
     "incidents": {
-        "99990001": {
-            "title": "DTDoS Against PSAPs in 12 States",
-            "date": 1477353600,
-            "category": "tdos911",
-            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+        "20230001": {
+            "title": "NHS 111 Cyber-attack Outage",
+            "date": 1659596400,
+            "category": "ran",
+            "description": "The National Health Service (NHS) 111 service, which provides U.K. citizens with 24/7 medical consultation services, suffered a system outage as a result of a ransomware attack against a contractor. The contractor, called Advance, provided approximately 85% of NHS's systems, which were used to dispatch ambulances, manage patient records, and handle emergency prescriptions (among other things). The attack resulted in significant outages and delays across the 111 service for several days.",
+            "perpetrator": "Unknown",
             "loc": {
-                "name": "Southeastern U.S. (12 States)",
-                "coords": [38.908742, -77.065142]
+                "name": "London, England, U.K.",
+                "coords": [51.5072,-0.1276]
             },
             "media": [
-                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
-                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
-                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
-                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+                { "name": "The Guardian", "url": "https://www.theguardian.com/society/2022/aug/05/nhs-111-expects-delays-after-cyber-attack-causes-system-outage" },
+                { "name": "Independent", "url": "https://www.independent.co.uk/news/health/cyber-attack-nhs-111-b2139188.html" },
+                { "name": "The Guardian", "url": "https://www.theguardian.com/technology/2022/aug/11/nhs-ransomware-attack-what-happened-and-how-bad-is-it" }
             ]
         },
-        "99990002": {
-            "id": 99990002,
-            "title": "BTDoS Against PSAPs in 12 States",
-            "date": 1477353600,
-            "category": "tdos911",
-            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+        "20230002": {
+            "title": "Suffolk County Ransomware Attack",
+            "date": 1662595200,
+            "category": "att",
+            "description": "The Suffolk County, NY clerk's office was compromised by the ALPHV group in December, 2021 through exploitation of the Log4j vulnerability. The attackers then spent eight months installing bitcoin mining software, establishing persistence, and creating fake accounts. In August, 2022, the group was able to escalate their attack through obtained credentials, gaining access to other Suffolk County departments before deploying BlackCat ransomware across the compromised systems. This resulted in 911 dispatchers using pen and paper, rather than their digital CAD system, and law enforcement officers calling in crime scene information via radio, rather than using their tablet-based emails. It also resulted in a months-long website outage for the entire county.",
+            "perpetrator": "Alphv Group",
             "loc": {
-                "name": "Southeastern U.S. (12 States)",
-                "coords": [42.908742, -77.065142]
+                "name": "Suffolk County, NY, U.S.",
+                "coords": [40.9849,-72.6151]
             },
             "media": [
-                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
-                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
-                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
-                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+                { "name": "The New York Times", "url": "https://www.nytimes.com/2022/11/28/nyregion/suffolk-county-cyber-attack.html" },
+                { "name": "The Record", "url": "https://therecord.media/suffolk-county-new-york-ransomware-investigation" },
+                { "name": "Police1", "url": "https://www.police1.com/cyber-attack/articles/ny-county-gets-help-from-nypd-after-hackers-hit-911-center-pd-hq-ERMrNQJfg1MQ5C2D/" }
             ]
         },
-        "99990003": {
-            "id": 99990003,
-            "title": "ATDoS Against PSAPs in 12 States",
-            "date": 1477353600,
-            "category": "tdos911",
-            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+        "20230003": {
+            "title": "CommonSpirit Health Ransomware Attack",
+            "date": 1664755200,
+            "category": "ran",
+            "description": "A ransomware attack against CommonSpirit Health resulted in disruptions across their hospitals spanning 21 states. These disruptions were felt particularly in midwestern states like Iowa and Indiana, resulting in ambulance diversions, cancelled appointments, and even a misdose of a patient. In terms of diversions, 5 ambulances were diverted from Iowa's MercyOne Des Moines Medical Center to UnityPoint Health-Des Moines.",
+            "perpetrator": "Unknown",
             "loc": {
-                "name": "Southeastern U.S. (12 States)",
-                "coords": [38.908742, -84.065142]
+                "name": "United States (21 states)",
+                "coords": [41.8781,-87.6298]
             },
             "media": [
-                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
-                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
-                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
-                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+                { "name": "The Des Moines Register", "url": "https://www.desmoinesregister.com/story/news/health/2022/10/06/mercyone-clinics-open-after-online-systems-shut-down-cyberattack/69544758007/" },
+                { "name": "The Northwest Indiana Times", "url": "https://www.nwitimes.com/info-expected-to-emerge-slowly-in-hospital-chain-cyberattack/article_7b716ca8-9186-5e0d-8f6f-1e9d1f101a2a.html" },
+                { "name": "The Des Moines Register", "url": "https://www.desmoinesregister.com/story/news/health/2022/10/20/mercyone-ransomware-attack-officials-restoring-systems-payroll-health-records/69578709007/" }
             ]
         },
-        "99990004": {
-            "id": 99990004,
-            "title": "CTDoS Against PSAPs in 12 States",
-            "date": 1477353600,
-            "category": "tdos911",
-            "description": "A teenager \"accidentally\" released a web page that, when visited, would cause a user's phone to automatically call 911. The phone would then keep calling 911 until the battery was removed. The perpetrator was eventually caught and arrested, but not after managing to temporarily take down 911 call centers across 12 states.",
+        "20230004": {
+            "title": "MedStar Ambulance Ransomware Attack",
+            "date": 1666224000,
+            "category": "ran",
+            "description": "MedStar Ambulance was compromised by attackers who gained unauthorized access to a number of files, potentially affecting 612,000 people. The perpetrators then deployed ransomware, causing an impact on MedStar Ambulance's CAD and patient record systems. 911 systems were reported to not have been impacted, but personnel reportedly used manual radios for dispatching due to concerns of system confidentiality and integrity; this was said to create a delay in ambulance response times.",
+            "perpetrator": "Unknown",
             "loc": {
-                "name": "Southeastern U.S. (12 States)",
-                "coords": [33.908742, -80.065142]
+                "name": "Fort Worth, TX, U.S.",
+                "coords": [32.7555,-97.3308]
             },
             "media": [
-                { "name": "CyberScoop", "url": "https://cyberscoop.com/911-call-center-ddos-dhs-maricopa-county/" },
-                { "name": "The Verge", "url":"https://www.theverge.com/2016/10/30/13471128/meetkumar-hiteshbhai-desai-arrest-911-exploit" },
-                { "name": "Wall Street Journal", "url":"https://www.wsj.com/articles/man-behind-911-call-system-2016-cyberattack-sentenced-to-probation-1507329999/"},
-                { "name": "Secure World", "url":"https://www.secureworld.io/industry-news/hacker-arrested-for-ddosing-911-call-network"}
+                { "name": "Fort Worth Star-Telegram", "url": "https://www.star-telegram.com/news/local/article267648132.html" },
+                { "name": "Bank Info Security", "url": "https://www.bankinfosecurity.com/texas-county-ems-agency-says-ransomware-breach-affects-612k-a-20876" },
+                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/tarrant-county-medstar-911-dispatch-patient-care-reporting-systems-disrupted-after-cyberattack/287-f1e54d71-48b6-40e5-a0d6-b0d7a021c737" },
+                { "name": "JEMS", "url": "https://www.jems.com/operations/hack-causes-medstar-ambulance-wait-times-to-skyrocket/" }
+            ]
+        },
+        "20230005": {
+            "title": "Empress EMS Ransomware Attack",
+            "date": 1653523200,
+            "category": "ran",
+            "description": "Empress EMS, a company that provides ambulance service to communities throughout New York, was infiltrated by attackers. After a few months, the responsible actors exfiltrated a \"small subset\" of files before deploying ransomware across systems. 318,558 patients were reported to have been impacted.",
+            "perpetrator": "Hive Ransomware Group",
+            "loc": {
+                "name": "Yonkers, NY, U.S.",
+                "coords": [40.9312,-73.8987]
+            },
+            "media": [
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/new-york-ambulance-service-discloses-ransomware-attack-and-318k-record-data-breach/" },
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/new-york-ambulance-service-discloses-data-breach-after-ransomware-attack/" },
+                { "name": "Patch", "url": "https://patch.com/new-york/newrochelle/300k-patients-compromised-ransomware-attack-empress-ems" }
+            ]
+        },
+        "20230006": {
+            "title": "Comstar Data Breach",
+            "date": 1648252800,
+            "category": "att",
+            "description": "Comstar, an ambulance billing company, observed suspicious network behavior in March, 2022. Upon further investigation, they realized that an unauthorized party had gained access to patient records. Comstar did not observe the breach occuring in real-time, but determined post factum that up to 69,000 individuals were affected.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Rowley, MA, U.S.",
+                "coords": [42.7167,-70.8787]
+            },
+            "media": [
+                { "name": "Portswigger", "url": "https://portswigger.net/daily-swig/data-breach-at-us-ambulance-billing-service-comstar-exposed-patients-healthcare-information" },
+                { "name": "Bank Info Security", "url": "https://www.bankinfosecurity.com/hacks-spotlight-phi-risks-for-ambulance-cos-vendors-a-20132" }
+            ]
+        },
+        "20230007": {
+            "title": "Erie County TDoS Incident",
+            "date": 1666644900,
+            "category": "tdos911",
+            "description": "On October 23rd, 2022, at 8:55pm, the Erie County, PA 911 center began to receive a high volume of calls originating from a single \"deactived wireless device\". This resulted in the 911 center becoming overwhelmed and some legitimate callers suffering from delays. The perpetrator and motivation remain unknown. The issue was mitigated through expansion of existing NG911 infrastructure, including isolation of the faulting device and creation of additional phone trunks for dispatchers.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Erie County, PA, U.S.",
+                "coords": [42.02589567294202, -80.09967120279346]
+            },
+            "media": [
+                { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-review-of-what-caused-system-from-mobile-calls/69586114007/" },
+                { "name": "Erie News Now", "url": "https://www.erienewsnow.com/story/47542591/possible-cyber-attack-suspected-as-cause-of-sundays-erie-county-911-issue" },
+                { "name": "GoErie", "url": "https://www.goerie.com/story/news/local/2022/10/24/erie-county-911-down-unable-to-receive-9-1-1-calls-on-wireless-devices/69585056007/" }
+            ]
+        },
+        "20230008": {
+            "title": "CLOP Leaks UK Police Data",
+            "date": 1633435200,
+            "category": "ran",
+            "description": "In October, 2021, the IT firm 'Dacoll' suffered a hack by the CL0P ransomware gang. This resulted in encryption of their data and exfiltration of a number of sensitive files. In December, 2021, it became apparent that this included limited information from the U.K. Police, including images from the country's Automatic Numberplate Recognition, was for sale on the Dark Web. While the sellers indicated that it was from the Police National Computer (PNC), U.K. Police denied that any of their systems had been compromised.",
+            "perpetrator": "CL0P",
+            "loc": {
+                "name": "United Kingdom",
+                "coords": [55.900927025894205, -3.644369229523187]
+            },
+            "media": [
+                { "name": "Infosecurity Magazine", "url": "https://www.infosecurity-magazine.com/news/ransomware-gang-police-data-dark/" },
+                { "name": "The Register", "url": "https://www.theregister.com/2021/12/20/dacoll_ransomware_clop_pnc_claims/" }
+            ]
+        },
+        "20230009": {
+            "title": "Fire-Rescue Victoria Ransomware",
+            "date": 1671105600,
+            "category": "ran",
+            "description": "In December, 2022, Fire Rescue Victoria (FRV) suffered a ransomware attack at the hands of Vice Society. That attack resulted in the disclosure of sensitive data regarding current and former employees; the breached data also potentially included former applicants to FRV. Additionally, Vice Society took down FRV's email system while accessing sensitve data, causing a longer-lasting disruption to services within the department. Disruption also negatively impacted the department's CAD system, causing units to be dispatched manually via phone and radio instead.",
+            "perpetrator": "Vice Society",
+            "loc": {
+                "name": "East Melbourne, Australia",
+                "coords": [-37.80928636135747, 144.97518997391347]
+            },
+            "media": [
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/vice-society-ransomware-claims-attack-on-australian-firefighting-service/" },
+                { "name": "ABC News", "url": "https://www.abc.net.au/news/2022-12-16/fire-rescue-victoria-confirms-cyber-attack/101781530" },
+                { "name": "Bit Defender", "url": "https://www.bitdefender.com/blog/hotforsecurity/australian-firefighting-service-frv-hacked-by-vice-society-ransomware-crew/" }
+            ]
+        },
+        "20230010": {
+            "title": "City of Oakland Ransomware Attack",
+            "date": 1675857600,
+            "category": "ran",
+            "description": "The City of Oakland declared a local state of emergency in response to a ransomware attack in February, 2023. The city stated that emergency services were not impacted, but the Oakland Police Department sent a tweet indicating that response times were delayed as a result. The primary impact of the attack was encryption and exfiltration of personnel files from the municipality, which were later identified for sale on the Dark Web. The attack was determined to be the work of the Play Ransomware group",
+            "perpetrator": "Play",
+            "loc": {
+                "name": "Oakland, CA, U.S.",
+                "coords": [37.80547295481007, -122.2724585728565]
+            },
+            "media": [
+                { "name": "City of Oakland", "url": "https://www.oaklandca.gov/news/2023/city-of-oakland-targeted-by-ransomware-attack-core-services-not-affected" },
+                { "name": "CBS News", "url": "https://www.cbsnews.com/sanfrancisco/news/oakland-ransomware-attack-state-of-emergency/" },
+                { "name": "San Francisco Chronicle", "url": "https://www.sfchronicle.com/eastbay/article/oakland-s-ransomware-attack-unusual-17829514.php" },
+                { "name": "Twitter", "url": "https://twitter.com/oaklandpoliceca/status/1625626564540104711" }
+            ]
+        },
+        "20230011": {
+            "title": "CHU Saint-Pierre Diverts Ambulances",
+            "date": 1678449600,
+            "category": "mal",
+            "description": "In March, 2023, CHU Saint-Pierre, a Belgian hospital, suffered an unspecified \"cyber attack\". It was later reported that the attack was a computer virus, which had resulted in the hospital shutting down its infrastructure to preemptively prevent propagation. As a direct result of the attack, ambulances were diverted for several hours to prevent the hospital's resources from becoming overwhelmed.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Burxelles, Belgium",
+                "coords": [50.83444492999195, 4.347948557820978]
+            },
+            "media": [
+                { "name": "The Brussels Times", "url": "https://www.brusselstimes.com/403517/chu-saint-pierre-hospital-hit-by-cyber-attack-on-friday" },
+                { "name": "The Record", "url": "https://therecord.media/brussels-hospital-cyberattack-belgium-saint-pierre" },
+                { "name": "The Brussels Times", "url": "https://www.brusselstimes.com/410896/hospitals-risk-becoming-major-targets-for-cyberattacks-following-saint-pierre-hacking" }
+            ]
+        },
+        "20230012": {
+            "title": "Dallas Police Department Struck by Ransomware",
+            "date": 1683111600,
+            "category": "ran",
+            "description": "In the early morning hours of May 3rd, 2023, the city of Dallas, Texas was struck by a ransomware attack. While it's unclear exactly what caused the attack to occur, the impact on emergency services was quickly obvious. It forced both law enforcement and fire-rescue to revert to manual dispatching mechanisms, with indications that their computer aided dispatch (CAD) systems had been taken offline. While 911 calls themselves weren't impacted, Dallas PD also indicated that internal shared drives and personnel records had also been affected. Dallas Fire-Rescue described how they were using coordination via public safety radio and public maps apps to overcome their loss of technology.",
+            "perpetrator": "Royal",
+            "loc": {
+                "name": "Dallas, TX, U.S.",
+                "coords": [32.779167,-96.808891]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/05/03/politics/ransomware-dallas-police-department/index.html" },
+                { "name": "Dallas City Hall", "url": "https://dallascityhall.com/DCH%20Documents/dallas-ransomware-incident-may-2023-incident-remediation-efforts-and-resolution.pdf" },
+                { "name": "Dallas News", "url": "https://www.dallasnews.com/news/public-safety/2023/05/04/a-group-called-royal-is-behind-the-ransomware-attack-on-dallas-the-city-said/" },
+                { "name": "StateScoop", "url": "https://statescoop.com/dallas-ransomware-sensitive-data/" },
+                { "name": "WFAA-TV", "url": "https://www.wfaa.com/article/news/local/dallas-ransomware-attack-delays-firefighters-response-emergency/287-295d512d-bbb1-4acc-b4b5-791c8e987c5e" }
+            ]
+        },
+        "20230013": {
+            "title": "Scripps Healthcare Ransomware Attack",
+            "date": 1619827200,
+            "category": "ran",
+            "description": "On May 1st, 2021, Scripps Healthcare was struck by a ransomware attack. It caused the cancellation of appointments, loss of patient records, and diversion of ambulances. Those ambulance diversions caused increased transport times and wall-holding among EMS personnel, in addition to straining nearby hospitals by pushing all new patients on to them.",
+            "perpetrator": "Maksim Galochkin",
+            "loc": {
+                "name": "San Diego, CA, U.S.",
+                "coords": [32.715736,-117.161087]
+            },
+            "media": [
+                { "name": "Department of Justice", "url": "https://www.justice.gov/usao-ndoh/pr/multiple-foreign-nationals-charged-connection-trickbot-malware-and-conti-ransomware" },
+                { "name": "Journal of the American Medical Association", "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2804585" }
+            ]
+        },
+        "20230014": {
+            "title": "City of Lowell Ransomware Attack",
+            "date": 1682402307,
+            "category": "ran",
+            "description": "On April 24th, 2023, the Play ransomware group compromised the network for the city of Lowell, MA. They soon exfiltrated and encrypted data, resulting in disruptions for servers and telephone systems. While Lowell never published many details to the public about the attack, it's known that the attack impacted systems for Lowell's police and fire departments, although 911 was never disrupted. The Play group initially released 5 GB of stolen data on their website, but no news articles were published announcing any further disclosures. While unconfirmed, that may be indicative of a ransom payment.",
+            "perpetrator": "Play",
+            "loc": {
+                "name": "Lowell, MA",
+                "coords": [42.646374619848615, -71.31418697446858]
+            },
+            "media": [
+                { "name": "Boston Globe", "url": "https://www.bostonglobe.com/2023/05/11/business/lowell-city-agencies-still-recovering-cyber-attack/" },
+                { "name": "The Sun", "url": "https://www.lowellsun.com/2023/05/11/play-ransomware-group-releases-5gb-of-lowell-data/" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/feds-now-investigating-the-lowell-mass-cyber-attack" }
+            ]
+        },
+        "20230015": {
+            "title": "City of Augusta Ransomware Attack",
+            "date": 1684684800,
+            "category": "ran",
+            "description": "The City of Augusta, Georgia disclosed that they had suffered an outage starting September 21st, 2023 that was determined to be the result of an ongoing cyber-attack. Specifically, the city's systems were infected by BlackByte ransomware. While not officially disclosed, BlackByte placed at least 10 GB of stolen Augusta data on their Tor site. The ransomware was found to affect the CAD system that permitted data sharing between 911 and responders, forcing dispatchers to resort to a 'manual' system.",
+            "perpetrator": "BlackByte",
+            "loc": {
+                "name": "Augusta, GA",
+                "coords": [33.47134071806415, -81.96192443442239]
+            },
+            "media": [
+                { "name": "WRDW-TV", "url": "https://www.wrdw.com/2023/05/24/city-augusta-cyber-crisis-whats-working-whats-not/" },
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/blackbyte-ransomware-claims-city-of-augusta-cyberattack/" }
+            ]
+        },
+        "20230016": {
+            "title": "Idaho Hospital Forced to Divert Ambulances",
+            "date": 1684684800,
+            "category": "mal",
+            "description": "Idaho Falls Community Hospital was struck by a virus that infected a number of its systems. While hospital IT staff were able to disconnect systems before it spread too far, the disruption of emergency room equipment caused the hospital to go on diversion and redirect any responding ambulances elsewhere. Idaho Falls Community Hospital staff refused to acknowledge whether or not the event was the result of ransomware, indicating only that it was some form of 'virus'.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Idaho Falls, ID",
+                "coords": [43.474324471447225, -111.98678851120387]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/05/31/politics/idaho-hospital-cyberattack/index.html" },
+                { "name": "Fierce Healthcare", "url": "https://www.fiercehealthcare.com/health-tech/over-24-hours-following-cyberattack-idaho-hospital-diverts-ambulances-turns-paper" }
+            ]
+        },
+        "20230017": {
+            "title": "Swatting of Ubisoft Montreal",
+            "date": 1605297600,
+            "category": "swat",
+            "description": "On November 13th, 2020, Yanni Ouahioune contacted police to report that multiple hostages had been taken in Ubisoft's Montreal office. This prompted the response of a tactical police unit, which entered the building and eventually determined the report to be false. Ouahioune had placed the call due to being banned from Ubisoft's game 'Rainbow Six Siege' multiple times, inducing anger towards the company. Three years later he was caught and sentenced to three years of community service.",
+            "perpetrator": "Yanni Ouahioune",
+            "loc": {
+                "name": "Ubisoft Montreal, Montréal, QC, Canada",
+                "coords": [45.52746258404415, -73.59980758380944]
+            },
+            "media": [
+                { "name": "Montreal Gazette", "url": "https://montrealgazette.com/news/local-news/police-operation-at-ubisoft-montreal-offices" },
+                { "name": "Montreal Gazette", "url": "https://montrealgazette.com/news/crime/man-sentenced-in-france-for-ubisoft-montreal-hostage-hoax" },
+                { "name": "Polygon", "url": "https://www.polygon.com/23787004/rainbow-six-siege-ubisoft-swat-swatting-hostage-hoax-sentenced" }
+            ]
+        },
+        "20230018": {
+            "title": "Swatting in Wichita, Kansas",
+            "date": 1514507400,
+            "category": "swat",
+            "description": "Police were dispatched to a residential home on November 13th, 2017 for reports of a man who had shot his father and was holding multiple people hostage. Upon police arrival, an officer killed a man who arrived at the front door of the residence. It was later determined that no one else was injured and that the call was an instance of swatting. The perpetrator was caught two years later and charged with making a false report that resulted in a death, eventually being sentenced to 20 years in prison. It was discovered that the swatting incident had been the result of a dispute between Barriss and the victim over a $1.50 bet in Call of Duty.",
+            "perpetrator": "Tyler Barriss",
+            "loc": {
+                "name": "Wichita, KS, U.S.",
+                "coords": [37.673280, -97.351940]
+            },
+            "media": [
+                { "name": "Wichita Eagle", "url": "https://www.kansas.com/news/local/crime/article192081124.html" },
+                { "name": "Polygon", "url": "https://www.polygon.com/2019/3/29/18287168/call-of-duty-swatting-death-prison-sentence" }
+            ]
+        },
+        "20230019": {
+            "title": "City of Hayward Ransomware Attack",
+            "date": 1688875200,
+            "category": "ran",
+            "description": "On Sunday, July 28th, 2023, the City of Hayward detected a ransomware attack on their network. The city preemptively shut down its website on Monday. Hayward reported no signs that any personal information had been compromised. While the emergency services were said to have not had their ability to respond impacted, it was later reported that the ransomware had impacted the CAD system, making it more difficult to appropriately respond to or coordinate calls for help.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "City of Hayward",
+                "coords": [37.671105855346184, -122.08554719984978]
+            },
+            "media": [
+                { "name": "The Mercury News", "url": "https://www.mercurynews.com/2023/07/14/systems-have-gone-down-emergency-declared-as-hayward-cyberattack-impedes-emergency-dispatch-system/" },
+                { "name": "CBS Bay Area", "url": "https://www.cbsnews.com/sanfrancisco/news/city-of-hayward-websites-cyber-attack/" },
+                { "name": "ABC7 News", "url": "https://abc7news.com/hayward-cyber-security-attack-city-of-website-down-personal-information/13485987/" }
+            ]
+        },
+        "20230020": {
+            "title": "Swatting in Knoxville, Tennessee",
+            "date": 1689110280,
+            "category": "swat",
+            "description": "Police were sent to a residential home for a report from a suicide hotline that a subject inside had already killed a 4-year-old child. Upon arrival, officers spoke to the homeowner and realized that the call was fabricated, which was confirmed following a sweep of the house.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Knoxville, TN, U.S.",
+                "coords": [35.989581059257624, -83.91604310804316]
+            },
+            "media": [
+                { "name": "WATE", "url": "https://www.wate.com/news/knox-county-news/swatting-call-targets-knox-county-family/" },
+                { "name": "WVLT", "url": "https://www.wvlt.tv/2023/07/11/knoxville-family-swatted-police-raid-their-home-after-phony-phone-call/" }
+            ]
+        },
+        "20230021": {
+            "title": "Swatting in Leitchfield, Kentucky",
+            "date": 1688603700,
+            "category": "swat",
+            "description": "Leitchfield PD and FD were dispatched for reports of a male who had shot his wife, tied up another man, and was threatening to burn down the house. The caller also stated that there were children inside. The large law enforcement response realized soon after arrival that the call was fake.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Leitchfield, KY, U.S.",
+                "coords": [37.48181837056912, -86.29756237591653]
+            },
+            "media": [
+                { "name": "K105", "url": "https://www.k105.com/2023/07/11/leitchfield-pd-investigating-swatting-call-that-said-a-husband-shot-his-wife-on-west-walnut-st/" }
+            ]
+        },
+        "20230022": {
+            "title": "Swatting in Orchard Park, NY",
+            "date": 1688931000,
+            "category": "swat",
+            "description": "On July 9th, two repairmen were working on a house when police arrived. They stated that they had received a call reporting four black men who had tied up a man inside the house. This was quickly proven to be false, and most articles have cited the fact that this was likely racially motivated.",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Orchard Park, NY, U.S.",
+                "coords": [42.762762136443854, -78.7441735636318]
+            },
+            "media": [
+                { "name": "WIVB4", "url": "https://www.wivb.com/news/local-news/racist-swatting-call-goes-viral-on-tik-tok-victims-say-it-couldve-been-much-worse/" },
+                { "name": "WKBW7", "url": "https://www.wkbw.com/news/local-news/orchard-park-pd-investigating-swatting-incident" }
+            ]
+        },
+        "20230023": {
+            "title": "ePCR Cyber-attack Impacts NHS Ambulance Trusts",
+            "date": 1689638400,
+            "category": "una",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "South Central and South Western England, U.K.",
+                "coords": [50.8458173894,-1.80938449208]
+            },
+            "media": [
+                { "name": "The Telegraph", "url": "https://www.telegraph.co.uk/news/2023/07/26/cyber-attack-nhs-ambulance-trusts-unable-patient-records/" },
+                {"name": "DigitalHealth.net", "url": "https://www.digitalhealth.net/2023/07/mobimed-epr-is-getting-ready-to-be-re-initiated-after-cyber-attack/"},
+                {"name": "BBC", "url": "https://www.bbc.com/news/uk-england-hampshire-66315690"}
+            ]
+        },
+        "20230024": {
+            "title": "Wuhan Earthquake Monitoring Center Cyber-attack",
+            "date": 1690358400,
+            "category": "mal",
+            "description": "",
+            "perpetrator": "U.S. Intelligence Agencies",
+            "loc": {
+                "name": "Wuhan, Hubei, China",
+                "coords": [30.50620508156117, 114.54335909719553]
+            },
+            "media": [
+                { "name": "ZDNET", "url": "https://www.zdnet.com/article/china-accuses-us-intelligence-agencies-as-source-behind-wuhan-cybersecurity-attack/" },
+                { "name": "Reuters", "url": "https://www.reuters.com/world/china/china-says-wuhan-earthquake-centre-attacked-by-overseas-hackers-2023-07-26/" },
+                { "name": "Infosecurity Magazine", "url": "https://www.infosecurity-magazine.com/news/china-wuhan-earthquake-cyber-attack/" }
+            ]
+        },
+        "20230025": {
+            "title": "George County CAD Disruption",
+            "date": 1689393600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "George County, MS, U.S.",
+                "coords": [30.92340967954037, -88.58998722983632]
+            },
+            "media": [
+                { "name": "Govtech", "url": "https://www.govtech.com/security/ransomware-prompted-emergency-declaration-for-mississippi-county" },
+                { "name": "The Record", "url": "https://therecord.media/coastal-mississippi-county-recovering-from-ransomware-attack-digital-hurricane" }
+            ]
+        },
+        "20230026": {
+            "title": "Jackson Township Ransomware Causes Data Breach, non-emergency line disruption",
+            "date": 1690084800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Donut Leaks",
+            "loc": {
+                "name": "Jackson Township, OH, U.S.",
+                "coords": [40.8611035146005, -81.48607604973792]
+            },
+            "media": [
+                { "name": "Canton Repository", "url": "https://www.cantonrep.com/story/news/crime/2023/07/07/jackson-township-cyber-experts-work-on-computer-network-incident/70391285007/" },
+                { "name": "Bit Defender", "url": "https://www.bitdefender.com/blog/hotforsecurity/jackson-county-pays-ransomware-operators-400k-to-regain-access-to-computers/" }
+            ]
+        },
+        "20230027": {
+            "title": "Prospect Medical Holdings Ransomware",
+            "date": 1691121600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "CT/RI/MA, U.S.",
+                "coords": [41.781916832464375, -72.52534291999876]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/08/04/politics/cyberattack-connecticut-pennsylvania-hospitals-ambulances/index.html" },
+                { "name": "Healthcare IT News", "url": "https://www.healthcareitnews.com/news/fbi-investigates-connecticut-ransomware-attack" },
+                { "name": "CT Insider", "url": "https://www.ctinsider.com/news/article/cyber-attack-ct-hospitals-fbi-18280611.php?src=ctipdensecp" },
+                { "name": "CBS News", "url": "https://www.cbsnews.com/philadelphia/news/cyberattack-disrupted-hospitals-crozer-pennsylvania/" },
+                { "name": "The Providence Journal", "url": "https://www.providencejournal.com/story/news/local/2023/08/05/roger-williams-medical-center-and-fatima-hospital-affected-cyberattack-parent-company/70535069007/" },
+                { "name": "EMS1", "url": "https://www.ems1.com/cyber-attacks/articles/cyberattack-closes-emergency-departments-at-conn-hospitals-CFp2SloyPHLiC3q6/" }
+            ]
+        },
+        "20230028": {
+            "title": "Breach Reveals Irish Police Officer Data",
+            "date": 1691452800,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Police Service of Northern Ireland",
+            "loc": {
+                "name": "Belfast, Northern Ireland, U.K.",
+                "coords": [54.58796324875807, -5.847716493951435]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://edition.cnn.com/2023/08/09/uk/psni-data-breach-gbr-intl/index.html" },
+                { "name": "The Journal", "url": "https://www.thejournal.ie/psni-staff-impacted-by-major-data-breach-6139039-Aug2023/" },
+                { "name": "The Journal", "url": "https://www.thejournal.ie/psni-chief-constable-questions-data-breach-6139986-Aug2023/" },
+                { "name": "BBC", "url": "https://www.bbc.com/news/uk-northern-ireland-66527832" },
+                { "name": "The Guardian", "url": "https://www.theguardian.com/uk-news/2023/aug/11/data-leaks-irish-republican-groups-upper-hand-against-police-analysts-warn" }
+            ]
+        },
+        "20230029": {
+            "title": "Documents and Radio Stolen from Irish Police",
+            "date": 1688601600,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Belfast, Northern Ireland, U.K.",
+                "coords": [54.58796324875807, -5.847716493951435]
+            },
+            "media": [
+                { "name": "The Journal", "url": "https://www.thejournal.ie/psni-data-beach-6139154-Aug2023/" },
+                { "name": "BBC", "url": "https://www.bbc.com/news/uk-northern-ireland-66454684" },
+                { "name": "The Guardian", "url": "https://www.theguardian.com/uk-news/2023/aug/11/data-leaks-irish-republican-groups-upper-hand-against-police-analysts-warn" }
+            ]
+        },
+        "20230030": {
+            "title": "Gadsden EMS Data Breach",
+            "date": 1692590400,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Gadsden County, FL, U.S.",
+                "coords": [30.587275191100364, -84.55819758087516]
+            },
+            "media": [
+                { "name": "Tallahassee Democrat", "url": "https://www.tallahassee.com/story/news/local/2023/08/21/data-breach-under-investigation-involving-gadsden-county-court-records/70641037007/" }
+            ]
+        },
+        "20230031": {
+            "title": "Mobile Emergency Service Radio Jamming",
+            "date": 1686369600,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Trenton Edward Lisak",
+            "loc": {
+                "name": "Mobile, AL, U.S.",
+                "coords": [30.68991714909822, -88.05311334375406]
+            },
+            "media": [
+                { "name": "AL.com", "url": "https://www.al.com/news/mobile/2023/06/man-charged-with-jamming-mobile-police-radio-traffic.html" },
+                { "name": "Fox 10 News", "url": "https://www.fox10tv.com/2023/06/12/mobile-man-charged-with-using-sophisticated-jamming-device-block-police-communications/" },
+                { "name": "WKRG News", "url": "https://www.wkrg.com/mobile-county/man-arrested-for-interfering-with-mobile-law-enforcement-radio-and-phone-communications/" }
+            ]
+        },
+        "20230032": {
+            "title": "Carthage Area Hospital TDoS Attack",
+            "date": 1693454400,
+            "category": "tdos",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Carthage, NY, U.S.",
+                "coords": [43.977402519903926, -75.61075157327913]
+            },
+            "media": [
+                { "name": "InformNNY", "url": "https://www.informnny.com/abc50-now/carthage-area-hospital-claxton-hepburn-deal-with-cyber-attack/" },
+                { "name": "WWNYTV", "url": "https://www.wwnytv.com/2023/09/01/carthage-claxton-hepburn-hospitals-target-cyber-attack/" },
+                { "name": "WWNYTV", "url": "https://www.wwnytv.com/2023/09/02/phone-services-restored-carthage-area-hospital-following-cyber-attack/" }
+            ]
+        },
+        "20230033": {
+            "title": "Seville Emergency Services impacted by Ransomware",
+            "date": 0,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Seville, Seville, Spain",
+                "coords": [37.388648864143086, -5.993227099557161]
+            },
+            "media": [
+                { "name": "Diario de Sevilla", "url": "https://www.diariodesevilla.es/sevilla/hackers-rescate-millon-medio-euros-Ayuntamiento-Sevilla_0_1827417442.html" },
+                { "name": "The Record", "url": "https://therecord.media/lockbit-cyberattack-shuts-down-networks-in-seville-spain" }
+            ]
+        },
+        "20230034": {
+            "title": "Maries County Courthouse TDoS",
+            "date": 1695355200,
+            "category": "tdos911",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Vienna, MO, U.S.",
+                "coords": [38.185417470010115, -91.94730843236124]
+            },
+            "media": [
+                { "name": "KRCG", "url": "https://krcgtv.com/news/local/maries-county-courthouse-under-cyber-attack-for-past-few-days" },
+                { "name": "Maries County Emergency Management", "url": "https://www.facebook.com/Mariescountyemergencymanagement/posts/632424279075216/" }
+            ]
+        },
+        "20230035": {
+            "title": "Indian Police Database Breached",
+            "date": 1694496600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown South Korean Actors",
+            "loc": {
+                "name": "Mandaveli, Chennai, India",
+                "coords": [13.036579664436982, 80.2806353522773]
+            },
+            "media": [
+                { "name": "Medianama", "url": "https://www.medianama.com/2023/09/223-tamil-nadu-police-website-hacked/" },
+                { "name": "The News Minute", "url": "https://www.thenewsminute.com/tamil-nadu/tamil-nadu-police-website-hacked-attackers-demand-20000-usd-to-restore-site" },
+                { "name": "The Hindu", "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-police-website-hacked-by-cyber-criminals/article67296670.ece" }
+            ]
+        },
+        "20230036": {
+            "title": "St. Louis Prisoner Processing, Police Ticketing System Cyber-attack",
+            "date": 1694404800,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "St. Louis, MO, U.S.",
+                "coords": [38.63153322811596, -90.20789199790201]
+            },
+            "media": [
+                { "name": "St. Louis Post-Dispatch", "url": "https://www.stltoday.com/news/local/government-politics/cyberattack-causes-st-louis-county-to-shut-down-some-public-safety-computer-servers/article_bdb52ede-51c5-11ee-9ac5-23aa74956aa9.html" },
+                { "name": "KSDK", "url": "https://www.ksdk.com/article/news/crime/security-incident-criminal-database-hampering-st-louis-area-police-operations/63-97e30db3-c096-4a7e-a50b-1436c69d88f4" }
+            ]
+        },
+        "20230037": {
+            "title": "Brazilian Police Credentials Leaked",
+            "date": 1695535200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Brazilian Cyber-criminal Gang",
+            "loc": {
+                "name": "Água Branca, São Paulo, Brazil",
+                "coords": [-22.2820839721812, -49.269959641637534]
+            },
+            "media": [
+                { "name": "Estadão", "url": "https://www.estadao.com.br/sao-paulo/hacker-14-anos-sistema-policia-justica-prisao-nprm/" },
+                { "name": "International IT", "url": "https://www.internationalit.com/post/hackers-adolescente-de-14-anos-%C3%A0-frente-de-quadrilha" }
+            ]
+        },
+        "20230038": {
+            "title": "United Hatzalah DDoS Attack",
+            "date": 1696816800,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Jerusalem, Israel",
+                "coords": [31.79788718693389, 35.2202503305874]
+            },
+            "media": [
+                { "name": "The Jerusalem Post", "url": "https://www.jpost.com/israel-news/article-767477" },
+                { "name": "Reuters", "url": "https://www.reuters.com/world/middle-east/hackers-hit-aid-groups-responding-israel-gaza-crisis-2023-10-13/" }
+            ]
+        },
+        "20230039": {
+            "title": "Medical Aid for Palestinians DDoS Attack",
+            "date": 1697076000,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "London, England, U.K.",
+                "coords": [51.54308881274762, -0.10466446886926264]
+            },
+            "media": [
+                { "name": "X/Twitter", "url": "https://twitter.com/MedicalAidPal/status/1712578276827242978" },
+                { "name": "Mint", "url": "https://www.livemint.com/news/world/israelhamas-war-medical-aid-for-palestinians-website-under-cyber-attack-hindering-donations-for-gaza-relief-efforts-11697157474678.html" },
+                { "name": "Reuters", "url": "https://www.reuters.com/world/middle-east/hackers-hit-aid-groups-responding-israel-gaza-crisis-2023-10-13/" }
+            ]
+        },
+        "20230040": {
+            "title": "HealthAlliance Hospital Cyber-attack causes Diversions",
+            "date": 1697342400,
+            "category": "mal",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Kingston, NY, U.S.",
+                "coords": [41.92068729260032, -73.99783019224255]
+            },
+            "media": [
+                { "name": "Associated Press", "url": "https://apnews.com/article/hospital-cyberattack-new-york-8d16389a47792a6a70eeed3f719d8f35" },
+                { "name": "Daily Freeman", "url": "https://www.dailyfreeman.com/2023/10/20/healthalliance-hospital-in-kingston-emptied-systems-to-shut-down-in-wake-of-cyber-attack/" },
+                { "name": "Times Union", "url": "https://www.timesunion.com/business/article/cyberattack-hits-2-new-york-hospitals-forces-18439557.php" }
+            ]
+        },
+        "20230041": {
+            "title": "Dallas County Cyber-attack Impacts Sheriff's Department",
+            "date": 1697680800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Play",
+            "loc": {
+                "name": "Dallas County, TX, U.S.",
+                "coords": [32.77621659764976, -96.79870475832587]
+            },
+            "media": [
+                { "name": "Govtech", "url": "https://www.govtech.com/security/dallas-county-officials-say-they-thwarted-recent-cyber-attack" },
+                { "name": "KERA News", "url": "https://www.keranews.org/news/2023-11-15/dallas-county-the-target-of-a-recent-cyber-attack-is-looking-to-hire-a-new-it-leader" },
+                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/play-dallas-cyber-security-attack-released/287-a15c6bda-9524-4a7b-ad9d-441065c14087" },
+                { "name": "CBS Texas", "url": "https://www.cbsnews.com/texas/news/dallas-county-cyberattack-did-not-encrypt-files-but-hackers-claim-to-have-stolen-sensitive-data/?intcid=CNM-00-10abd1h" },
+                { "name": "X/Twitter", "url": "https://twitter.com/brettcallow/status/1718681911546269967" }
+            ]
+        },
+        "20230042": {
+            "title": "Stanford University DPS Ransomware Attack",
+            "date": 1698393600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Akira",
+            "loc": {
+                "name": "Stanford, CA, U.S.",
+                "coords": [37.42947290920172, -122.15589481161226]
+            },
+            "media": [
+                { "name": "Govtech", "url": "https://www.govtech.com/education/higher-ed/stanford-investigating-cyber-incident-ransomware-threat" },
+                { "name": "Stanford Report", "url": "https://news.stanford.edu/report/2023/10/27/stanford-statement-department-public-safety-cybersecurity-incident/" },
+                { "name": "The Record", "url": "https://therecord.media/stanford-investigating-cyberattack-after-ransomware" }
+            ]
+        },
+        "20230043": {
+            "title": "Czech Police Suffer DDoS Attack",
+            "date": 1698105600,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "NoName057(16)",
+            "loc": {
+                "name": "Záběhlice, Prague, Czech Republic",
+                "coords": [50.05681957652475, 14.503962131617797]
+            },
+            "media": [
+                { "name": "Radio Prague International", "url": "https://deutsch.radio.cz/websites-des-tschechischen-innenministeriums-und-der-polizei-von-hackern-8797994" },
+                { "name": "BRNO Daily", "url": "https://brnodaily.com/2023/10/24/news/czech-police-interior-ministry-airport-websites-come-under-cyber-attack/" }
+            ]
+        },
+        "20230044": {
+            "title": "NCA-led Crimephone Operation Suffers Leak",
+            "date": 1587686400,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Natalie Mottram",
+            "loc": {
+                "name": "Winsford, U.K.",
+                "coords": [53.19022514606422, -2.5994476422231223]
+            },
+            "media": [
+                { "name": "National Crime Agency", "url": "https://nationalcrimeagency.gov.uk/news/operation-venetic-corrupt-police-worker-jailed-for-tipping-off-criminal-over-secret-international-investigation" },
+                { "name": "Seriously Risky Business", "url": "https://srslyriskybiz.substack.com/p/sec-vs-solarwinds-2-this-time-its#%C2%A7the-encrochat-takedown-was-wildly-wildly-successful" },
+                { "name": "Manchester Evening News", "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/corrupt-police-analyst-who-told-28040020" }
+            ]
+        },
+        "20230045": {
+            "title": "Tri-City Medical Center Ransomware causes Diversions",
+            "date": 1699516800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "INC Ransom",
+            "loc": {
+                "name": "Oceanside, CA, U.S.",
+                "coords": [33.30725748317504, -116.92305728267912]
+            },
+            "media": [
+                { "name": "Fox 5 San Diego", "url": "https://fox5sandiego.com/news/local-news/tri-city-medical-center-experiencing-cyber-attack/" },
+                { "name": "NBC 7 San Diego", "url": "https://www.nbcsandiego.com/news/local/tri-city-medical-center-still-working-to-recover-5-days-after-cyber-attack-shut-down-emergency-services/3355189/" },
+                { "name": "The San Diego Union Tribune", "url": "https://www.sandiegouniontribune.com/news/health/story/2023-12-08/ransomware-group-posts-stolen-tri-city-medical-center-documents-to-dark-web" }
+            ]
+        },
+        "20230046": {
+            "title": "Huber Heights Ransomware",
+            "date": 1699768800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "BlackSuit",
+            "loc": {
+                "name": "Huber Heights, OH, U.S.",
+                "coords": [39.86296193059764, -84.12991637515181]
+            },
+            "media": [
+                { "name": "Govtech", "url": "https://govtech.com/security/huber-heights-ohio-suffers-ransomware-attack-on-systems" },
+                { "name": "Dayton Daily News", "url": "https://www.daytondailynews.com/local/huber-heights-cyber-attack-some-functions-restored-full-upgrades-weeks-away/PQ6UC73LXRELTK5MVCPJXCHUGM/" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/extent-of-damage-in-huber-heights-cyber-attack-unknown" }
+            ]
+        },
+        "20230047": {
+            "title": "Loiret Fire Department Affected by Council Cyber-attack",
+            "date": 1699228800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Semoy, Loiret, France",
+                "coords": [47.93930282051193, 1.9435077776003877]
+            },
+            "media": [
+                { "name": "France TV", "url": "https://france3-regions.francetvinfo.fr/centre-val-de-loire/loiret/le-departement-du-loiret-vise-par-une-cyberattaque-une-plainte-deposee-2868185.html" },
+                { "name": "Red Packet Security", "url": "https://www.redpacketsecurity.com/lockbit-3-0-ransomware-victim-loiret-fr/" }
+            ]
+        },
+        "20230048": {
+            "title": "UT Health East Texas Ransomware causes Diversions",
+            "date": 1700722800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Tyler, TX, U.S.",
+                "coords": [32.33858450077151, -95.28993273988468]
+            },
+            "media": [
+                { "name": "CNN", "url": "https://www.cnn.com/2023/11/24/us/east-texas-hospital-cybersecurity/index.html" },
+                { "name": "CBS 19", "url": "https://www.cbs19.tv/article/news/local/security-incident-that-caused-network-outages-ut-health-east-texas-identified-as-ransomware-attack/501-7c011a0a-fe81-4235-bb01-c86fa3acefff" }
+            ]
+        },
+        "20230049": {
+            "title": "Portneuf Medical Center Ransomware causes Diversions",
+            "date": 1700722800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Pocatello, ID, U.S.",
+                "coords": [42.8744371459714, -112.42001579828525]
+            },
+            "media": [
+                { "name": "EastIdahoNews.com", "url": "https://www.eastidahonews.com/2023/11/portneuf-medical-center-experienced-ransomware-attack-hospital-is-adapting-with-pencils-and-paper/" },
+                { "name": "KIFI", "url": "https://localnews8.com/news/pocatello/2023/11/25/portneuf-medical-center-victim-of-potential-cyber-attack/" }
+            ]
+        },
+        "20230050": {
+            "title": "Hackensack Meridian Health Ransomware causes Diversions",
+            "date": 1700722800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Bergen County, NJ, U.S.",
+                "coords": [40.985371269259794, -74.01559578750336]
+            },
+            "media": [
+                { "name": "CBS 2 New York", "url": "https://www.cbsnews.com/newyork/news/hackensack-meridian-health-potential-cybersecurity-breach/" },
+                { "name": "NorthJersey.com", "url": "https://www.northjersey.com/story/news/health/2023/11/27/hackensack-meridian-hospitals-divert-status-network-outage-security-incident/71715797007/" },
+                { "name": "USA Today", "url": "https://www.usatoday.com/story/news/nation/2023/11/28/ardent-health-hospital-cyber-attack-ransomware/71726309007/" }
+            ]
+        },
+        "20230051": {
+            "title": "Israeli Emergency Services Lines Downed from IT Malfunction",
+            "date": 1701129600,
+            "category": "oth",
+            "description": "",
+            "perpetrator": "Bezeq Electric",
+            "loc": {
+                "name": "Petah Tikva, Israel Central, Israel",
+                "coords": [32.08470508380743, 34.85862676127743]
+            },
+            "media": [
+                { "name": "The Jerusalem Post", "url": "https://www.jpost.com/breaking-news/article-775438" },
+                { "name": "The Jerusalem Post", "url": "https://www.msn.com/en-nz/news/other/emergency-services-phone-lines-downed-in-potential-cyberattack/ar-AA1kDks6" }
+            ]
+        },
+        "20230052": {
+            "title": "D.C. Fire & EMS Impacted by Kronos Ransomware",
+            "date": 1639198800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Washington, D.C., U.S.",
+                "coords": [38.91743564695076, -77.03210435012232]
+            },
+            "media": [
+                { "name": "Fox 5 D.C.", "url": "https://www.fox5dc.com/news/hazard-pay-for-prince-georges-county-government-workers-delayed-due-to-kronos-hack" }
+            ]
+        },
+        "20230053": {
+            "title": "Langdale County Sheriff's Office Seriously Impacted by Ransomware",
+            "date": 1625979600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Langdale County, WI, U.S.",
+                "coords": [45.14461133655114, -89.15464998630836]
+            },
+            "media": [
+                { "name": "The Record", "url": "https://therecord.media/wisconsin-county-dealing-with-software-failure" },
+                { "name": "SC Media", "url": "https://www.scmagazine.com/brief/separate-ransomware-attacks-take-toll-on-wisconsin-california-cities" }
+            ]
+        },
+        "20230054": {
+            "title": "National Police of Peru suffers Ransomware Attack",
+            "date": 1702184400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Chorrillos, Lima, Peru",
+                "coords": [-12.176893783015322, -76.97459962534249]
+            },
+            "media": [
+                { "name": "The Cyber Express", "url": "https://thecyberexpress.com/the-national-police-force-of-peru-data-breach/" }
+            ]
+        },
+        "20230055": {
+            "title": "Uttar Pradesh Police suffers Ransomware Attack",
+            "date": 1702339200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "StarsX",
+            "loc": {
+                "name": "Lucknow, Uttar Pradesh, India",
+                "coords": [26.867905804324387, 80.94779891452794]
+            },
+            "media": [
+                { "name": "CyberMaterial", "url": "https://cybermaterial.com/starsx-teams-allegedly-hit-indian-gov/" }
+            ]
+        },
+        "20230056": {
+            "title": "NorthStar EMS Service Data Breach",
+            "date": 1663304400,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Tuscaloosa, AL, U.S.",
+                "coords": [33.192928673492574, -87.55904298894832]
+            },
+            "media": [
+                { "name": "NorthStar EMS", "url": "https://www.northstar-ems.us/notice-of-data-security-incident" },
+                { "name": "ABC 33/40", "url": "https://abc3340.com/news/local/alabama-tuscaloosa-county-northstar-emergency-medical-services-data-breach-parients-notice-cybersecurity-unauthorized-investigation" },
+                { "name": "Tuscaloosa Thread", "url": "https://tuscaloosathread.com/data-breach-at-tuscaloosas-northstar-paramedic-services-could-impact-82000-patients/" }
+            ]
+        },
+        "20230057": {
+            "title": "United Hatzalah Targeted by Multiple Cyber-attacks",
+            "date": 1681344000,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Anonymous",
+            "loc": {
+                "name": "Jerusalem, Israel",
+                "coords": [31.79788718693389, 35.2202503305874]
+            },
+            "media": [
+                { "name": "United Hatzalah", "url": "https://israelrescue.org/stories/united-hatzalah-hit-by-tens-of-thousands-of-cyber-attacks/" },
+                { "name": "The Jerusalem Post", "url": "https://www.jpost.com/israel-news/article-736443" }
+            ]
+        },
+        "20230058": {
+            "title": "Liberty Hospital Cyber-attack causes Diversions & Evacuation",
+            "date": 1702962000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "INC Ransom",
+            "loc": {
+                "name": "Jersey City, NJ, U.S.",
+                "coords": [40.71627424803817, -74.05009404203103]
+            },
+            "media": [
+                { "name": "COurier Tribune", "url": "https://www.mycouriertribune.com/news/it-issue-diverting-patients-from-liberty-hospital/article_2051a86a-b11b-5a42-b10f-7024f2dbf97b.html" },
+                { "name": "KSHB", "url": "https://www.kshb.com/news/crime/information-technology-event-impacting-operations-at-liberty-hospital" },
+                { "name": "KMBC", "url": "https://www.kmbc.com/article/as-liberty-hospital-computer-issues-continue-cybersecurity-expert-says-hospitals-have-become-prime-targets/46213812" }
+            ]
+        },
+        "20230059": {
+            "title": "Adams County 911 Communications Center (ADCOM911) suffers Ransomware Attack",
+            "date": 1683176400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Akira",
+            "loc": {
+                "name": "West Union, OH, U.S.",
+                "coords": [38.795411461479276, -83.54588468444379]
+            },
+            "media": [
+                { "name": "Adams County Sheriff", "url": "https://www.adamssheriff.org/sites/default/files/2023-05/Press%20Release%205-4-2023.pdf" },
+                { "name": "Red Packet Security", "url": "https://www.redpacketsecurity.com/akira-ransomware-victim-the-adams-county-com-munication-center-or-adcom/" }
+            ]
+        },
+        "20230060": {
+            "title": "Oakbend Medical Center Ransomware causes Disruptions",
+            "date": 1693544400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Daixin Team",
+            "loc": {
+                "name": "Richmond, TX, U.S.",
+                "coords": [29.57679574702145, -95.76960449511304]
+            },
+            "media": [
+                { "name": "The Record", "url": "https://therecord.media/texas-hospital-still-bringing-systems-back-online-after-sept-1-ransomware-attack" },
+                { "name": "Bit Defender", "url": "https://www.bitdefender.com/blog/hotforsecurity/oakbend-medical-center-hit-with-ransomware-attackers-claim-to-have-stolen-personal-data-of-a-millions-us-citizens/" },
+                { "name": "Data Breaches", "url": "https://www.databreaches.net/oakbend-medical-center-hit-by-ransomware-daixin-team-claims-responsibility/" }
+            ]
+        },
+        "20230061": {
+            "title": "Peruvian Police Suffer Website Defacement",
+            "date": 1384837200,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Lulzsec Peru",
+            "loc": {
+                "name": "Chorrillos, Lima, Peru",
+                "coords": [-12.176893783015322, -76.97459962534249]
+            },
+            "media": [
+                { "name": "HackRead", "url": "https://www.hackread.com/lulzsec-hacks-peru-president-police-sites/" }
+            ]
+        },
+        "20230062": {
+            "title": "Delhi Police DDoS During G20 Summit",
+            "date": 1694131200,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Jambi Cyber Team, Ganonsec",
+            "loc": {
+                "name": "New Delhi, Delhi, India",
+                "coords": [28.6333086309604, 77.25389103052042]
+            },
+            "media": [
+                { "name": "The Indian Express", "url": "https://indianexpress.com/article/cities/delhi/delhi-police-website-attacked-by-hackers-cyber-attacks-police-probe-8935656/" },
+                { "name": "Buisness Today", "url": "https://www.businesstoday.in/technology/news/story/delhi-police-website-down-amid-fears-of-cyberattacks-during-g20-summit-2023-397508-2023-09-08" }
             ]
         }
     }

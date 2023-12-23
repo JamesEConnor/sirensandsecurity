@@ -30,8 +30,13 @@
         "alt": ""
     },
     "dox": {
-        "name": "Doxxing",
+        "name": "Doxxing/Leak",
         "icon": "/icons/cat_doxxing.png",
+        "alt": ""
+    },
+    "att": {
+        "name": "Attack/Breach",
+        "icon": "/icons/cat_other_unknown.png",
         "alt": ""
     },
     "una": {
@@ -41,7 +46,7 @@
     },
     "oth": {
         "name": "Other",
-        "icon": "/icons/cat_dos.png",
+        "icon": "/icons/cat_other_unknown.png",
         "alt": ""
     }
 }

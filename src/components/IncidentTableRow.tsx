@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import categories from "@data/categories"
 import { incidentType, searchUpdateFunctionType } from '@/types/customtypes';
+import { generateDateFromUTC } from '@/scripts/utils'
 
 //The different incident categories.
 export const IncidentCategory = {
@@ -41,7 +42,7 @@ export default function IncidentTableRow(props: IncidentProps) {
             </td>
             <td className="inline-block w-1/5 p-3">{categories[catC].name}</td>
             <td className="inline-block w-1/5 p-3">{props.incident.title}</td>
-            <td className="inline-block w-1/5 p-3">{(new Date(props.incident.date)).toLocaleDateString()}</td>
+            <td className="inline-block w-1/5 p-3">{generateDateFromUTC(props.incident.date).toLocaleDateString()}</td>
             <td className="inline-block w-1/5 p-3">{props.incident.loc.name}</td>
         </tr>
     );

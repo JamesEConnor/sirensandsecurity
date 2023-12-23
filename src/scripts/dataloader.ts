@@ -1,6 +1,8 @@
 import { incidentType, incidentsResultType, loadFunctionProps, loadReturnFunction } from "@/types/customtypes"
 import { PATH } from "@/types/envvars";
 
+import { generateDateFromUTC } from "@/scripts/utils";
+
 
 //Loads incidents based on search parameters.
 export function loadIncidents(
@@ -38,8 +40,8 @@ export function loadIncidents(
               }
               else if(
                   (search.category == "" || searchCats.includes(details.category)) &&
-                  (search.startDate == undefined || new Date(details.date) >= search.startDate) &&
-                  (search.endDate == undefined || new Date(details.date) <= search.endDate) &&
+                  (search.startDate == undefined || generateDateFromUTC(details.date) >= search.startDate) &&
+                  (search.endDate == undefined || generateDateFromUTC(details.date) <= search.endDate) &&
                   (search.keyphrase == '' ||
                   details.title.toLowerCase().includes(search.keyphrase) ||
                   details.description.toLowerCase().includes(search.keyphrase))
