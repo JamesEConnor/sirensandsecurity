@@ -1,6 +1,6 @@
 {
     "version": "0.1",
-    "updated": 1687046400,
+    "updated": 1703376000,
     "incidents": {
         "20230001": {
             "title": "NHS 111 Cyber-attack Outage",
@@ -23,7 +23,7 @@
             "date": 1662595200,
             "category": "att",
             "description": "The Suffolk County, NY clerk's office was compromised by the ALPHV group in December, 2021 through exploitation of the Log4j vulnerability. The attackers then spent eight months installing bitcoin mining software, establishing persistence, and creating fake accounts. In August, 2022, the group was able to escalate their attack through obtained credentials, gaining access to other Suffolk County departments before deploying BlackCat ransomware across the compromised systems. This resulted in 911 dispatchers using pen and paper, rather than their digital CAD system, and law enforcement officers calling in crime scene information via radio, rather than using their tablet-based emails. It also resulted in a months-long website outage for the entire county.",
-            "perpetrator": "Alphv Group",
+            "perpetrator": "Alphv",
             "loc": {
                 "name": "Suffolk County, NY, U.S.",
                 "coords": [40.9849,-72.6151]
@@ -967,6 +967,237 @@
             "media": [
                 { "name": "The Indian Express", "url": "https://indianexpress.com/article/cities/delhi/delhi-police-website-attacked-by-hackers-cyber-attacks-police-probe-8935656/" },
                 { "name": "Buisness Today", "url": "https://www.businesstoday.in/technology/news/story/delhi-police-website-down-amid-fears-of-cyberattacks-during-g20-summit-2023-397508-2023-09-08" }
+            ]
+        },
+        "20230063": {
+            "title": "German Hospital Ransomware causes Diversions",
+            "date": 1703376000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Bielefeld, North Rhine-Westphalia, Germany",
+                "coords": [52.02362491662257, 8.524345710606404]
+            },
+            "media": [
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/lockbit-ransomware-disrupts-emergency-care-at-german-hospitals/" },
+                { "name": "Techzine", "url": "https://www.techzine.eu/news/security/114748/emergency-systems-offline-after-ransomware-attack/" },
+                { "name": "Times Now", "url": "https://www.timesnownews.com/technology-science/german-hospitals-hit-by-lockbit-ransomware-attack-emergency-services-affected-article-106350676" }
+            ]
+        },
+        "20230064": {
+            "title": "Cyber-attack on Anna Jaques Hospital causes Diversions",
+            "date": 1703480400,
+            "category": "una",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Newburyport, MA, U.S.",
+                "coords": [42.814175630629215, -70.89089925171702]
+            },
+            "media": [
+                { "name": "Becker's Healthcare", "url": "https://www.beckershospitalreview.com/cybersecurity/massachusetts-hospital-it-systems-ehr-affected-by-cyberattack.html" },
+                { "name": "The Daily News", "url": "https://www.newburyportnews.com/news/local_news/ajh-computer-system-compromised-after-cyberattack/article_a5a6d88e-a58e-11ee-bc90-cf662aa3badb.html" },
+                { "name": "Data Breaches", "url": "https://www.databreaches.net/anna-jaques-hospitals-computer-system-compromised-by-cyberattack/" }
+            ]
+        },
+        "20230065": {
+            "title": "School Emergency Management Plan Data Leak",
+            "date": 1704931200,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "None",
+            "loc": {
+                "name": "Houston, TX, U.S.",
+                "coords": [29.805813761718813, -95.44763433862856]
+            },
+            "media": [
+                { "name": "Wired", "url": "https://www.wired.com/story/us-school-shooter-emergency-plans-leak/" },
+                { "name": "vpnMentor", "url": "https://www.vpnmentor.com/news/report-raptortech-breach/" }
+            ]
+        },
+        "20240001": {
+            "title": "Fallon Ambulance Service Suffers Data Breach",
+            "date": 1704931200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Alphv",
+            "loc": {
+                "name": "Milton, MA, U.S.",
+                "coords": [42.27223810420073, -71.06139174029487]
+            },
+            "media": [
+                { "name": "CyberNews", "url": "https://cybernews.com/news/transformative-fallon-attack-exposed-million/" },
+                { "name": "Security Magazine", "url": "https://www.securitymagazine.com/articles/100316-fallon-ambulance-announces-data-breach-affecting-over-900-000-patients" }
+            ]
+        },
+        "20240002": {
+            "title": "Ransomware Group Threatens Hospital with SWAT Teams",
+            "date": 1704931200,
+            "category": "swat",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Seattle, WA, U.S.",
+                "coords": [47.62735608034426, -122.31971707891253]
+            },
+            "media": [
+                { "name": "Becker's Healthcare", "url": "https://www.beckershospitalreview.com/cybersecurity/hackers-threaten-to-send-swat-teams-to-fred-hutch-patients-homes.html" }
+            ]
+        },
+        "20240003": {
+            "title": "Slovenia 112 System Data Breach",
+            "date": 1705276800,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Ljubljana, Slovenia",
+                "coords": [46.05435012282408, 14.522170150280665]
+            },
+            "media": [
+                { "name": "Slovenia Times", "url": "https://sloveniatimes.com/40146/medical-emergency-call-data-breached-in-incident" },
+                { "name": "Slovenian Press Agency", "url": "https://english.sta.si/3257137/massive-breach-of-112-emergency-medical-assistance-call-data-reported" }
+            ]
+        },
+        "20240004": {
+            "title": "Brockton Police Suffer Ransomware Attack",
+            "date": 1626782400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Pheonix Group",
+            "loc": {
+                "name": "Brockton, MA, U.S.",
+                "coords": [42.08506175014007, -71.01566981924552]
+            },
+            "media": [
+                { "name": "Boston 25 News", "url": "https://www.boston25news.com/news/brockton-pd-under-cyberattack-police-fire-forced-go-old-school/ZAK2D73VNJDHFMJS6RPDIM755U/" },
+                { "name": "The Enterprise", "url": "https://www.enterprisenews.com/story/news/technology/2021/07/24/brockton-police-cyberattack-investigation-hack-computers-safety-security-data/8047165002/" }
+            ]
+        },
+        "20240005": {
+            "title": "DC Metro Police Suffer Ransomware Attack",
+            "date": 1619438400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Babuk",
+            "loc": {
+                "name": "Washington, DC, U.S.",
+                "coords": [38.894826216228786, -77.01349603492207]
+            },
+            "media": [
+                { "name": "Associated Press", "url": "https://apnews.com/article/police-technology-government-and-politics-1aedfcf42a8dc2b004ef610d0b57edb9" },
+                { "name": "The New York Times", "url": "https://www.nytimes.com/2021/04/27/us/dc-police-hack.html" },
+                { "name": "Forbes", "url": "https://www.forbes.com/sites/thomasbrewster/2021/05/13/ransomware-hackers-claim-to-leak-250gb-of-washington-dc-police-data-after-cops-dont-pay-4-million-ransom/?sh=321a5a4458d0" }
+            ]
+        },
+        "20240006": {
+            "title": "Presque Isle Police Suffer Ransomware Attack",
+            "date": 1618747200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Avaddon ransomware affiliate",
+            "loc": {
+                "name": "Presque Isle, ME, U.S.",
+                "coords": [46.68870441589626, -68.00699521162441]
+            },
+            "media": [
+                { "name": "Bangor Daily News", "url": "https://www.bangordailynews.com/2021/04/27/aroostook/presque-isle-police-server-hacked-by-ransomware/" },
+                { "name": "8 WAGM", "url": "https://www.wagmtv.com/2021/06/12/update-with-presque-isle-pd-their-ransomware-attack/" }
+            ]
+        },
+        "20240007": {
+            "title": "Cooke County Sheriff Suffers Ransomware Attack",
+            "date": 1593864000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "REvil ransomware affiliate",
+            "loc": {
+                "name": "Cooke County, TX, U.S.",
+                "coords": [33.64955385203048, -97.1676295275347]
+            },
+            "media": [
+                { "name": "Gainsville Daily Register", "url": "https://www.gainesvilleregister.com/news/local_news/2-000-get-letters-in-relation-to-cyberattack/article_1230017a-e1a1-11ea-8686-cf831e2e0d15.html" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/texas-county-sheriffs-office-suffers-ransomware-attack.html" }
+            ]
+        },
+        "20240008": {
+            "title": "St. Lucie County Sheriff Suffers Ransomware Attack",
+            "date": 1576238400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "St. Lucie County, FL, U.S.",
+                "coords": [27.378057212236254, -80.3664206955099]
+            },
+            "media": [
+                { "name": "CBS 12", "url": "https://cbs12.com/news/local/st-lucie-county-sheriffs-office-hit-by-cyber-attack" },
+                { "name": "WPTV", "url": "https://www.wptv.com/news/region-st-lucie-county/hackers-tried-to-extort-1-million-from-st-lucie-county-sheriffs-office-using-dopplepaymer-virus" }
+            ]
+        },
+        "20240009": {
+            "title": "Baltimore 911 Suffers Ransomware Attack",
+            "date": 1521979200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Baltimore, MD, U.S.",
+                "coords": [39.39983091123236, -76.6055425525651]
+            },
+            "media": [
+                { "name": "NBC News", "url": "https://www.nbcnews.com/news/us-news/baltimore-s-911-emergency-system-hit-cyberattack-n860876" },
+                { "name": "Baltimore Sun", "url": "https://www.baltimoresun.com/2018/03/28/hack-of-baltimores-911-dispatch-system-was-ransomware-attack-city-officials-say/" },
+                { "name": "Baltimore Sun", "url": "https://www.baltimoresun.com/2019/05/17/analysis-of-ransomware-used-in-baltimore-attack-indicates-hackers-needed-unfettered-access-to-city-computers/" }
+            ]
+        },
+        "20240010": {
+            "title": "Atlanta PD Suffers Ransomware Attack",
+            "date": 1521720000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Atlanta, GA, U.S.",
+                "coords": [33.74817531884539, -84.39335893993238]
+            },
+            "media": [
+                { "name": "The New York Times", "url": "https://www.nytimes.com/2018/03/27/us/cyberattack-atlanta-ransomware.html" },
+                { "name": "Wired", "url": "https://www.wired.com/story/atlanta-spent-26m-recover-from-ransomware-scare/" },
+                { "name": "Wired", "url": "https://www.wired.com/story/atlanta-ransomware-samsam-will-strike-again/" }
+            ]
+        },
+        "20240011": {
+            "title": "Bucks County 911 Suffers Ransomware Attack",
+            "date": 1706097600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Akira",
+            "loc": {
+                "name": "Bucks County, PA, U.S.",
+                "coords": [40.20152407187966, -75.07270873957533]
+            },
+            "media": [
+                { "name": "Bucks County Government", "url": "https://www.buckscounty.gov/CivicAlerts.aspx?AID=958" },
+                { "name": "NBC 10", "url": "https://www.nbcphiladelphia.com/news/local/bucks-co-emergency-dispatch-system-down-since-sunday-due-to-cyberattack/3754282/" },
+                { "name": "NBC 10", "url": "https://www.nbcphiladelphia.com/news/local/akira-ransomware-behind-bucks-co-security-attack-that-crippled-emergency-dispatch-system-officials-say/3759350/" },
+                { "name": "WPXI", "url": "https://www.wpxi.com/news/local/washington-county-government-targeted-by-hackers/UREJKZZAWRBF5OWY5T6PWKXIL4/" }            
+            ]
+        },
+        "20240012": {
+            "title": "Quebec Dispatch Suffers Ransomware Attack",
+            "date": 1521720000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Quebec City, Quebec, CA",
+                "coords": [46.83910024851831, -71.27771655825819]
+            },
+            "media": [
+                { "name": "inCyber News", "url": "https://incyber.org/en/article/cyberattack-paralyzes-emt-dispatch-in-quebec/" },
+                { "name": "CTV News", "url": "https://montreal.ctvnews.ca/quebec-city-ambulance-dispatch-hit-by-ransomware-attack-1.6743464" }
             ]
         }
     }
