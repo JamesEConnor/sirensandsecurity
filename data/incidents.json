@@ -1080,7 +1080,7 @@
             "date": 1619438400,
             "category": "ran",
             "description": "",
-            "perpetrator": "Babuk",
+            "perpetrator": "Mikhail Matveev, Babuk group",
             "loc": {
                 "name": "Washington, DC, U.S.",
                 "coords": [38.894826216228786, -77.01349603492207]
@@ -1088,7 +1088,8 @@
             "media": [
                 { "name": "Associated Press", "url": "https://apnews.com/article/police-technology-government-and-politics-1aedfcf42a8dc2b004ef610d0b57edb9" },
                 { "name": "The New York Times", "url": "https://www.nytimes.com/2021/04/27/us/dc-police-hack.html" },
-                { "name": "Forbes", "url": "https://www.forbes.com/sites/thomasbrewster/2021/05/13/ransomware-hackers-claim-to-leak-250gb-of-washington-dc-police-data-after-cops-dont-pay-4-million-ransom/?sh=321a5a4458d0" }
+                { "name": "Forbes", "url": "https://www.forbes.com/sites/thomasbrewster/2021/05/13/ransomware-hackers-claim-to-leak-250gb-of-washington-dc-police-data-after-cops-dont-pay-4-million-ransom/?sh=321a5a4458d0" },
+                { "name": "Department of Justice", "url": "https://www.justice.gov/opa/pr/russian-national-charged-ransomware-attacks-against-critical-infrastructure" }
             ]
         },
         "20240006": {
@@ -1198,6 +1199,126 @@
             "media": [
                 { "name": "inCyber News", "url": "https://incyber.org/en/article/cyberattack-paralyzes-emt-dispatch-in-quebec/" },
                 { "name": "CTV News", "url": "https://montreal.ctvnews.ca/quebec-city-ambulance-dispatch-hit-by-ransomware-attack-1.6743464" }
+            ]
+        },
+        "20240013": {
+            "title": "Chinese Police Documents Leak",
+            "date": 1708387200,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Congcheng, Beijing, CH",
+                "coords": [39.90676498626503, 116.4048331327683]
+            },
+            "media": [
+                { "name": "Associated Press", "url": "https://apnews.com/article/china-cybersecurity-leak-document-dump-spying-aac38c75f268b72910a94881ccbb77cb" }
+            ]
+        },
+        "20240014": {
+            "title": "Scottish Ambulance Service Database Leak",
+            "date": 1705363200,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Edinburgh, Scotland, U.K.",
+                "coords": [55.93106281789432, -3.2938808203721752]
+            },
+            "media": [
+                { "name": "BBC", "url": "https://www.bbc.com/news/uk-scotland-68458077" }
+            ]
+        },
+        "20240015": {
+            "title": "Stuart PD Suffers Ransomware Attack",
+            "date": 1555113600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Stuart, FL, U.S.",
+                "coords": [27.193304464654688, -80.23860708180905]
+            },
+            "media": [
+                { "name": "Treasure Coast Newspaper", "url": "https://www.tcpalm.com/story/news/local/martin-county/2019/04/22/city-halls-ransomware-attack-may-linked-phishing-email-scam-ryuk/3540067002/" },
+                { "name": "ZDNET", "url": "https://www.zdnet.com/article/six-suspected-drug-dealers-went-free-after-police-lost-evidence-in-ransomware-attack/" },
+                { "name": "Bit Defender", "url": "https://www.bitdefender.com/blog/hotforsecurity/ransomware-attack-in-florida-forces-prosecutor-to-drop-charges-in-drug-cases/" }
+            ]
+        },
+        "20240016": {
+            "title": "Cockrell Hill PD Ransomware Attack",
+            "date": 1481500800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Cockrell Hill, TX, U.S.",
+                "coords": [32.735392486105695, -96.88789330618661]
+            },
+            "media": [
+                { "name": "WFAA", "url": "https://www.wfaa.com/article/news/local/cockrell-hill-police-lose-years-worth-of-evidence-in-ransom-hacking/287-392673232" },
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/police-department-loses-years-worth-of-evidence-in-ransomware-incident/" }
+            ]
+        },
+        "20240017": {
+            "title": "Lawrenceville PD Suffers Ransomware Attack",
+            "date": 1563494400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Lawrenceville, GA, U.S.",
+                "coords": [33.952923642551056, -83.97963820843604]
+            },
+            "media": [
+                { "name": "11Alive", "url": "https://www.11alive.com/article/news/ransomeware-cripples-lawrenceville-pd-computer-systems/85-5b4cd2dc-4b30-482c-85f7-44d84bebf7a2" },
+                { "name": "AJC", "url": "https://www.ajc.com/news/local/lawrenceville-henry-county-recovery-mode-after-cyber-attack/KSxlFBnQScAhrGti8NQZCO/" }
+            ]
+        },
+        "20240018": {
+            "title": "Georgia DPS Suffers Ransomware Attack",
+            "date": 1564099200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Atlanta, GA, U.S.",
+                "coords": [33.726294090014825, -84.3455941619706]
+            },
+            "media": [
+                { "name": "ZDNET", "url": "https://www.zdnet.com/article/ransomware-infection-takes-some-police-car-laptops-offline-in-georgia/" },
+                { "name": "AJC", "url": "https://www.ajc.com/news/crime--law/georgia-state-patrol-working-computer-fix-after-cyber-attack/TOoRXmmVh5JTQ0WnjvGNgM/" }
+            ]
+        },
+        "20240019": {
+            "title": "Georgia Emergency Management Agency (GEMA) Suffers Ransomware Attack",
+            "date": 1562284800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Atlanta, GA, U.S.",
+                "coords": [33.7291097508466, -84.34286929824448]
+            },
+            "media": [
+                { "name": "11Alive", "url": "https://www.11alive.com/article/news/gema-malware-discovered-within-its-computer-system/85-dc504b0c-a179-40fe-9c8b-d92c89788788" },
+                { "name": "Georgia Recorder", "url": "https://georgiarecorder.com/2019/09/09/cyber-attack-headaches-linger-at-state-patrol-other-ga-agencies/" }
+            ]
+        },
+        "20240020": {
+            "title": "Henry County Attack Targets CAD Systems",
+            "date": 1710720000,
+            "category": "una",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "McDonough, GA, U.S.",
+                "coords": [33.54933357324263, -83.62150402082317]
+            },
+            "media": [
+                { "name": "WQAD", "url": "https://www.wqad.com/article/news/local/public-safety/henry-county-suffers-cyberattack-cybersecurity-incident/526-5df9342b-02c9-4878-8d5a-7989e3495ccc" },
+                { "name": "Facebook (Press Release)", "url": "https://www.facebook.com/photo/?fbid=265148176650907&set=a.162747820224277" },
+                { "name": "Our QC News", "url": "https://www.ourquadcities.com/news/local-news/henry-county-undergoes-cyber-attack/" }
             ]
         }
     }
