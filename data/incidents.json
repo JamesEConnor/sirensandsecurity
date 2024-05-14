@@ -1320,6 +1320,174 @@
                 { "name": "Facebook (Press Release)", "url": "https://www.facebook.com/photo/?fbid=265148176650907&set=a.162747820224277" },
                 { "name": "Our QC News", "url": "https://www.ourquadcities.com/news/local-news/henry-county-undergoes-cyber-attack/" }
             ]
+        },
+        "20240021": {
+            "title": "Dallas Sirens Hacked",
+            "date": 1502107200,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Dallas, TX, U.S.",
+                "coords": [32.78258533289463, -96.78733696588438]
+            },
+            "media": [
+                { "name": "The New York Times", "url": "https://www.nytimes.com/2017/04/08/us/dallas-emergency-sirens-hacking.html" },
+                { "name": "Wired", "url": "https://www.wired.com/2017/04/dallas-siren-hack-wasnt-novel-just-really-loud/" }
+            ]
+        },
+        "20240022": {
+            "title": "Emergency Medical Services Authority Hacked",
+            "date": 1707825600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Oklahoma City, OK, U.S.",
+                "coords": [35.40356556758246, -97.42366900472861]
+            },
+            "media": [
+                { "name": "EMSA", "url": "https://emsaonline.com/news/cyber-security-notice/" },
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/benefytt-emsa-lindsay-municipal-hospital-affected-by-cyberattacks/" }
+            ]
+        },
+        "20240023": {
+            "title": "City of Wichita Ransomware",
+            "date": 1714910400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "LockBit",
+            "loc": {
+                "name": "Wichita, KS, U.S.",
+                "coords": [37.69344131436563, -97.34063555197416]
+            },
+            "media": [
+                { "name": "Security Week", "url": "https://www.securityweek.com/city-of-wichita-shuts-down-network-following-ransomware-attack/" },
+                { "name": "KWCH", "url": "https://www.kwch.com/2024/05/09/wichita-first-responders-adjust-changes-keeps-up-with-calls-following-cyberattack/" },
+                { "name": "Dark Reading", "url": "https://www.darkreading.com/cyberattacks-data-breaches/lockbit-claims-wichita-as-its-victim-two-days-after-ransomware-attack" }
+            ]
+        },
+        "20240024": {
+            "title": "2013 EAS Hijack - Montana",
+            "date": 1360621800,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Not publicly announced",
+            "loc": {
+                "name": "Great Falls, MT, U.S.",
+                "coords": [47.53595066618638, -111.28319450360922]
+            },
+            "media": [
+                { "name": "NBC News", "url": "https://www.nbcnews.com/id/wbna50783269" },
+                { "name": "Huffpost", "url": "https://www.huffpost.com/entry/krtv-fake-zombie-alert_n_2665469" },
+                { "name": "The Hacker News", "url": "https://thehackernews.com/2013/02/hacker-broadcasts-zombie-warning-on-tv.html" }
+            ]
+        },
+        "20240025": {
+            "title": "2013 EAS Hijack - Michigan",
+            "date": 1360623300,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Not publicly announced",
+            "loc": {
+                "name": "Marquette, MI, U.S.",
+                "coords": [46.55994516749228, -87.40584223437078]
+            },
+            "media": [
+                { "name": "The Guardian", "url": "https://www.theguardian.com/world/2013/feb/12/zombie-apocalypse-newsflash-montana-tv" },
+                { "name": "ABC 10 News", "url": "https://abc10up.com/2013/02/12/update-eas-hacker-found/" }
+            ]
+        },
+        "20240026": {
+            "title": "2013 EAS Hijack - Wisconsin",
+            "date": 1360623300,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Not publicly announced",
+            "loc": {
+                "name": "La Crosse, WI, U.S.",
+                "coords": [43.810738285629824, -91.24681840657354]
+            },
+            "media": [
+                { "name": "The Guardian", "url": "https://www.theguardian.com/world/2013/feb/12/zombie-apocalypse-newsflash-montana-tv" },
+                { "name": "La Crosse Tribune", "url": "https://lacrossetribune.com/news/local/tv-zombie-attack-warning-a-false-alarm/article_96312830-759f-11e2-bb49-0019bb2963f4.html" },
+                { "name": "ABC 10 News", "url": "https://abc10up.com/2013/02/12/update-eas-hacker-found/" }
+            ]
+        },
+        "20240027": {
+            "title": "2013 EAS Hijack - New Mexico",
+            "date": 1360632900,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Not publicly announced",
+            "loc": {
+                "name": "Portales, NM, U.S.",
+                "coords": [34.17526574020766, -103.35057872696753]
+            },
+            "media": [
+                { "name": "ABC 10 News", "url": "https://abc10up.com/2013/02/12/update-eas-hacker-found/" }
+            ]
+        },
+        "20240028": {
+            "title": "Randolph County EAS Hijack",
+            "date": 1488392100,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Winchester, IN, U.S.",
+                "coords": [40.16623734547964, -84.96591242119149]
+            },
+            "media": [
+                { "name": "Dayton Daily News", "url": "https://www.daytondailynews.com/news/crime--law/zombie-messages-broadcast-after-indiana-radio-station-hack/wsesswedW89KUtZPsGcGKL/" },
+                { "name": "Fox 59", "url": "https://fox59.com/news/hackers-take-over-randolph-county-radio-stations-alert-system-send-out-messages-about-fake-zombie-attack/" }
+            ]
+        },
+        "20240029": {
+            "title": "Washington State EAS Hijack",
+            "date": 1582248600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Michael Andrew Smith",
+            "loc": {
+                "name": "Port Townsend, WA, U.S.",
+                "coords": [48.13310685500923, -123.3634756244637]
+            },
+            "media": [
+                { "name": "KIRO 7", "url": "https://www.kiro7.com/news/local/false-alert-indicating-radiological-incident-appeared-tv-jefferson-county/KJI2SNVTZBE6DAOMYWFOQK47SM/" },
+                { "name": "PT Leader", "url": "https://www.ptleader.com/stories/wave-false-alert-remains-mystery-after-residual-message-airs-again,68246" },
+                { "name": "ABC 7", "url": "https://abc7amarillo.com/news/local/texas-man-hacks-cable-system-issues-false-emergency-alert-about-comanche-peak-nuclear-power-plant-glen-rose-michael-andrew-smith-harris-broadband-brownwood-emergency-broadcast-system-texas-am-engineering-cyber-response-team" }
+            ]
+        },
+        "20240030": {
+            "title": "Gardena Police Compromise",
+            "date": 1642827600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Michael Andrew Smith",
+            "loc": {
+                "name": "Gardena, CA, U.S.",
+                "coords": [33.883766582352195, -118.30711215216571]
+            },
+            "media": [
+                { "name": "Health IT Security", "url": "https://healthitsecurity.com/news/mfa-bypass-results-in-breach-at-la-county-department-of-mental-health" },
+                { "name": "Cyber News", "url": "https://cybernews.com/news/los-angeles-department-of-mental-health-hacked/" }
+            ]
+        },
+        "20240031": {
+            "title": "Ascension Health Ransomware Attack",
+            "date": 1642827600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Black Basta",
+            "loc": {
+                "name": "Topkea, KS, U.S.",
+                "coords": [37.69877007850664, -97.33027710796996]
+            },
+            "media": [
+                { "name": "EMS1", "url": "https://www.ems1.com/cybersecurity/cyberattack-forces-hospital-system-to-divert-ambulance-in-19-states" },
+                { "name": "PC Magazine", "url": "https://www.pcmag.com/news/us-warns-about-black-basta-ransomware-after-ascension-hospital-hack" }
+            ]
         }
     }
 }
