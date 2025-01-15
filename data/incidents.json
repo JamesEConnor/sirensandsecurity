@@ -1488,6 +1488,97 @@
                 { "name": "EMS1", "url": "https://www.ems1.com/cybersecurity/cyberattack-forces-hospital-system-to-divert-ambulance-in-19-states" },
                 { "name": "PC Magazine", "url": "https://www.pcmag.com/news/us-warns-about-black-basta-ransomware-after-ascension-hospital-hack" }
             ]
+        },
+        "20240032": {
+            "title": "Maryland VFD Loses Money to Cyber Scam",
+            "date": 1712620800,
+            "category": "oth",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Rockville, MD, U.S.",
+                "coords": [39.087806696079596, -77.15024148870975]
+            },
+            "media": [
+                { "name": "USA Today", "url": "https://www.usatoday.com/story/news/nation/2024/05/13/rockville-volunteer-fire-department-loses-220k-cyber-crime/73675133007/" },
+                { "name": "Rockville Volunteer Fire Department", "url": "https://rvfd.org/rvfd-victim-of-cyber-crime/" }
+            ]
+        },
+        "20240033": {
+            "title": "Europol Online Portal Breached",
+            "date": 1694001600,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "IntelBroker",
+            "loc": {
+                "name": "Den Haag, NL",
+                "coords": [52.092858718138885, 4.281540654314089]
+            },
+            "media": [
+                { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/news/security/europol-confirms-web-portal-breach-says-no-operational-data-stolen/#Update1" },
+                { "name": "Politico", "url": "https://www.politico.eu/article/europol-internal-agency-eu-police-agency-engulfed-in-clean-up-over-missing-files/" }
+            ]
+        },
+        "20240034": {
+            "title": "Superior Ambulance Data Breach",
+            "date": 1682942400,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Elmhurst, IL, U.S.",
+                "coords": [41.918631954087374, -87.95210659195149]
+            },
+            "media": [
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/superior-air-ground-ambulance-service-data-breach-affects-858k-individuals/" },
+                { "name": "Superior Air-Ground Ambulance", "url": "https://www.superiorambulance.com/wp-content/uploads/Superior-Website-Notice.pdf" }
+            ]
+        },
+        "20240035": {
+            "title": "Michigan Ascension Ransomware Causes Ambulance Diversions",
+            "date": 1715792400,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Madison Heights, MI, U.S.",
+                "coords": [42.4932970147069, -83.08666807363424]
+            },
+            "media": [
+                { "name": "EMS1", "url": "https://www.ems1.com/cybersecurity/cyberattack-continues-to-force-mich-hospitals-to-divert-ambulances" },
+                { "name": "The Record", "url": "https://therecord.media/nearly-six-million-affected-ransomware" },
+                { "name": "Michigan Ascension Hospital", "url": "https://about.ascension.org/cybersecurity-event" }
+            ]
+        },
+        "20240036": {
+            "title": "KCK Fire, Police Departments Extored by Hackers",
+            "date": 1716296400,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Kansas City, KS, U.S.",
+                "coords": [39.11577544906549, -94.6270934123374]
+            },
+            "media": [
+                { "name": "KMBC", "url": "https://www.kmbc.com/article/kansas-city-kansas-police-confirm-hacking/61161884" },
+                { "name": "Kansas City Star", "url": "https://www.kansascity.com/news/local/article288633325.html" }
+            ]
+        },
+        "20240037": {
+            "title": "Newburgh Police Department Suffers Disruption",
+            "date": 1718298000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Newburgh, NY, U.S.",
+                "coords": [41.49925947551197, -74.00896872653271]
+            },
+            "media": [
+                { "name": "News 12", "url": "https://westchester.news12.com/officials-serious-cybersecurity-attack-holds-data-operations-in-city-of-newburgh-at-ransom" },
+                { "name": "The Record", "url": "https://therecord.media/traverse-city-michigan-newburgh-new-york-ransomware" }
+            ]
         }
     }
 }

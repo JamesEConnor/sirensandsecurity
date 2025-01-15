@@ -50,8 +50,8 @@ export default function IncidentTableRow(props: IncidentProps) {
 
 export function IncidentDetails(props: IncidentProps) {
     return (
-        <tr key={"details-" + props.id} className="bg-neutral-200 rounded-md">
-            <td className="w-full relative p-5">
+        <tr key={"details-" + props.id} className="bg-neutral-200 rounded-md d-block">
+            <td className="w-full relative p-5 d-block">
                 <h1 className="custom-underline text-black text-xl font-bold">{props.incident.title}</h1>
                 <p className="text-black text-md my-5">{props.incident.description}</p>
 
