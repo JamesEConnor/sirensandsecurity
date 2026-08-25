@@ -1474,7 +1474,7 @@
                 { "name": "Cyber News", "url": "https://cybernews.com/news/los-angeles-department-of-mental-health-hacked/" }
             ]
         },
-        "20240031": {
+        "20250001": {
             "title": "Ascension Health Ransomware Attack",
             "date": 1642827600,
             "category": "att",
@@ -1489,7 +1489,7 @@
                 { "name": "PC Magazine", "url": "https://www.pcmag.com/news/us-warns-about-black-basta-ransomware-after-ascension-hospital-hack" }
             ]
         },
-        "20240032": {
+        "20250002": {
             "title": "Maryland VFD Loses Money to Cyber Scam",
             "date": 1712620800,
             "category": "oth",
@@ -1504,7 +1504,7 @@
                 { "name": "Rockville Volunteer Fire Department", "url": "https://rvfd.org/rvfd-victim-of-cyber-crime/" }
             ]
         },
-        "20240033": {
+        "20250003": {
             "title": "Europol Online Portal Breached",
             "date": 1694001600,
             "category": "dox",
@@ -1519,7 +1519,7 @@
                 { "name": "Politico", "url": "https://www.politico.eu/article/europol-internal-agency-eu-police-agency-engulfed-in-clean-up-over-missing-files/" }
             ]
         },
-        "20240034": {
+        "20250004": {
             "title": "Superior Ambulance Data Breach",
             "date": 1682942400,
             "category": "dox",
@@ -1534,7 +1534,7 @@
                 { "name": "Superior Air-Ground Ambulance", "url": "https://www.superiorambulance.com/wp-content/uploads/Superior-Website-Notice.pdf" }
             ]
         },
-        "20240035": {
+        "20250005": {
             "title": "Michigan Ascension Ransomware Causes Ambulance Diversions",
             "date": 1715792400,
             "category": "ran",
@@ -1550,7 +1550,7 @@
                 { "name": "Michigan Ascension Hospital", "url": "https://about.ascension.org/cybersecurity-event" }
             ]
         },
-        "20240036": {
+        "20250006": {
             "title": "KCK Fire, Police Departments Extored by Hackers",
             "date": 1716296400,
             "category": "att",
@@ -1565,7 +1565,7 @@
                 { "name": "Kansas City Star", "url": "https://www.kansascity.com/news/local/article288633325.html" }
             ]
         },
-        "20240037": {
+        "20250007": {
             "title": "Newburgh Police Department Suffers Disruption",
             "date": 1718298000,
             "category": "ran",
@@ -1578,6 +1578,375 @@
             "media": [
                 { "name": "News 12", "url": "https://westchester.news12.com/officials-serious-cybersecurity-attack-holds-data-operations-in-city-of-newburgh-at-ransom" },
                 { "name": "The Record", "url": "https://therecord.media/traverse-city-michigan-newburgh-new-york-ransomware" }
+            ]
+        },
+        "20250008": {
+            "title": "Saratoga Springs 911 Preemptively Rerouted",
+            "date": 1719493200,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Saratoga Springs, NY, U.S.",
+                "coords": [43.0832592785886, -73.7840405660724]
+            },
+            "media": [
+                { "name": "CBS 6 Albany", "url": "https://cbs6albany.com/news/local/cybersecurity-incident-disrupts-saratoga-it-system" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/fbi-probes-it-disruption-at-saratoga-springs-n-y-city-hall" }
+            ]
+        },
+        "20250009": {
+            "title": "Acadian Ambulance Hack/Data Breach",
+            "date": 1718974800,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Daixin Team",
+            "loc": {
+                "name": "Nashville, TN, U.S.",
+                "coords": [36.14483706862218, -86.73846680864358]
+            },
+            "media": [
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/acadian-ambulance-ransomware-attack/" },
+                { "name": "EMS1", "url": "https://www.ems1.com/cybersecurity/hackers-hold-acadian-ambulance-patient-information-for-7m-ransom" },
+                { "name": "Reddit", "url": "https://www.reddit.com/r/ems/comments/1e9fz3t/daixin_team_ransomware_extortion_group_claims/" }
+            ]
+        },
+        "20250010": {
+            "title": "Southern California 911 Agencies Suffer Ransomware Attack",
+            "date": 1718640000,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "DragonForce",
+            "loc": {
+                "name": "Hawthorne, CA, U.S.",
+                "coords": [33.91993877015629, -118.3540853409595]
+            },
+            "media": [
+                { "name": "Securelore", "url": "https://seculore.com/state/california/07-16-2024-ca-manhattan-beach/" },
+                { "name": "Global Security Mag", "url": "https://www.globalsecuritymag.fr/911-emergency-services-under-cyber-attack-in-california.html" }
+            ]
+        },
+        "20250011": {
+            "title": "Ada County CAD Taken Offline",
+            "date": 1720918800,
+            "category": "oth",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Boise, ID, U.S.",
+                "coords": [43.60775129202034, -116.27055758675431]
+            },
+            "media": [
+                { "name": "Ada County Sheriff's Office", "url": "https://adacounty.id.gov/sheriff/news/ada-county-cad-back-online-no-evidence-of-breached-data/" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/ada-county-idaho-takes-dispatch-offline-amid-cyber-concerns" }
+            ]
+        },
+        "20250012": {
+            "title": "TDoS Attack Disrupts Austin 911",
+            "date": 1722772800,
+            "category": "tdos911",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Belton, TX, U.S.",
+                "coords": [31.04569987274397, -97.47770221344321]
+            },
+            "media": [
+                { "name": "KXAN", "url": "https://www.kxan.com/news/local/austin-hays-county-9-1-1-systems-experiencing-difficulties/" },
+                { "name": "KUT News", "url": "https://www.kut.org/crime-justice/2024-08-05/911-technical-difficulties-austin-central-texas-cyberattack" }
+            ]
+        },
+        "20250013": {
+            "title": "Ransomware Disrupts North Miami Police",
+            "date": 1722754800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "North Miami, FL, U.S.",
+                "coords": [25.88925955383654, -80.18373163523452]
+            },
+            "media": [
+                { "name": "Govtech", "url": "https://www.govtech.com/security/north-miami-works-to-restore-services-after-cyber-attack" },
+                { "name": "Local 10", "url": "https://www.local10.com/news/local/2024/08/12/north-miami-back-up-and-running-sort-of-after-cyberattack-cripples-city-business/" }
+            ]
+        },
+        "20250014": {
+            "title": "Timisoara Police Portal Disrupted",
+            "date": 1724428800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Timisoara, RO",
+                "coords": [45.75875137666854, 21.24163162617291]
+            },
+            "media": [
+                { "name": "Timisoara Municipality", "url": "https://www.primariatm.ro/2024/08/26/atac-cibernetic" }
+            ]
+        },
+        "20250015": {
+            "title": "Indian National Police Website Suffers DDoS",
+            "date": 1724688000,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "Server Killers",
+            "loc": {
+                "name": "New Delhi, Delhi, India",
+                "coords": [28.6333086309604, 77.25389103052042]
+            },
+            "media": [
+                { "name": "X/Twitter", "url": "https://x.com/DailyDarkWeb/status/1828085246740279331" }
+            ]
+        },
+        "20250016": {
+            "title": "Wichita Police Data Breach",
+            "date": 1714579200,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Wichita, KS, U.S.",
+                "coords": [37.69344131436563, -97.34063555197416]
+            },
+            "media": [
+                { "name": "KWCH", "url": "https://www.kwch.com/2024/09/19/more-than-70k-wichita-police-records-compromised-massive-cyberattack/" },
+                { "name": "Govtech", "url": "https://www.govtech.com/security/wichita-kan-cyber-incident-limited-to-police-records" }
+            ]
+        },
+        "20250017": {
+            "title": "Bermuda Cyber-attack Impedes Police, 911",
+            "date": 1695348000,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Possible Russian Actors",
+            "loc": {
+                "name": "Bermuda",
+                "coords": [32.29988239211361, -64.76612396856885]
+            },
+            "media": [
+                { "name": "Bernews", "url": "https://bernews.com/2024/09/govt-learned-vital-lessons-from-cyber-attack/" },
+                { "name": "Royal Gazette", "url": "https://www.royalgazette.com/year-in-review/news/article/20240101/september-2023-cyberattack-strikes-at-very-heart-of-government/" },
+                { "name": "Associated Press", "url": "https://apnews.com/article/bermuda-cyberattack-government-services-7b7ab914523c388140d9c3bda582e11a" }
+            ]
+        },
+        "20250018": {
+            "title": "Fake Emergency Alerts in Israel",
+            "date": 1726671600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Hezbollah",
+            "loc": {
+                "name": "Israel",
+                "coords": [31.797226305888504, 35.22819284503389]
+            },
+            "media": [
+                { "name": "Jerusalem Post", "url": "https://www.jpost.com/breaking-news/article-820776" },
+                { "name": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog_entry/thousands-of-israelis-receive-false-text-messages-telling-them-to-enter-bomb-shelters/" }
+            ]
+        },
+        "20250019": {
+            "title": "Taiwanese Police Website Disrupted",
+            "date": 1726390800,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "NoName057(16)",
+            "loc": {
+                "name": "Taipei City, Taiwan",
+                "coords": [25.04567171338842, 121.5228984542753]
+            },
+            "media": [
+                { "name": "Jerusalem Post", "url": "https://www.jpost.com/breaking-news/article-820776" },
+                { "name": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog_entry/thousands-of-israelis-receive-false-text-messages-telling-them-to-enter-bomb-shelters/" }
+            ]
+        },
+        "20250020": {
+            "title": "Texas Hospital Diverts Ambulances due to Ransomware",
+            "date": 1727373600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Lubbock, TX, U.S.",
+                "coords": [33.589395209287495, -101.89217173845081]
+            },
+            "media": [
+                { "name": "The Record", "url": "https://therecord.media/crucial-hospital-texas-ransomware-attackc" },
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/umc-health-ransomware-attack/" }
+            ]
+        },
+        "20250021": {
+            "title": "Kileen Police Records Leaked by Ransomware",
+            "date": 1723053600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "BlackSuit",
+            "loc": {
+                "name": "Killeen, TX, U.S.",
+                "coords": [31.037482688859768, -97.720305326617]
+            },
+            "media": [
+                { "name": "Killeen Daily Herald", "url": "https://kdhnews.com/news/local/city-of-killeen-touts-response-to-ransomware-attack/article_cc2bf5ba-804f-11ef-bbad-6f889012038f.html" },
+                { "name": "Killeen Government", "url": "https://www.killeentexas.gov/CivicAlerts.aspx?AID=2297" },
+                { "name": "Killeen Daily Herald", "url": "https://kdhnews.com/news/local/city-ransom-not-paid-in-hack-financial-info-of-killeen-residents-not-believed-to-be/article_bcef6d86-5695-11ef-a208-df2549eb7789.html" }
+            ]
+        },
+        "20250022": {
+            "title": "Muskogee County 911 Data Breach",
+            "date": 1721926800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Killeen, TX, U.S.",
+                "coords": [31.037482688859768, -97.720305326617]
+            },
+            "media": [
+                { "name": "The HIPAA Journal", "url": "https://www.hipaajournal.com/muskogee-city-county-enhanced-911-trust-authority-prc-saltillo-data-breaches/" },
+                { "name": "Business Wire", "url": "https://www.businesswire.com/news/home/20241011507703/en/Federman-Sherwood-Investigates-Muskogee-City-County-Enhanced-911-Trust-Authority-%E2%80%9CMCC911%E2%80%9D-for-Data-Breach" }
+            ]
+        },
+        "20260001": {
+            "title": "Netherlands Police Officer Data Stolen",
+            "date": 1727308800,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Den Haag, Netherlands",
+                "coords": [52.0889802567655, 4.299859966656765]
+            },
+            "media": [
+                { "name": "Politico", "url": "https://www.politico.eu/article/dutch-police-officers-details-stolen-hack-cyberattack-netherlands/" }
+            ]
+        },
+        "20260002": {
+            "title": "Texas DPS Suffers Data Breach",
+            "date": 1728889200,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Austin, TX, U.S.",
+                "coords": [30.32634349626336, -97.72465410381427]
+            },
+            "media": [
+                { "name": "Houston Public Media", "url": "https://www.houstonpublicmedia.org/articles/news/public-safety/2024/10/16/503095/personal-information-for-more-than-115000-texans-leaked-in-dps-data-breach/" }
+            ]
+        },
+        "20260003": {
+            "title": "Columbus Ohio 911 Ransomware",
+            "date": 1721260800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Columbus, Ohio, U.S.",
+                "coords": [39.9625150026061, -83.00322033144225]
+            },
+            "media": [
+                { "name": "StateScoop", "url": "https://statescoop.com/ransomware-jefferson-county-kentucky-columbus-ohio/" }
+            ]
+        },
+        "20260004": {
+            "title": "SQL Slammer Worm Disrupts 911",
+            "date": 1043452800,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Bellevue, WA, U.S.",
+                "coords": [47.614514717154755, -122.19266348131383]
+            },
+            "media": [
+                { "name": "Threatpost", "url": "https://threatpost.com/inside-story-sql-slammer-102010/74589/" },
+                { "name": "Schneier on Security", "url": "https://www.schneier.com/essays/archives/2003/12/blaster_and_the_grea.html" }
+            ]
+        },
+        "20260005": {
+            "title": "Ransomware Takes Down Sheriff's Office Computers",
+            "date": 1730764800,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Cadillac, MI, U.S.",
+                "coords": [44.25522377751825, -85.38234780131864]
+            },
+            "media": [
+                { "name": "UpNorthLive", "url": "https://upnorthlive.com/news/local/malware-attack-impacts-some-county-computers-phones-in-wexford-county" },
+                { "name": "Cadillac News", "url": "https://www.cadillacnews.com/news/wexford-county-target-of-election-day-ransomware-attack/article_92cb1382-9bca-11ef-b88b-67c1ef9419a0.html" }
+            ]
+        },
+        "20260006": {
+            "title": "Police, Emergency Service Personnel Data Leaked",
+            "date": 1732665600,
+            "category": "dox",
+            "description": "",
+            "perpetrator": "Interlock",
+            "loc": {
+                "name": "Noblesville, IN, U.S.",
+                "coords": [40.044396043854945, -86.01396971525229]
+            },
+            "media": [
+                { "name": "Comparitech", "url": "https://www.comparitech.com/news/ransomware-gang-says-it-hacked-noblesville-in-local-government-and-stole-4-tb-of-data/" }
+            ]
+        },
+        "20260007": {
+            "title": "Cyber Incident Takes Out Internal Police Network",
+            "date": 1735862400,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Kingston, Ontario, Canada",
+                "coords": [44.251485410655576, -76.49584625899068]
+            },
+            "media": [
+                { "name": "The Whig Standard", "url": "https://www.thewhig.com/news/cyber-incident-impacts-kingston-police" }
+            ]
+        },
+        "20260008": {
+            "title": "DDoS Attack Against French Police",
+            "date": 1735628400,
+            "category": "dos",
+            "description": "",
+            "perpetrator": "NoName057(16)",
+            "loc": {
+                "name": "Paris, France",
+                "coords": [48.85498410445794, 2.346947870525274]
+            },
+            "media": [
+                { "name": "X.com", "url": "https://x.com/FalconFeedsio/status/1874076043088453880?s=20" }
+            ]
+        },
+        "20260009": {
+            "title": "Cyber Incident Takes Down Syracuse PD Operations",
+            "date": 1736553600,
+            "category": "att",
+            "description": "",
+            "perpetrator": "Unknown",
+            "loc": {
+                "name": "Syracuse, NY, U.S.",
+                "coords": [43.046780424421065, -76.14700998329516]
+            },
+            "media": [
+                { "name": "Syracuse.com", "url": "https://www.syracuse.com/crime/2025/01/syracuse-police-investigating-security-incident-that-shut-down-its-computer-system.html" }
+            ]
+        },
+        "20260010": {
+            "title": "Ransomware Shuts Down Local Alabama Police Department",
+            "date": 1739145600,
+            "category": "ran",
+            "description": "",
+            "perpetrator": "RansomHub",
+            "loc": {
+                "name": "Tarrant, AL, U.S.",
+                "coords": [33.58447964910508, -86.77480587484641]
+            },
+            "media": [
+                { "name": "AL.com", "url": "https://www.al.com/news/2025/02/tarrant-fends-off-ransomware-attack-on-city-computers-police-say.html" },
+                { "name": "Dysruption Hub", "url": "https://dysruptionhub.com/tarrant-ransomware-attack-2025/" }
             ]
         }
     }
